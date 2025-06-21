@@ -798,14 +798,14 @@ export default function ScientificEventPage() {
                 </div>
                 <div className="pt-4">
                   <Button variant="outline" className="inline-flex items-center gap-2">
-                    Get Directions
+                    Mapa de metro para llegar a nuestro Campus Vivo
                     <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
               </div>
               <div className="overflow-hidden rounded-xl">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/udem.jpg?height=400&width=600"
                   width={600}
                   height={400}
                   alt="Conference Venue"
@@ -887,14 +887,15 @@ export default function ScientificEventPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Join Us?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para unirte?</h2>
                 <p className="mx-auto max-w-[700px] md:text-xl/relaxed">
-                  Register now to secure your spot at the International Conference on Quantum Computing.
+                ¡No te quedes fuera! Regístrate hoy mismo para el SIQUI 2025 y sé parte de una experiencia única 
+                llena de conocimiento, networking y pasión por la química.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
-                  Register Now
+                  Regístrate ahora
                   <ChevronRight className="h-4 w-4" />
                 </Button>
                 <Button
@@ -902,7 +903,7 @@ export default function ScientificEventPage() {
                   variant="outline"
                   className="inline-flex items-center gap-2 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
                 >
-                  Contact Us
+                  Contáctenos
                   <Mail className="h-4 w-4" />
                 </Button>
               </div>
@@ -913,21 +914,18 @@ export default function ScientificEventPage() {
       <footer className="w-full border-t bg-background py-6">
         <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
           <div className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-primary">SCICONF</span>
+            <span className="text-primary">SIQUI</span>
             <span className="text-muted-foreground">2025</span>
           </div>
           <p className="text-center text-sm text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} International Conference on Quantum Computing. All rights reserved.
+            &copy; {new Date().getFullYear()} Simposio de Química UdeMedellín. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
+              Política de Privacidad
             </Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Code of Conduct
+              Términos de Servicio
             </Link>
           </div>
         </div>
