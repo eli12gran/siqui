@@ -14,13 +14,13 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 244 41% 94%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    --primary: 154 19% 54%;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
@@ -47,6 +47,7 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --navbar-background: 48 58% 90%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -82,29 +83,13 @@ body {
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  .border-border {
-    border-color: hsl(var(--border));
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-  
 }
 
-/* @layer base {
-  .border-border {
-    border-color: hsl(var(--border));
-  }
+@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-} */
+}
