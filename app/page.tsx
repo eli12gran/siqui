@@ -46,139 +46,149 @@ export default function ScientificEventPage() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-muted/50 to-background">
+        <section className="w-full py-2 md:py-2 lg:py-2 bg-gradient-to-b from-muted/50 to-background">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Simposio de Química UdeMedellín
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Cien años entendiendo lo invisible: El poder de la química en todas sus formas
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
-                  passHref legacyBehavior
-                  target="_blank"
-                  rel="noopener noreferrer">
-                    <Button size="lg" className="inline-flex items-center gap-2">
-                      Regístrate acá
-                      <ChevronRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                  <Button size="lg" variant="outline" className="inline-flex items-center gap-2">
-                    Descarga cronograma
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground md:flex-row md:gap-6">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>Octubre 22, 2025</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    <span>Universidad de Medellín, Medellín, Antioquia</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-4 w-4" />
-                    <span>100+ Participantes</span>
-                  </div>
+            <div className="flex flex-col items-center text-center space-y-8">
+              
+              {/* Image on Top */}
+              <Image
+                src="/Logo_up.png"
+                width={800}
+                height={800}
+                alt="Conference Banner"
+                className="w-full max-w-2xl rounded-xl object-contain"
+              />
+
+              {/* Title and Description */}
+              <div className="space-y-4">
+                <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
+                  II Simposio de Química
+                </h1>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">
+                  UdeMedellín
+                </h2>
+                <div className="text-muted-foreground md:text-2xl max-w-1xl mx-auto leading-tight">
+                  <p className="mb-0">Cien años entendiendo lo invisible:</p>
+                  <p className="mt-0">El poder de la química en todas sus formas</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-full">
-                <Image
-                  src="/logo_sin_fondo.png?height=400&width=600"
-                  width={1000}
-                  height={800}
-                  alt="Conference Banner"
-                  className="aspect-video overflow-hidden rounded-xl object-cover"
-                />
+
+              {/* Buttons */}
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform"
+                  passHref
+                  legacyBehavior
+                >
+                  <Button size="lg" className="inline-flex items-center gap-2">
+                    Regístrate acá
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+                <Button size="lg" variant="outline" className="inline-flex items-center gap-2">
+                  Descarga cronograma
+                  <ExternalLink className="h-4 w-4" />
+                </Button>
+              </div>
+
+              {/* Details Row */}
+              <div className="flex flex-col gap-2 text-sm text-muted-foreground md:flex-row md:gap-6 justify-center items-center">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>Octubre 22, 2025</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4" />
+                  <span>Universidad de Medellín, Medellín, Antioquia</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4" />
+                  <span>evento gratuito</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+
         {/* About Section */}
-<section id="about" className="w-full py-12 md:py-24 lg:py-32">
-  <div className="container px-4 md:px-6">
-    <div className="flex flex-col items-center justify-center space-y-4 text-center">
-      <div className="space-y-6 max-w-2xl mx-auto">
-        <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-          Sobre el evento
-        </div>
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Avanzando juntos en la ciencia</h2>
-        <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
-          el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
-          Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
-          siglo XXI a través de la ciencia y la tecnología. En sintonía con este llamado, nuestro simposio adopta el tema "Lo cuántico" como eje inspirador, 
-          resaltando su impacto y conexiones desde la química. Queremos hacer de esta jornada un espacio accesible, participativo y transformador, 
-          donde el conocimiento se comparta, se cuestione y se conecte con las personas. Invitamos a estudiantes, docentes, investigadores y entusiastas de la ciencia 
-          a ser parte de un evento que celebra la curiosidad, la interdisciplinariedad y el potencial de la química como puente entre el mundo cuántico y la vida cotidiana. 
-          Todas las áreas de la química y ciencias afines son bienvenidas.
-        </p>
-      </div>
-    </div>
-    
-    <div className="mx-auto max-w-5xl py-12">
-      <div className="flex flex-col items-center text-center">
-        <div className="flex flex-col justify-center space-y-4 max-w-3xl">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Líneas temáticas</h2>
-            <p className="text-muted-foreground">
-              Exploración interdisciplinaria de la química en el contexto cuántico y sus aplicaciones contemporáneas
-            </p>
-          </div>
-          <ul className="grid gap-6">
-            <li>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-left">⚛️​ Áreas clásicas de la química</h3>
-                <p className="text-muted-foreground text-left">
-                  Desde química orgánica e inorgánica hasta fisicoquímica y analítica, fundamentos que siguen revolucionando la ciencia básica.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-left">🔬​ Materiales y catálisis</h3>
-                <p className="text-muted-foreground text-left">
-                  Desarrollo de nuevos materiales con propiedades cuánticas y catalizadores para procesos industriales más eficientes.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-left">🌱​ Sostenibilidad</h3>
-                <p className="text-muted-foreground text-left">
-                  Soluciones químicas para desafíos ambientales, economía circular y procesos sustentables alineados con los ODS.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-left">💡 Innovación, Educación e Impacto Social</h3>
-                <p className="text-muted-foreground text-left">
-                  Pedagogía de la química cuántica y su rol en la transformación social, con enfoque en divulgación científica.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div className="grid gap-1">
-                <h3 className="text-xl font-bold text-left">🏭 Aplicaciones industriales</h3>
-                <p className="text-muted-foreground text-left">
-                  Transferencia tecnológica de desarrollos cuánticos a sectores productivos como farmacéutica, energía y nanotecnología.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-6 max-w-5xl mx-auto px-4 md:px-6">
+  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+    Sobre el evento
   </div>
-</section>
+  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Avanzando juntos en la ciencia</h2>
+  <p className="text-muted-foreground md:text-xl leading-relaxed">
+                  En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
+                  el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
+                  Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
+                  siglo XXI a través de la ciencia y la tecnología. En sintonía con este llamado, nuestro simposio adopta el tema "Lo cuántico" como eje inspirador, 
+                  resaltando su impacto y conexiones desde la química. Queremos hacer de esta jornada un espacio accesible, participativo y transformador, 
+                  donde el conocimiento se comparta, se cuestione y se conecte con las personas. Invitamos a estudiantes, docentes, investigadores y entusiastas de la ciencia 
+                  a ser parte de un evento que celebra la curiosidad, la interdisciplinariedad y el potencial de la química como puente entre el mundo cuántico y la vida cotidiana. 
+                  Todas las áreas de la química y ciencias afines son bienvenidas.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mx-auto max-w-5xl py-12">
+              <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col justify-center space-y-4 max-w-3xl">
+                  <div className="space-y-2">
+                    <h2 className="text-3xl font-bold tracking-tight">Líneas temáticas</h2>
+                    <p className="text-muted-foreground">
+                      Exploración interdisciplinaria de la química en el contexto cuántico y sus aplicaciones contemporáneas
+                    </p>
+                  </div>
+                  <ul className="grid gap-6">
+                    <li>
+                      <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-left">⚛️​ Áreas clásicas de la química</h3>
+                        <p className="text-muted-foreground text-left">
+                          Desde química orgánica e inorgánica hasta fisicoquímica y analítica, fundamentos que siguen revolucionando la ciencia básica.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-left">🔬​ Materiales y catálisis</h3>
+                        <p className="text-muted-foreground text-left">
+                          Desarrollo de nuevos materiales con propiedades cuánticas y catalizadores para procesos industriales más eficientes.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-left">🌱​ Sostenibilidad</h3>
+                        <p className="text-muted-foreground text-left">
+                          Soluciones químicas para desafíos ambientales, economía circular y procesos sustentables alineados con los ODS.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-left">💡 Innovación, Educación e Impacto Social</h3>
+                        <p className="text-muted-foreground text-left">
+                          Pedagogía de la química cuántica y su rol en la transformación social, con enfoque en divulgación científica.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="grid gap-1">
+                        <h3 className="text-xl font-bold text-left">🏭 Aplicaciones industriales</h3>
+                        <p className="text-muted-foreground text-left">
+                          Transferencia tecnológica de desarrollos cuánticos a sectores productivos como farmacéutica, energía y nanotecnología.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Keynote Speakers */}
         <section id="speakers" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
