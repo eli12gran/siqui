@@ -102,87 +102,83 @@ export default function ScientificEventPage() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Sobre el evento
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Avanzando juntos en la ciencia</h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
-                el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
-                Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
-                siglo XXI a través de la ciencia y la tecnología. En sintonía con este llamado, nuestro simposio adopta el tema “Lo cuántico” como eje inspirador, 
-                resaltando su impacto y conexiones desde la química. Queremos hacer de esta jornada un espacio accesible, participativo y transformador, 
-                donde el conocimiento se comparta, se cuestione y se conecte con las personas. Invitamos a estudiantes, docentes, investigadores y entusiastas de la ciencia 
-                a ser parte de un evento que celebra la curiosidad, la interdisciplinariedad y el potencial de la química como puente entre el mundo cuántico y la vida cotidiana. 
-                Todas las áreas de la química y ciencias afines son bienvenidas.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tight">Líneas temáticas</h2>
-                <p className="text-muted-foreground">
-                  Exploración interdisciplinaria de la química en el contexto cuántico y sus aplicaciones contemporáneas
-                </p>
-              </div>
-              <ul className="grid gap-6">
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">⚛️​ Áreas clásicas de la química</h3>
-                    <p className="text-muted-foreground">
-                      Desde química orgánica e inorgánica hasta fisicoquímica y analítica, fundamentos que siguen revolucionando la ciencia básica.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">🔬​ Materiales y catálisis</h3>
-                    <p className="text-muted-foreground">
-                      Desarrollo de nuevos materiales con propiedades cuánticas y catalizadores para procesos industriales más eficientes.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">🌱​ Sostenibilidad</h3>
-                    <p className="text-muted-foreground">
-                      Soluciones químicas para desafíos ambientales, economía circular y procesos sustentables alineados con los ODS.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">💡 Innovación, Educación e Impacto Social</h3>
-                    <p className="text-muted-foreground">
-                      Pedagogía de la química cuántica y su rol en la transformación social, con enfoque en divulgación científica.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">🏭 Aplicaciones industriales</h3>
-                    <p className="text-muted-foreground">
-                      Transferencia tecnológica de desarrollos cuánticos a sectores productivos como farmacéutica, energía y nanotecnología.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                width={600}
-                height={400}
-                alt="Conference Workshop"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
-            </div>
+<section id="about" className="w-full py-12 md:py-24 lg:py-32">
+  <div className="container px-4 md:px-6">
+    <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="space-y-6">
+        <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+          Sobre el evento
+        </div>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Avanzando juntos en la ciencia</h2>
+        <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
+          el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
+          Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
+          siglo XXI a través de la ciencia y la tecnología. En sintonía con este llamado, nuestro simposio adopta el tema "Lo cuántico" como eje inspirador, 
+          resaltando su impacto y conexiones desde la química. Queremos hacer de esta jornada un espacio accesible, participativo y transformador, 
+          donde el conocimiento se comparta, se cuestione y se conecte con las personas. Invitamos a estudiantes, docentes, investigadores y entusiastas de la ciencia 
+          a ser parte de un evento que celebra la curiosidad, la interdisciplinariedad y el potencial de la química como puente entre el mundo cuántico y la vida cotidiana. 
+          Todas las áreas de la química y ciencias afines son bienvenidas.
+        </p>
+      </div>
+    </div>
+    
+    <div className="mx-auto max-w-5xl py-12">
+      <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col justify-center space-y-4 max-w-3xl">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tight">Líneas temáticas</h2>
+            <p className="text-muted-foreground">
+              Exploración interdisciplinaria de la química en el contexto cuántico y sus aplicaciones contemporáneas
+            </p>
           </div>
-        </section>
+          <ul className="grid gap-6">
+            <li>
+              <div className="grid gap-1">
+                <h3 className="text-xl font-bold text-left">⚛️​ Áreas clásicas de la química</h3>
+                <p className="text-muted-foreground text-left">
+                  Desde química orgánica e inorgánica hasta fisicoquímica y analítica, fundamentos que siguen revolucionando la ciencia básica.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="grid gap-1">
+                <h3 className="text-xl font-bold text-left">🔬​ Materiales y catálisis</h3>
+                <p className="text-muted-foreground text-left">
+                  Desarrollo de nuevos materiales con propiedades cuánticas y catalizadores para procesos industriales más eficientes.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="grid gap-1">
+                <h3 className="text-xl font-bold text-left">🌱​ Sostenibilidad</h3>
+                <p className="text-muted-foreground text-left">
+                  Soluciones químicas para desafíos ambientales, economía circular y procesos sustentables alineados con los ODS.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="grid gap-1">
+                <h3 className="text-xl font-bold text-left">💡 Innovación, Educación e Impacto Social</h3>
+                <p className="text-muted-foreground text-left">
+                  Pedagogía de la química cuántica y su rol en la transformación social, con enfoque en divulgación científica.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="grid gap-1">
+                <h3 className="text-xl font-bold text-left">🏭 Aplicaciones industriales</h3>
+                <p className="text-muted-foreground text-left">
+                  Transferencia tecnológica de desarrollos cuánticos a sectores productivos como farmacéutica, energía y nanotecnología.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Keynote Speakers */}
         <section id="speakers" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
@@ -213,24 +209,24 @@ export default function ScientificEventPage() {
                   institution: "Andercol S.A.S.",
                   image: "/johnatan_diosa.jpg?height=300&width=300",
                 },
-                {
-                  name: "Dr. Maria Rodriguez",
-                  role: "Quantum Hardware Engineer",
-                  institution: "IBM Quantum",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
-                {
-                  name: "Dr. Robert Kim",
-                  role: "Quantum Information Theorist",
-                  institution: "Caltech",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
-                {
-                  name: "Prof. Sarah Johnson",
-                  role: "Quantum Applications Researcher",
-                  institution: "Harvard University",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
+                // {
+                //   name: "Dr. Maria Rodriguez",
+                //   role: "Quantum Hardware Engineer",
+                //   institution: "IBM Quantum",
+                //   image: "/placeholder.svg?height=300&width=300",
+                // },
+                // {
+                //   name: "Dr. Robert Kim",
+                //   role: "Quantum Information Theorist",
+                //   institution: "Caltech",
+                //   image: "/placeholder.svg?height=300&width=300",
+                // },
+                // {
+                //   name: "Prof. Sarah Johnson",
+                //   role: "Quantum Applications Researcher",
+                //   institution: "Harvard University",
+                //   image: "/placeholder.svg?height=300&width=300",
+                // },
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
                   <div className="aspect-square overflow-hidden">
@@ -311,46 +307,34 @@ export default function ScientificEventPage() {
                   </div>
                 </div>
 
-                {/* Program Committee
+                {/*Program Committee*/}
                 <div>
-                  <h3 className="mb-6 text-center text-2xl font-bold">Program Committee</h3>
+                  <h3 className="mb-6 text-center text-2xl font-bold">Comité Logístico</h3>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
                       {
-                        name: "Dr. Michael Lee",
-                        role: "Program Chair",
-                        affiliation: "Stanford University",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Valentina Miranda Garcés",
+                        role: "Estudiante de Computación Científica",
+                        affiliation: "Universidad de Medellín",
+                        image: "/vale.jpg?height=150&width=150",
                       },
                       {
-                        name: "Prof. Sarah Johnson",
-                        role: "Program Co-Chair",
-                        affiliation: "MIT",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Emanuel Cabrera",
+                        role: "Estudiante de Computación Científica",
+                        affiliation: "Universidad de Medellín",
+                        image: "/placeholder.jpg?height=150&width=150",
                       },
                       {
-                        name: "Dr. Thomas Brown",
-                        role: "Committee Member",
-                        affiliation: "Cambridge University",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Valentina Ospina",
+                        role: "no idea",
+                        affiliation: "Universidad de Medellín",
+                        image: "/placeholder.jpg?height=150&width=150",
                       },
                       {
-                        name: "Prof. Maria Garcia",
-                        role: "Committee Member",
-                        affiliation: "Technical University of Munich",
-                        image: "/placeholder.svg?height=150&width=150",
-                      },
-                      {
-                        name: "Dr. Robert Kim",
-                        role: "Committee Member",
-                        affiliation: "Seoul National University",
-                        image: "/placeholder.svg?height=150&width=150",
-                      },
-                      {
-                        name: "Prof. Jennifer Adams",
-                        role: "Committee Member",
-                        affiliation: "University of Toronto",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Elizabeth Granda Rodríguez",
+                        role: "Estudiante de Computación Científica",
+                        affiliation: "Universidad de Medellín",
+                        image: "/eli.jpg?height=150&width=150",
                       },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -369,7 +353,7 @@ export default function ScientificEventPage() {
                       </div>
                     ))}
                   </div>
-                </div> */}
+                </div>
 
                 {/* Organizing Committee */}
                 <div>
@@ -777,7 +761,8 @@ export default function ScientificEventPage() {
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Centro Científico</h3>
                   <p className="text-muted-foreground">
-                    Un lugar equipado con los implementos necesarios para una experiencia amena y significativa en el SIQUI 2025
+                    Un lugar equipado con los implementos necesarios para una experiencia amena y significativa en el SIQUI 2025.
+                    Llegar a nuestro Campus Vivo es muy sencillo usando el transporte público integrado, Metro de Medellín.
                   </p>
                 </div>
                 <div className="space-y-2">
@@ -797,21 +782,34 @@ export default function ScientificEventPage() {
                   </div>
                 </div>
                 <div className="pt-4">
-                  <Button variant="outline" className="inline-flex items-center gap-2">
-                    Mapa de metro para llegar a nuestro Campus Vivo
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
+                <Link 
+                    href="https://www.metrodemedellin.gov.co/hs-fs/hubfs/v1-mapa%20esquematico-2021%20(1).webp?width=1200&height=1638&name=v1-mapa%20esquematico-2021%20(1).webp" 
+                    passHref 
+                    legacyBehavior
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" className="inline-flex items-center gap-2" asChild>
+                      <a>
+                      Mapa de Metro Medellín
+                      <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
+                </Link>
                 </div>
               </div>
               <div className="overflow-hidden rounded-xl">
-                <Image
-                  src="/udem.jpg?height=400&width=600"
-                  width={600}
-                  height={400}
-                  alt="Conference Venue"
-                  className="aspect-video h-full w-full object-cover"
-                />
-              </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2436516604885!2d-75.61255342500957!3d6.231576693756585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44298d0551a085%3A0xd6c06b6158ba814d!2sUniversidad%20de%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1743790557531!5m2!1ses-419!2sco"
+                  width="600"
+                  height="800"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="aspect-video h-full w-full rounded-xl">
+                </iframe>
+            </div>
             </div>
           </div>
         </section>
@@ -894,17 +892,25 @@ export default function ScientificEventPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href= "https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
+                passHref legacyBehavior
+                target="_blank"
+                rel="noopener noreferrer">
                 <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
                   Regístrate ahora
                   <ChevronRight className="h-4 w-4" />
                 </Button>
+                </Link>
                 <Button
                   size="lg"
                   variant="outline"
                   className="inline-flex items-center gap-2 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
+                  asChild
                 >
+                  <Link href="mailto:siquiudem@gmail.com">
                   Contáctenos
                   <Mail className="h-4 w-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
