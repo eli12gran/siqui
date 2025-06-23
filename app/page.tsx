@@ -281,13 +281,13 @@ export default function ScientificEventPage() {
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
                       {
-                        name: "PhD. Nancy Arelas",
+                        name: "PhD. Nancy Acelas",
                         role: "Semillero de Investigación Materiales con Impacto",
                         affiliation: "Universidad de Medellín",
                         image: "/nancy_arelas.jpg?height=150&width=150",
                       },
                       {
-                        name: "PhD. María Angélica Forgionny Flórez",
+                        name: "PhD. María Angélica Forgionny",
                         role: "Semillero de Investigación Materiales con Impacto",
                         affiliation: "Universidad de Medellín",
                         image: "/angelica.jpg?height=150&width=150",
@@ -323,7 +323,7 @@ export default function ScientificEventPage() {
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
                       {
-                        name: "Valentina Miranda Garcés",
+                        name: "Valentina Miranda",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
                         image: "/vale.jpg?height=150&width=150",
@@ -336,12 +336,12 @@ export default function ScientificEventPage() {
                       },
                       {
                         name: "Valentina Ospina",
-                        role: "no idea",
+                        role: "rol",
                         affiliation: "Universidad de Medellín",
                         image: "/placeholder.jpg?height=150&width=150",
                       },
                       {
-                        name: "Elizabeth Granda Rodríguez",
+                        name: "Elizabeth Granda",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
                         image: "/eli.jpg?height=150&width=150",
@@ -745,11 +745,11 @@ export default function ScientificEventPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Conference Schedule
+                  Cronograma
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Event Program</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Programación del Evento</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  A full day of inspiring talks, workshops, and networking opportunities.
+                  Un día completo de charlas inspiradoras, invitados especiales
                 </p>
               </div>
             </div>
@@ -757,69 +757,90 @@ export default function ScientificEventPage() {
               <div className="space-y-6">
                 {[
                   {
-                    time: "08:00 - 09:00",
-                    title: "Registration & Breakfast",
-                    location: "Main Hall",
+                    time: "07:00 - 08:00",
+                    title: "Registro e inscripciones",
+                    location: "pendiente",
                   },
                   {
-                    time: "09:00 - 10:00",
-                    title: "Opening Ceremony",
-                    speaker: "Conference Chair",
-                    location: "Auditorium A",
+                    time: "08:00 - 08:15",
+                    title: "Apertura y bienvenida",
+                    location: "pendiente",
                   },
                   {
-                    time: "10:00 - 11:30",
-                    title: "Keynote: The Future of Quantum Computing",
-                    speaker: "Dr. Eleanor Chen",
-                    location: "Auditorium A",
+                    time: "8:15 - 9:15",
+                    title: "Conferencia plenaria 1: 100 años de la mecánica cuántica",
+                    speaker: "Dr. Albeiro Restrepo",
+                    location: "pendiente",
                   },
                   {
-                    time: "11:30 - 13:00",
-                    title: "Lunch Break",
-                    location: "Dining Hall",
+                    time: "9:15 - 9:45",
+                    title: "Participación modalidad charla 1-2",
+                    speaker: "Pendiente",
+                    location: "pendiente",
                   },
                   {
-                    time: "13:00 - 14:30",
-                    title: "Panel Discussion: Quantum Supremacy",
-                    speaker: "Multiple Speakers",
-                    location: "Auditorium B",
+                    time: "9:45 - 10:15",
+                    title: "Conferencista invitado: Química en la Industria",
+                    speaker: "Jonathan Diosa",
+                    location: "pendiente",
                   },
                   {
-                    time: "14:30 - 16:00",
-                    title: "Parallel Sessions: Quantum Algorithms",
-                    location: "Rooms 101-103",
-                  },
-                  {
-                    time: "16:00 - 16:30",
+                    time: "10:15 - 10:30",
                     title: "Coffee Break",
-                    location: "Main Hall",
                   },
                   {
-                    time: "16:30 - 18:00",
-                    title: "Workshop: Introduction to Quantum Programming",
-                    speaker: "Prof. James Wilson",
-                    location: "Computer Lab",
+                    time: "10:30 - 11:30",
+                    title: "Participaciones modalidad charla 3-6",
+                    speaker: "Pendiente",
+                    location: "pendiente",
                   },
                   {
-                    time: "18:30 - 20:30",
-                    title: "Welcome Reception",
-                    location: "Rooftop Garden",
+                    time: "11:30 - 12:00",
+                    title: "Conferencista invitado: Química desde la educación media",
+                    speaker: "Por confirmar",
+                    location: "pendiente"
+                  },
+                  {
+                    time: "10:15 - 10:30",
+                    title: "Almuerzo libre",
+                  },
+                  {
+                    time: "14:00 - 15:00",
+                    title: "Conferencia plenaria 2: Procesos avanzados de oxidación",
+                    speaker: "Por confimar",
+                    location: "pendiente",
+                  },
+                  {
+                    time: "15:00 - 16:00",
+                    title: "Participaciones modalidad charla 7-10",
+                    speaker: "Pendiente",
+                    location: "pendiente",
+                  },
+                  {
+                    time: "16:15 - 18:00",
+                    title: "Sesión de pósters",
+                    location: "pendiente",
+                  },
+                  {
+                    time: "18:00 - 19:00",
+                    title: "Clausura",
+                    location: "pendiente",
                   },
                 ].map((session, index) => (
-                  <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center">
+                  <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
                     <div className="flex w-full flex-col gap-1 md:w-1/5">
                       <div className="flex items-center gap-2">
                         <Clock className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-sm font-medium">{session.time}</span>
+                        <span className="text-base font-medium">{session.time}</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-xs text-muted-foreground">{session.location}</span>
+                        <span className="text-base text-muted-foreground">{session.location}</span>
                       </div>
                     </div>
                     <div className="flex-1">
                       <h3 className="font-bold">{session.title}</h3>
-                      {session.speaker && <p className="text-sm text-muted-foreground">{session.speaker}</p>}
+                      {session.speaker && <p className="text-base text-muted-foreground">{session.speaker}</p>}
                     </div>
                   </div>
                 ))}
