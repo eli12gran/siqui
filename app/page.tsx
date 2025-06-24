@@ -369,7 +369,7 @@ export default function ScientificEventPage() {
                 </div>
 
                 {/* Organizing Committee */}
-                <div>
+                {/* <div>
                   <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
@@ -426,7 +426,7 @@ export default function ScientificEventPage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
