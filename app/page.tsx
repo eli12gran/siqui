@@ -335,11 +335,11 @@ export default function ScientificEventPage() {
                         name: "Emanuel Cabrera",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
-                        image: "/placeholder.jpg?height=150&width=150",
+                        image: "/emanuel.jpg?height=150&width=150",
                       },
                       {
                         name: "Valentina Ospina",
-                        role: "rol",
+                        role: "Ingeniera ambiental. Asistente de Investigación",
                         affiliation: "Universidad de Medellín",
                         image: "/placeholder.jpg?height=150&width=150",
                       },
