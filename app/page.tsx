@@ -36,7 +36,7 @@ export default function ScientificEventPage() {
               Lugar
             </Link>
             <Link href="#sponsors" className="text-sm font-medium hover:text-primary">
-              Patrocinadores
+              Organiza
             </Link>
           </nav>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
@@ -199,13 +199,9 @@ export default function ScientificEventPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Speakers que participan
+                  Conferencistas
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Líderes expertos en sus campos</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Conoce a pioneros que exploran las fronteras donde la química converge con los fenómenos cuánticos y sus aplicaciones innovadoras.
-                Conferencistas nacionales e internacionales
-                </p>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Conferencistas Invitados</h2>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
@@ -268,7 +264,7 @@ export default function ScientificEventPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Equipos de revisión y organización
+                  Comités
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comités de SIQUI 2025</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -369,55 +365,32 @@ export default function ScientificEventPage() {
                 </div>
 
                 {/* Organizing Committee */}
-                {/* <div>
+                <div>
                   <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
                       {
-                        name: "Prof. Elizabeth Chen",
-                        role: "General Chair",
-                        affiliation: "Harvard University",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Francisco Nuñez",
+                        affiliation: "Universidad Nacional de Colombia",
                       },
                       {
-                        name: "Dr. James Wilson",
-                        role: "Vice Chair",
-                        affiliation: "Caltech",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Jazmín Porras",
+                        affiliation: "Corporación Universitaria Remington",
                       },
                       {
-                        name: "Dr. Olivia Martinez",
-                        role: "Publications Chair",
-                        affiliation: "University of Washington",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Carolina Ramírez",
+                        affiliation: "Instituto Tecnológico Metropolitano",
                       },
                       {
-                        name: "Prof. Daniel Taylor",
-                        role: "Finance Chair",
-                        affiliation: "Imperial College London",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Efraím Serna",
+                        affiliation: "Universidad de Antioquia",
                       },
                       {
-                        name: "Dr. Rachel Green",
-                        role: "Publicity Chair",
-                        affiliation: "University of Melbourne",
-                        image: "/placeholder.svg?height=150&width=150",
-                      },
-                      {
-                        name: "Prof. Kevin Zhang",
-                        role: "Local Arrangements Chair",
-                        affiliation: "Boston University",
-                        image: "/placeholder.svg?height=150&width=150",
+                        name: "Gina Hincapié",
+                        affiliation: "Universidad Nacional de Colombia (Bogotá)",
                       },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-                        <Image
-                          src={member.image || "/placeholder.svg"}
-                          alt={member.name}
-                          width={60}
-                          height={60}
-                          className="rounded-full object-cover"
-                        />
                         <div>
                           <h4 className="font-bold">{member.name}</h4>
                           <p className="text-sm text-muted-foreground">{member.role}</p>
@@ -426,7 +399,7 @@ export default function ScientificEventPage() {
                       </div>
                     ))}
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -438,7 +411,7 @@ export default function ScientificEventPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  evento pasado
+                  SIQUI I (evento pasado)
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Memorias</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -511,7 +484,7 @@ export default function ScientificEventPage() {
 
                     <h4 className="text-xl font-semibold">🏆 Premiación</h4>
                     <p className="text-muted-foreground mt-1">
-                      Al finalizar el día se otorgaron reconocimientos. El premio "Mi póster favorito", elegido por votación de los asistentes, fue entregado a un proyecto presentado por estudiantes de educación media de la subregión norte del Departamento de Antioquia, destacando el talento emergente en la ciencia.
+                      Al finalizar el día se otorgaron reconocimientos. Mención a los tres primeros puestos en la sesión de Pósters. Además, el premio "Mi póster favorito", elegido por votación de los asistentes, fue entregado a un proyecto presentado por estudiantes de educación media de la subregión norte del Departamento de Antioquia, destacando el talento emergente en la ciencia.
                     </p>
                   </div>
 
@@ -707,7 +680,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "9:15 - 9:45",
-                    title: "Participación modalidad charla 1-2",
+                    title: "Charlas 1-2",
                     speaker: "Pendiente",
                     location: "pendiente",
                   },
@@ -723,7 +696,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "10:30 - 11:30",
-                    title: "Participaciones modalidad charla 3-6",
+                    title: "Charlas 3-6",
                     speaker: "Pendiente",
                     location: "pendiente",
                   },
@@ -745,7 +718,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "15:00 - 16:00",
-                    title: "Participaciones modalidad charla 7-10",
+                    title: "Charlas 7-10",
                     speaker: "Pendiente",
                     location: "pendiente",
                   },
@@ -817,6 +790,7 @@ export default function ScientificEventPage() {
                     <Mail className="mt-1 h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Contacto</p>
+                      <p className="text-sm text-muted-foreground">siquiudem@udemedellin.edu.co</p>
                       <p className="text-sm text-muted-foreground">siquiudem@gmail.com</p>
                     </div>
                   </div>
@@ -860,21 +834,18 @@ export default function ScientificEventPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Comité organizador
+                  Comité Organizador
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Con el apoyo de:</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Agradecemos el apoyo de los organizadores que hacen este evento posible
-                </p>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Organiza:</h2>
               </div>
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                 {[
-                  "/universidad_nacional.jpg",
                   "/universidad_medellin.jpg",
                   "/universidad_antioquia.png",
+                  "/universidad_nacional.jpg",
                   "/polanyi.jpg"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
@@ -947,7 +918,7 @@ export default function ScientificEventPage() {
                   className="inline-flex items-center gap-2 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
                   asChild
                 >
-                  <Link href="mailto:siquiudem@gmail.com">
+                  <Link href="mailto:siquiudem@soyudemedellin.edu.co">
                   Contáctenos
                   <Mail className="h-4 w-4" />
                   </Link>

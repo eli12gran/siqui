@@ -11,7 +11,6 @@ const attendeeData = [
   { name: 'Enseñanza de la Química', value: 13.7 },
   { name: 'Química de Materiales ', value: 13.7 },
   { name: 'Otro', value: 7.7 },
-  { name: 'No aplica (solo asistente)', value: 29.7 },
 ];
 
 const COLORS = [
