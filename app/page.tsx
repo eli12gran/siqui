@@ -2,7 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import AttendeeTypeChart from "@/components/ui/attendee-type-pie-chart";
+import TopicsChart from "@/components/ui/topics-pie-chart";
 import { Calendar, Clock, MapPin, Users, Mail, ExternalLink, ChevronRight } from "lucide-react"
+
 
 export default function ScientificEventPage() {
   return (
@@ -52,7 +55,7 @@ export default function ScientificEventPage() {
               
               {/* Image on Top */}
               <Image
-                src="/Logo_up.png"
+                src="/logo_top.png"
                 width={800}
                 height={800}
                 alt="Conference Banner"
@@ -602,136 +605,66 @@ export default function ScientificEventPage() {
                   </div>
                 </div>
 
-                {/* Gender Demographics */}
+                {/* attendee statistics */}
                 <div className="grid gap-8 md:grid-cols-2 mb-12">
-                  <div className="rounded-lg border p-6">
-                    <h4 className="font-bold mb-4">Gender Distribution</h4>
-                    <div className="flex items-center gap-4">
-                      <div className="w-full bg-muted rounded-full h-4">
-                        <div className="bg-primary h-4 rounded-full" style={{ width: "42%" }}></div>
-                      </div>
-                      <div className="text-sm whitespace-nowrap">42% Women</div>
-                    </div>
-                    <div className="flex items-center gap-4 mt-2">
-                      <div className="w-full bg-muted rounded-full h-4">
-                        <div className="bg-primary h-4 rounded-full" style={{ width: "56%" }}></div>
-                      </div>
-                      <div className="text-sm whitespace-nowrap">56% Men</div>
-                    </div>
-                    <div className="flex items-center gap-4 mt-2">
-                      <div className="w-full bg-muted rounded-full h-4">
-                        <div className="bg-primary h-4 rounded-full" style={{ width: "2%" }}></div>
-                      </div>
-                      <div className="text-sm whitespace-nowrap">2% Non-binary</div>
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-4">
-                      We're proud of our progress toward gender balance in the quantum computing field, with women's
-                      participation significantly higher than the industry average.
-                    </p>
-                  </div>
-
-                  {/* Geographic Distribution */}
-                  <div className="rounded-lg border p-6">
-                    <h4 className="font-bold mb-4">Geographic Distribution</h4>
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">Europe</div>
-                        <div className="text-sm font-medium">45%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "45%" }}></div>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">North America</div>
-                        <div className="text-sm font-medium">28%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "28%" }}></div>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">Asia</div>
-                        <div className="text-sm font-medium">18%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "18%" }}></div>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">Oceania</div>
-                        <div className="text-sm font-medium">5%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "5%" }}></div>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">Africa</div>
-                        <div className="text-sm font-medium">3%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "3%" }}></div>
-                      </div>
-
-                      <div className="flex justify-between items-center">
-                        <div className="text-sm">South America</div>
-                        <div className="text-sm font-medium">1%</div>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: "1%" }}></div>
-                      </div>
-                    </div>
-                  </div>
+                  <AttendeeTypeChart />
+                  <TopicsChart />
                 </div>
-
-                {/* Additional Statistics */}
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                  <div className="rounded-lg border p-4">
-                    <h4 className="font-medium text-sm mb-2">Academic vs. Industry</h4>
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-primary"></div>
-                      <div className="text-sm">Academic: 65%</div>
-                    </div>
-                    <div className="flex items-center gap-2 mt-1">
-                      <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                      <div className="text-sm">Industry: 35%</div>
-                    </div>
+                
+                {/* Geographic Distribution */}
+                <div className="flex flex-col lg:flex-row gap-6 items-center justify-center border rounded-lg p-6">
+                  {/* Map Image */}
+                  <div className="w-full lg:w-2/3">
+                    <Image
+                      src="/Colombia_America.png"
+                      alt="Distribución geográfica"
+                      width={800}
+                      height={400}
+                      className="rounded-lg w-full h-auto object-contain"
+                    />
                   </div>
 
-                  <div className="rounded-lg border p-4">
-                    <h4 className="font-medium text-sm mb-2">Career Stage</h4>
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-primary"></div>
-                      <div className="text-sm">Senior: 42%</div>
-                    </div>
-                    <div className="flex items-center gap-2 mt-1">
-                      <div className="w-3 h-3 rounded-full bg-muted-foreground"></div>
-                      <div className="text-sm">Mid-career: 38%</div>
-                    </div>
-                    <div className="flex items-center gap-2 mt-1">
-                      <div className="w-3 h-3 rounded-full bg-gray-300"></div>
-                      <div className="text-sm">Early-career: 20%</div>
-                    </div>
-                  </div>
-
-                  <div className="rounded-lg border p-4">
-                    <h4 className="font-medium text-sm mb-2">Research Areas</h4>
-                    <div className="text-xs space-y-1">
-                      <div>Quantum Algorithms: 28%</div>
-                      <div>Quantum Hardware: 24%</div>
-                      <div>Quantum Applications: 22%</div>
-                      <div>Quantum Theory: 15%</div>
-                      <div>Quantum Education: 11%</div>
-                    </div>
-                  </div>
-
-                  <div className="rounded-lg border p-4">
-                    <h4 className="font-medium text-sm mb-2">Satisfaction Rate</h4>
-                    <div className="text-3xl font-bold text-primary">96%</div>
-                    <div className="text-xs text-muted-foreground mt-1">
-                      of attendees rated the conference as "Excellent" or "Very Good"
-                    </div>
+                  {/* Region Legend */}
+                  <div className="w-full lg:w-1/3 space-y-2">
+                    <h4 className="font-bold text-lg mb-2">Participación por región</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f19756' }}></span>
+                        <span>Antioquia: Medellín, Gómez Plata, Caldas  – 40.7%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#ff7f27' }}></span>
+                        <span>México: Hidalgo, Querétaro y Ciudad de México – 14.8%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#2998fb' }}></span>
+                        <span>Bogotá – 14.8%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#60e1fb' }}></span>
+                        <span>Cauca: Popayán, Totoró – 7.4%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f7b2fb' }}></span>
+                        <span>Valle del Cauca: Cali – 7.4%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#a08afb' }}></span>
+                        <span>Risaralda: Pereira – 3.7%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#effb61' }}></span>
+                        <span>Boyacá: Tunja – 3.7%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#a1fb8e' }}></span>
+                        <span>Santander: Bucaramanga – 3.7%</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#fb7635' }}></span>
+                        <span>San Andrés – 3.7%</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
