@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import AttendeeTypeChart from "@/components/ui/attendee-type-pie-chart";
 import TopicsChart from "@/components/ui/topics-pie-chart";
 import { Calendar, Clock, MapPin, Users, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 
 export default function ScientificEventPage() {
@@ -55,7 +56,7 @@ export default function ScientificEventPage() {
               
               {/* Image on Top */}
               <Image
-                src="/logo_top.png"
+                src="/logo_up.png"
                 width={800}
                 height={800}
                 alt="Conference Banner"
@@ -88,10 +89,16 @@ export default function ScientificEventPage() {
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </Link>
+                <Link
+                  href="https://docs.google.com/document/d/1FHvBjdXH4eJ828lF3preHnQWOsEZhbna/edit?usp=sharing&ouid=115148655397799654178&rtpof=true&sd=true"
+                  passHref
+                  legacyBehavior
+                >
                 <Button size="lg" variant="outline" className="inline-flex items-center gap-2">
-                  Descarga cronograma
+                  Descarga formato resumen
                   <ExternalLink className="h-4 w-4" />
                 </Button>
+                </Link>
               </div>
 
               {/* Details Row */}
@@ -775,9 +782,21 @@ export default function ScientificEventPage() {
                   <div className="flex items-start gap-2">
                     <Mail className="mt-1 h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Contacto</p>
                       <p className="text-sm text-muted-foreground">siquiudem@udemedellin.edu.co</p>
                       <p className="text-sm text-muted-foreground">siquiudem@gmail.com</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <FaXTwitter className="mt-1 h-5 w-5 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">@siquiudem</p>
+                      <p className="text-sm text-muted-foreground">@ConMpac</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <FaInstagram className="mt-1 h-5 w-5 text-primary" />
+                    <div>
+                      <p className="text-sm text-muted-foreground">@materialesconimpacto</p>
                     </div>
                   </div>
                 </div>
@@ -907,6 +926,26 @@ export default function ScientificEventPage() {
                   <Link href="mailto:siquiudem@soyudemedellin.edu.co">
                   Contáctenos
                   <Mail className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Link href= "https://x.com/siquiudem" 
+                passHref legacyBehavior
+                target="_blank"
+                rel="noopener noreferrer">
+                <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
+                  @siquiudem
+                  <FaXTwitter className="w-5 h-5" />
+                </Button>
+                </Link>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="inline-flex items-center gap-2 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
+                  asChild
+                >
+                  <Link href="https://www.instagram.com/materialesconimpacto/">
+                  @materialesconimpacto
+                  <FaInstagram className="w-5 h-5" />
                   </Link>
                 </Button>
               </div>
