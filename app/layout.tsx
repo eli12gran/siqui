@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "International Conference on Quantum Computing",
+  title: "SIQUI UDEM 2025",
   description: "Join us for the premier scientific event exploring the frontiers of quantum technology",
     generator: 'v0.dev'
 }
