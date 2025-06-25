@@ -95,7 +95,7 @@ export default function ScientificEventPage() {
               </div>
 
               {/* Details Row */}
-              <div className="flex flex-col gap-2 text-sm text-muted-foreground md:flex-row md:gap-6 justify-center items-center">
+              <div className="flex flex-col gap-2 text-lm text-muted-foreground md:flex-row md:gap-6 justify-center items-center">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
                   <span>Octubre 22, 2025</span>
@@ -119,11 +119,8 @@ export default function ScientificEventPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-6 max-w-5xl mx-auto px-4 md:px-6">
-  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-    Sobre el evento
-  </div>
-  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Avanzando juntos en la ciencia</h2>
-  <p className="text-muted-foreground md:text-xl leading-relaxed">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sobre el evento</h2>
+                <p className="text-muted-foreground md:text-xl leading-relaxed">
                   En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
                   el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
                   Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
@@ -141,52 +138,32 @@ export default function ScientificEventPage() {
                 <div className="flex flex-col justify-center space-y-4 max-w-3xl">
                   <div className="space-y-2">
                     <h2 className="text-3xl font-bold tracking-tight">Líneas temáticas</h2>
-                    <p className="text-muted-foreground">
-                      Exploración interdisciplinaria de la química en el contexto cuántico y sus aplicaciones contemporáneas
-                    </p>
                   </div>
-                  <ul className="grid gap-6">
-                    <li>
-                      <div className="grid gap-1">
-                        <h3 className="text-xl font-bold text-left">⚛️​ Áreas clásicas de la química</h3>
-                        <p className="text-muted-foreground text-left">
-                          Desde química orgánica e inorgánica hasta fisicoquímica y analítica, fundamentos que siguen revolucionando la ciencia básica.
-                        </p>
+                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+                    {[
+                      {
+                        name: "⚛️​ Química inorgánica, orgánica, analítica, fisicoquímica y computacional.",
+                      },
+                      {
+                        name: "🔬​ Química de materiales avanzados, nanomateriales y catálisis.",
+                      },
+                      {
+                        name: "🌱​ Energía renovable, química verde, sostenibilidad y economía circular.",
+                      },
+                      {
+                        name: "💡 Innovación, educación e impacto social de la química.",
+                      },
+                      {
+                        name: "🏭 Aplicaciones industriales, políticas científicas y regulación en tecnologías químicas.",
+                      },
+                    ].map((member, index) => (
+                      <div key={index} className="flex items-center gap-4 rounded-lg border p-4 transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
+                        <div>
+                          <h4 className="text-xl font-bold">{member.name}</h4>
+                        </div>
                       </div>
-                    </li>
-                    <li>
-                      <div className="grid gap-1">
-                        <h3 className="text-xl font-bold text-left">🔬​ Materiales y catálisis</h3>
-                        <p className="text-muted-foreground text-left">
-                          Desarrollo de nuevos materiales con propiedades cuánticas y catalizadores para procesos industriales más eficientes.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="grid gap-1">
-                        <h3 className="text-xl font-bold text-left">🌱​ Sostenibilidad</h3>
-                        <p className="text-muted-foreground text-left">
-                          Soluciones químicas para desafíos ambientales, economía circular y procesos sustentables alineados con los ODS.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="grid gap-1">
-                        <h3 className="text-xl font-bold text-left">💡 Innovación, Educación e Impacto Social</h3>
-                        <p className="text-muted-foreground text-left">
-                          Pedagogía de la química cuántica y su rol en la transformación social, con enfoque en divulgación científica.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="grid gap-1">
-                        <h3 className="text-xl font-bold text-left">🏭 Aplicaciones industriales</h3>
-                        <p className="text-muted-foreground text-left">
-                          Transferencia tecnológica de desarrollos cuánticos a sectores productivos como farmacéutica, energía y nanotecnología.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -198,9 +175,6 @@ export default function ScientificEventPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Conferencistas
-                </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Conferencistas Invitados</h2>
               </div>
             </div>
@@ -217,25 +191,7 @@ export default function ScientificEventPage() {
                   role: "Especialista I+D Síntesis y mezclas",
                   institution: "Andercol S.A.S.",
                   image: "/johnatan_diosa.jpg?height=300&width=300",
-                },
-                // {
-                //   name: "Dr. Maria Rodriguez",
-                //   role: "Quantum Hardware Engineer",
-                //   institution: "IBM Quantum",
-                //   image: "/placeholder.svg?height=300&width=300",
-                // },
-                // {
-                //   name: "Dr. Robert Kim",
-                //   role: "Quantum Information Theorist",
-                //   institution: "Caltech",
-                //   image: "/placeholder.svg?height=300&width=300",
-                // },
-                // {
-                //   name: "Prof. Sarah Johnson",
-                //   role: "Quantum Applications Researcher",
-                //   institution: "Harvard University",
-                //   image: "/placeholder.svg?height=300&width=300",
-                // },
+                }
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
                   <div className="aspect-square overflow-hidden">
@@ -263,12 +219,9 @@ export default function ScientificEventPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Comités
-                </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comités de SIQUI 2025</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Conozca a los distinguidos expertos que revisan las presentaciones y organizan el evento.
+                Conozca a los reconocidos expertos que revisan las presentaciones y organizan el evento.
                 </p>
               </div>
             </div>
@@ -280,12 +233,6 @@ export default function ScientificEventPage() {
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {[
                       {
-                        name: "PhD. Nancy Acelas",
-                        role: "Semillero de Investigación Materiales con Impacto",
-                        affiliation: "Universidad de Medellín",
-                        image: "/nancy_arelas.jpg?height=150&width=150",
-                      },
-                      {
                         name: "PhD. María Angélica Forgionny",
                         role: "Semillero de Investigación Materiales con Impacto",
                         affiliation: "Universidad de Medellín",
@@ -296,6 +243,30 @@ export default function ScientificEventPage() {
                         role: "Semillero de Investigación Materiales con Impacto",
                         affiliation: "Universidad de Medellín",
                         image: "/carlos.jpg?height=150&width=150",
+                      },
+                      {
+                        name: "PhD. Nancy Acelas",
+                        role: "Semillero de Investigación Materiales con Impacto",
+                        affiliation: "Universidad de Medellín",
+                        image: "/nancy_arelas.jpg?height=150&width=150",
+                      },
+                      {
+                        name: "PhD. Ricardo Torres",
+                        role: "Pendiente",
+                        affiliation: "Universidad de Antioquia",
+                        image: "/placeholder.jpg?height=150&width=150",
+                      },
+                      {
+                        name: "PhD. Farid Cortés",
+                        role: "Pendiente",
+                        affiliation: "Universidad Nacional de Colombia",
+                        image: "/placeholder.jpg?height=150&width=150",
+                      },
+                      {
+                        name: "PhD. Camilo Franco",
+                        role: "Pendiente",
+                        affiliation: "Universidad Nacional de Colombia",
+                        image: "/placeholder.jpg?height=150&width=150",
                       },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -319,7 +290,7 @@ export default function ScientificEventPage() {
                 {/*Program Committee*/}
                 <div>
                   <h3 className="mb-6 text-center text-2xl font-bold">Comité Logístico</h3>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
                     {[
                       {
                         name: "Valentina Miranda",
@@ -389,11 +360,26 @@ export default function ScientificEventPage() {
                         name: "Gina Hincapié",
                         affiliation: "Universidad Nacional de Colombia (Bogotá)",
                       },
+                      {
+                        name: "Natalia Súarez",
+                        affiliation: "Universidad de Antioquia",
+                      },
+                      {
+                        name: "Viviana Ospina",
+                        affiliation: "Universitá del Piemonte Orientale, Italia",
+                      },
+                      {
+                        name: "Sol Milena Mejía Chica",
+                        affiliation: "Universidad Javeriana",
+                      },
+                      {
+                        name: "Alejandro Vasquez",
+                        affiliation: "Universidad Arturo Prat, Chile",
+                      },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
                         <div>
                           <h4 className="font-bold">{member.name}</h4>
-                          <p className="text-sm text-muted-foreground">{member.role}</p>
                           <p className="text-xs">{member.affiliation}</p>
                         </div>
                       </div>
