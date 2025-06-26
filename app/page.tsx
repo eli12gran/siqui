@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import AttendeeTypeChart from "@/components/ui/attendee-type-pie-chart";
 import TopicsChart from "@/components/ui/topics-pie-chart";
-import { Calendar, Clock, MapPin, Users, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Calendar, Clock, MapPin, Users, Mail, ExternalLink, ChevronRight, Download } from "lucide-react"
 import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 
@@ -20,6 +20,9 @@ export default function ScientificEventPage() {
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:text-primary">
               Sobre SIQUI
+            </Link>
+            <Link href="#inscriptions" className="text-sm font-medium hover:text-primary">
+              Inscripciones
             </Link>
             <Link href="#speakers" className="text-sm font-medium hover:text-primary">
               Ponentes
@@ -37,7 +40,7 @@ export default function ScientificEventPage() {
               Lugar
             </Link>
             <Link href="#sponsors" className="text-sm font-medium hover:text-primary">
-              Organiza
+              Apoya
             </Link>
           </nav>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
@@ -50,32 +53,18 @@ export default function ScientificEventPage() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-2 md:py-2 lg:py-2 bg-gradient-to-b from-muted/50 to-background">
+        <section className="w-full py-2 md:py-2 lg:py-4 bg-gradient-to-b from-muted/50 to-background">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center text-center space-y-8">
+            <div className="flex flex-col items-center text-center space-y-5">
               
               {/* Image on Top */}
               <Image
-                src="/logo_up.png"
+                src="/1.png"
                 width={800}
                 height={800}
                 alt="Conference Banner"
-                className="w-full max-w-2xl rounded-xl object-contain"
+                className="w-full max-w-4xl rounded-xl object-contain"
               />
-
-              {/* Title and Description */}
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
-                  II Simposio de Química
-                </h1>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">
-                  UdeMedellín
-                </h2>
-                <div className="text-muted-foreground md:text-2xl max-w-1xl mx-auto leading-tight">
-                  <p className="mb-0">Cien años entendiendo lo invisible:</p>
-                  <p className="mt-0">El poder de la química en todas sus formas</p>
-                </div>
-              </div>
 
               {/* Buttons */}
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -84,7 +73,7 @@ export default function ScientificEventPage() {
                   passHref
                   legacyBehavior
                 >
-                  <Button size="lg" className="inline-flex items-center gap-2">
+                  <Button size="lg" className="inline-flex text-lg items-center gap-2">
                     Regístrate acá
                     <ChevronRight className="h-4 w-4" />
                   </Button>
@@ -94,7 +83,7 @@ export default function ScientificEventPage() {
                   passHref
                   legacyBehavior
                 >
-                <Button size="lg" variant="outline" className="inline-flex items-center gap-2">
+                <Button size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
                   Descarga formato resumen
                   <ExternalLink className="h-4 w-4" />
                 </Button>
@@ -102,10 +91,10 @@ export default function ScientificEventPage() {
               </div>
 
               {/* Details Row */}
-              <div className="flex flex-col gap-2 text-lm text-muted-foreground md:flex-row md:gap-6 justify-center items-center">
+              <div className="flex flex-col gap-2 text-xl text-muted-foreground md:flex-row md:gap-6 justify-center items-center space-y-3">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  <span>Octubre 22, 2025</span>
+                  <span>Octubre 21 y 22, 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
@@ -122,7 +111,7 @@ export default function ScientificEventPage() {
 
 
         {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-15">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-6 max-w-5xl mx-auto px-4 md:px-6">
@@ -140,7 +129,7 @@ export default function ScientificEventPage() {
               </div>
             </div>
             
-            <div className="mx-auto max-w-5xl py-12">
+            <div className="mx-auto max-w-5xl py-7">
               <div className="flex flex-col items-center text-center">
                 <div className="flex flex-col justify-center space-y-4 max-w-3xl">
                   <div className="space-y-2">
@@ -164,7 +153,7 @@ export default function ScientificEventPage() {
                         name: "🏭 Aplicaciones industriales, políticas científicas y regulación en tecnologías químicas.",
                       },
                     ].map((member, index) => (
-                      <div key={index} className="flex items-center gap-4 rounded-lg border p-4 transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
+                      <div key={index} className="flex items-justified gap-4 rounded-lg border p-4 transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
                         <div>
                           <h4 className="text-xl font-bold">{member.name}</h4>
                         </div>
@@ -175,6 +164,86 @@ export default function ScientificEventPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Inscriptions Section */}
+        <section id="inscriptions" className="w-full py-7 bg-muted/50">
+        <div className="container px-4 md:px-6 space-y-12">
+          {/* Heading and Description */}
+          <div className="text-center space-y-6">
+            <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+              Inscripciones
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Participa en el Simposio
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              Inscríbete como asistente o presenta tu proyecto. Aquí encontrarás el formulario de inscripción, las plantillas necesarias y fechas importantes.
+            </p>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              Ten en cuenta que, para participar en modalidad de póster o charla, es necesario que envíes el resumen de tu trabajo usando la plantilla.
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-lg mt-4"
+            >
+              <button className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition">
+                Formulario de inscripción
+              </button>
+            </a>
+          </div>
+
+          {/* Templates Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                label: "Plantilla resumen del proyecto",
+                link: "/templates/Formato_Resumen_SIQUIUDEM.docx",
+              },
+              {
+                label: "Plantilla para póster",
+                link: "/templates/Plantilla_poster_SIQUI.pptx",
+              },
+              {
+                label: "Plantilla presentación de diapositivas",
+                link: "/templates/Plantilla_SIQUI.pptx",
+              },
+            ].map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-4 p-4 border rounded-lg hover:shadow transition"
+              >
+                <span className="font-medium text-lg text-left">{item.label}</span>
+                <Download className="w-5 h-5 text-primary" />
+
+              </a>
+            ))}
+          </div>
+
+          {/* Important Dates */}
+          <div className="max-w-3xl mx-auto space-y-6">
+            <h3 className="text-2xl font-bold text-center">Fechas importantes</h3>
+            <ul className="space-y-4">
+              <li className="flex text-lg items-start gap-3">
+                <Calendar className="w-5 h-5 text-primary mt-1" />
+                <span>
+                  <strong>Fecha límite para envío de resúmenes:</strong> 01 de septiembre de 2025
+                </span>
+              </li>
+              <li className="flex text-lg items-start gap-3">
+                <Calendar className="w-5 h-5 text-primary mt-1" />
+                <span>
+                  <strong>Cierre de inscripciones generales:</strong> 30 de septiembre de 2025
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
         </section>
 
         {/* Keynote Speakers */}
@@ -192,13 +261,31 @@ export default function ScientificEventPage() {
                   role: "Profesor titular, Instituto de Química. Codirector del grupo de Química-Física Teórica, clasificado A1 por Minciencias. Investigador senior.",
                   institution: "Universidad de Antioquia",
                   image: "/albeiro.jpg?height=300&width=300",
+                  link: "https://scholar.google.es/citations?user=nfjNsG4AAAAJ&hl=es",
                 },
                 {
-                  name: "Johnatan Diosa",
+                  name: "Dr. César Pulgarín",
+                  role: "Profesor Emérito EPFL (Suiza). Miembro honorario de la Academia Colombiana de Ciencias Exactas Físicas y Naturales",
+                  institution: "EPFL (Suiza)",
+                  image: "/Cesar_Pulgarin.jpg?height=300&width=300",
+                  link: "https://people.epfl.ch/cesar.pulgarin?lang=en",
+                },
+                {
+                  name: "Dr. Sixto Malato",
+                  role: "Profesor e Investigador OPI (España)",
+                  institution: "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT) (Ministerio de Economía y Competitividad de España)",
+                  image: "/Sixto_Malato.jpg?height=300&width=300",
+                  link: "https://www.psa.es/es/unidades/tsa/personal/smalato.php",
+                },
+                {
+                  name: "Dr. Johnatan Diosa",
+                  formacion: "Doctor en Ciencias Químicas, Universidad de Antioquia",
                   role: "Especialista I+D Síntesis y mezclas",
                   institution: "Andercol S.A.S.",
                   image: "/johnatan_diosa.jpg?height=300&width=300",
+                  link: "https://www.linkedin.com/in/johnatan-diosa-arango-17185b37/",
                 }
+                
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
                   <div className="aspect-square overflow-hidden">
@@ -211,9 +298,25 @@ export default function ScientificEventPage() {
                     />
                   </div>
                   <CardContent className="p-4">
-                    <h3 className="text-xl font-bold">{speaker.name}</h3>
-                    <p className="text-sm text-muted-foreground">{speaker.role}</p>
-                    <p className="text-sm font-medium">{speaker.institution}</p>
+                    <div className="space-y-1.5">
+                      <h3 className="text-xl font-bold">{speaker.name}</h3>
+                      {speaker.formacion && (
+                        <p className="text-sm text-muted-foreground">{speaker.formacion}</p>
+                      )}
+                      <p className="text-sm text-muted-foreground">{speaker.role}</p>
+                      <p className="text-sm font-medium">{speaker.institution}</p>
+                      {speaker.link && (
+                        <a
+                          href={speaker.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-2"
+                        >
+                          Ver perfil
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -235,64 +338,104 @@ export default function ScientificEventPage() {
             <div className="mx-auto max-w-5xl py-12">
               <div className="space-y-12">
                 {/* Scientific Committee */}
-                <div>
-                  <h3 className="mb-6 text-center text-2xl font-bold">Comité Organizador</h3>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {[
-                      {
-                        name: "PhD. María Angélica Forgionny",
-                        role: "Semillero de Investigación Materiales con Impacto",
-                        affiliation: "Universidad de Medellín",
-                        image: "/angelica.jpg?height=150&width=150",
-                      },
-                      {
-                        name: "PhD. Carlos Jiménez",
-                        role: "Semillero de Investigación Materiales con Impacto",
-                        affiliation: "Universidad de Medellín",
-                        image: "/carlos.jpg?height=150&width=150",
-                      },
-                      {
-                        name: "PhD. Nancy Acelas",
-                        role: "Semillero de Investigación Materiales con Impacto",
-                        affiliation: "Universidad de Medellín",
-                        image: "/nancy_arelas.jpg?height=150&width=150",
-                      },
-                      {
-                        name: "PhD. Ricardo Torres",
-                        role: "Pendiente",
-                        affiliation: "Universidad de Antioquia",
-                        image: "/placeholder.jpg?height=150&width=150",
-                      },
-                      {
-                        name: "PhD. Farid Cortés",
-                        role: "Pendiente",
-                        affiliation: "Universidad Nacional de Colombia",
-                        image: "/placeholder.jpg?height=150&width=150",
-                      },
-                      {
-                        name: "PhD. Camilo Franco",
-                        role: "Pendiente",
-                        affiliation: "Universidad Nacional de Colombia",
-                        image: "/placeholder.jpg?height=150&width=150",
-                      },
-                    ].map((member, index) => (
-                      <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-                        <Image
-                          src={member.image || "/placeholder.svg"}
-                          alt={member.name}
-                          width={60}
-                          height={60}
-                          className="rounded-full object-cover"
-                        />
-                        <div>
-                          <h4 className="font-bold">{member.name}</h4>
-                          <p className="text-sm text-muted-foreground">{member.role}</p>
-                          <p className="text-xs">{member.affiliation}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <div className="space-y-12">
+  <h3 className="text-center text-2xl font-bold">Comité Organizador</h3>
+
+  {/* Universidad de Medellín */}
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <h4 className="text-center text-lg font-bold">Universidad de Medellín</h4>
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+      {[
+        {
+          name: "María Angélica Forgionny",
+          image: "/angelica.jpg?height=150&width=150",
+        },
+        {
+          name: "Carlos Jiménez",
+          image: "/carlos.jpg?height=150&width=150",
+        },
+        {
+          name: "Nancy Acelas",
+          image: "/nancy_arelas.jpg?height=150&width=150",
+        },
+        {
+          name: "Maria Isabel Mejía",
+          image: "/maria_isabel.webp?height=150&width=150",
+        },
+      ].map((member, index) => (
+        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
+          <Image
+            src={member.image}
+            alt={member.name}
+            width={60}
+            height={60}
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h4 className="font-bold">{member.name}</h4>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Universidad de Antioquia */}
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <h4 className="text-center text-lg font-bold">Universidad de Antioquia</h4>
+    <div className="grid gap-6 sm:grid-cols-1 place-items-center">
+      {[
+        {
+          name: "Ricardo Torres",
+          image: "/Ricardo_Torres.jpg?height=150&width=150",
+        },
+      ].map((member, index) => (
+        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
+          <Image
+            src={member.image}
+            alt={member.name}
+            width={60}
+            height={60}
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h4 className="font-bold">{member.name}</h4>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Universidad Nacional de Colombia */}
+  <div className="space-y-6 max-w-4xl mx-auto">
+    <h4 className="text-center text-lg font-bold">Universidad Nacional de Colombia</h4>
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+      {[
+        {
+          name: "Farid Cortés",
+          image: "/Farid_Cortes.jpeg?height=150&width=150",
+        },
+        {
+          name: "Camilo Franco",
+          image: "/Camilo_Franco.jpg?height=150&width=150",
+        },
+      ].map((member, index) => (
+        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
+          <Image
+            src={member.image}
+            alt={member.name}
+            width={60}
+            height={60}
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h4 className="font-bold">{member.name}</h4>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 
                 {/*Program Committee*/}
                 <div>
@@ -345,7 +488,7 @@ export default function ScientificEventPage() {
                 {/* Organizing Committee */}
                 <div>
                   <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-3">
                     {[
                       {
                         name: "Francisco Nuñez",
@@ -364,7 +507,7 @@ export default function ScientificEventPage() {
                         affiliation: "Universidad de Antioquia",
                       },
                       {
-                        name: "Gina Hincapié",
+                        name: "Gina Hincapié Triviño",
                         affiliation: "Universidad Nacional de Colombia (Bogotá)",
                       },
                       {
@@ -373,7 +516,7 @@ export default function ScientificEventPage() {
                       },
                       {
                         name: "Viviana Ospina",
-                        affiliation: "Universitá del Piemonte Orientale, Italia",
+                        affiliation: "Universidad Utrecht, Países Bajos",
                       },
                       {
                         name: "Sol Milena Mejía Chica",
@@ -382,6 +525,46 @@ export default function ScientificEventPage() {
                       {
                         name: "Alejandro Vasquez",
                         affiliation: "Universidad Arturo Prat, Chile",
+                      },
+                      {
+                        name: "Camilo Franco",
+                        affiliation: "Universidad Nacional de Colombia (Medellín)",
+                      },
+                      {
+                        name: "Maria Angélica Prada",
+                        affiliation: "Universidad de Antioquia",
+                      },
+                      {
+                        name: "Jorge Gallego",
+                        affiliation: "Universidad de Medellín",
+                      },
+                      {
+                        name: "Marcela Paredes",
+                        affiliation: "Fundación Universitaria Navarra (Huila)",
+                      },
+                      {
+                        name: "David Morales",
+                        affiliation: "Universidad Nacional Autónoma de México, Ciudad de México",
+                      },
+                      {
+                        name: "Ariel Cadena",
+                        affiliation: "Universidad Nacional de Colombia (Bogotá)",
+                      },
+                      {
+                        name: "Leidy Hoyos",
+                        affiliation: "Tecnológico de Antioquia",
+                      },
+                      {
+                        name: "Lina Paola Higuita",
+                        affiliation: "PPG Colombia",
+                      },
+                      {
+                        name: "Camilo Castro",
+                        affiliation: "Universidad de Antioquia",
+                      },
+                      {
+                        name: "Sergio Valencia",
+                        affiliation: "Tecnológico de Antioquia",
                       },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -399,7 +582,7 @@ export default function ScientificEventPage() {
         </section>
 
         {/* Memories */}
-        <section id="memories" className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
+        <section id="memories" className="w-full py-12 md:py-24 lg:py-20 bg-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -639,7 +822,7 @@ export default function ScientificEventPage() {
         </section>
 
         {/* Schedule */}
-        <section id="schedule" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="schedule" className="w-full py-12 md:py-24 lg:py-20">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -653,10 +836,46 @@ export default function ScientificEventPage() {
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl">Martes 21 de octubre</h3>
               <div className="space-y-6">
                 {[
                   {
-                    time: "07:00 - 08:00",
+                    time: "15:00 - 16:00",
+                    title: "Registro e inscripciones",
+                    location: "pendiente",
+                  },
+                  {
+                    time: "16:00 - 17:00",
+                    title: "Conferencia plenaria 1",
+                    speaker: "Dr. Sixto Malato",
+                    location: "pendiente",
+                  },
+                ].map((session, index) => (
+                  <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
+                    <div className="flex w-full flex-col gap-1 md:w-1/5">
+                      <div className="flex items-center gap-2">
+                        <Clock className="h-4 w-4 text-muted-foreground" />
+                        <span className="text-base font-medium">{session.time}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MapPin className="h-4 w-4 text-muted-foreground" />
+                        <span className="text-base text-muted-foreground">{session.location}</span>
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold">{session.title}</h3>
+                      {session.speaker && <p className="text-base text-muted-foreground">{session.speaker}</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mx-auto max-w-5xl py-1">
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl">Miércoles 22 de octubre</h3>
+              <div className="space-y-6">
+                {[
+                  {
+                    time: "07:30 - 08:00",
                     title: "Registro e inscripciones",
                     location: "pendiente",
                   },
@@ -667,7 +886,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "8:15 - 9:15",
-                    title: "Conferencia plenaria 1: 100 años de la mecánica cuántica",
+                    title: "Conferencia plenaria 2: Mecánica cuántica y evolución molecular",
                     speaker: "Dr. Albeiro Restrepo",
                     location: "pendiente",
                   },
@@ -705,8 +924,8 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "14:00 - 15:00",
-                    title: "Conferencia plenaria 2: Procesos avanzados de oxidación",
-                    speaker: "Por confimar",
+                    title: "Conferencia plenaria 3: Procesos avanzados de oxidación",
+                    speaker: "César Pulgarín",
                     location: "pendiente",
                   },
                   {
@@ -749,7 +968,7 @@ export default function ScientificEventPage() {
         </section>
 
         {/* Venue */}
-        <section id="venue" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="venue" className="w-full py-12 md:py-24 lg:py-20 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -837,7 +1056,7 @@ export default function ScientificEventPage() {
         <section id="sponsors" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Comité Organizador
                 </div>
@@ -846,9 +1065,27 @@ export default function ScientificEventPage() {
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
+              <div className="grid grid-cols-2 gap-8 md:grid-cols-1 lg:grid-cols-1">
+                {[
+                  "/universidad_medellin.jpg"
+                ].map((src, i) => (
+                  <div key={`platinum-${i}`} className="flex items-center justify-center">
+                    <Image
+                      src={src}
+                      width={200}
+                      height={100}
+                      alt={`Platinum Sponsor ${i + 1}`}
+                      className="max-h-16 w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Apoya:</h2>
+            <div className="mx-auto py-12">
+              {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                 {[
-                  "/universidad_medellin.jpg",
                   "/universidad_antioquia.png",
                   "/universidad_nacional.jpg",
                   "/polanyi.jpg"
@@ -864,34 +1101,6 @@ export default function ScientificEventPage() {
                   </div>
                 ))}
               </div>
-              {/* <h3 className="mb-8 mt-16 text-center text-lg font-medium">Gold Sponsors</h3>
-              <div className="grid grid-cols-3 gap-8 md:grid-cols-4 lg:grid-cols-6">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={`gold-${i}`} className="flex items-center justify-center">
-                    <Image
-                      src="/placeholder.svg?height=80&width=160"
-                      width={160}
-                      height={80}
-                      alt={`Gold Sponsor ${i + 1}`}
-                      className="max-h-12 w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div> */}
-              {/* <h3 className="mb-8 mt-16 text-center text-lg font-medium">Silver Sponsors</h3>
-              <div className="grid grid-cols-4 gap-8 md:grid-cols-6 lg:grid-cols-8">
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <div key={`silver-${i}`} className="flex items-center justify-center">
-                    <Image
-                      src="/placeholder.svg?height=60&width=120"
-                      width={120}
-                      height={60}
-                      alt={`Silver Sponsor ${i + 1}`}
-                      className="max-h-10 w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div> */}
             </div>
           </div>
         </section>
