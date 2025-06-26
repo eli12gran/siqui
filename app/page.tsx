@@ -59,7 +59,7 @@ export default function ScientificEventPage() {
               
               {/* Image on Top */}
               <Image
-                src="/1.png"
+                src="/1.webp"
                 width={800}
                 height={800}
                 alt="Conference Banner"
@@ -260,21 +260,21 @@ export default function ScientificEventPage() {
                   name: "Dr. Albeiro Restrepo",
                   role: "Profesor titular, Instituto de Química. Codirector del grupo de Química-Física Teórica, clasificado A1 por Minciencias. Investigador senior.",
                   institution: "Universidad de Antioquia",
-                  image: "/albeiro.jpg?height=300&width=300",
+                  image: "/albeiro.webp?height=300&width=300",
                   link: "https://scholar.google.es/citations?user=nfjNsG4AAAAJ&hl=es",
                 },
                 {
                   name: "Dr. César Pulgarín",
                   role: "Profesor Emérito EPFL (Suiza). Miembro honorario de la Academia Colombiana de Ciencias Exactas Físicas y Naturales",
                   institution: "EPFL (Suiza)",
-                  image: "/Cesar_Pulgarin.jpg?height=300&width=300",
+                  image: "/Cesar_Pulgarin.webp?height=300&width=300",
                   link: "https://people.epfl.ch/cesar.pulgarin?lang=en",
                 },
                 {
                   name: "Dr. Sixto Malato",
                   role: "Profesor e Investigador OPI (España)",
                   institution: "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT) (Ministerio de Economía y Competitividad de España)",
-                  image: "/Sixto_Malato.jpg?height=300&width=300",
+                  image: "/Sixto_Malato.webp?height=300&width=300",
                   link: "https://www.psa.es/es/unidades/tsa/personal/smalato.php",
                 },
                 {
@@ -282,7 +282,7 @@ export default function ScientificEventPage() {
                   formacion: "Doctor en Ciencias Químicas, Universidad de Antioquia",
                   role: "Especialista I+D Síntesis y mezclas",
                   institution: "Andercol S.A.S.",
-                  image: "/johnatan_diosa.jpg?height=300&width=300",
+                  image: "/johnatan_diosa.webp?height=300&width=300",
                   link: "https://www.linkedin.com/in/johnatan-diosa-arango-17185b37/",
                 }
                 
@@ -348,15 +348,15 @@ export default function ScientificEventPage() {
       {[
         {
           name: "María Angélica Forgionny",
-          image: "/angelica.jpg?height=150&width=150",
+          image: "/angelica.webp?height=150&width=150",
         },
         {
           name: "Carlos Jiménez",
-          image: "/carlos.jpg?height=150&width=150",
+          image: "/carlos.webp?height=150&width=150",
         },
         {
           name: "Nancy Acelas",
-          image: "/nancy_arelas.jpg?height=150&width=150",
+          image: "/nancy_arelas.webp?height=150&width=150",
         },
         {
           name: "Maria Isabel Mejía",
@@ -386,7 +386,7 @@ export default function ScientificEventPage() {
       {[
         {
           name: "Ricardo Torres",
-          image: "/Ricardo_Torres.jpg?height=150&width=150",
+          image: "/Ricardo_Torres.webp?height=150&width=150",
         },
       ].map((member, index) => (
         <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -412,11 +412,11 @@ export default function ScientificEventPage() {
       {[
         {
           name: "Farid Cortés",
-          image: "/Farid_Cortes.jpeg?height=150&width=150",
+          image: "/Farid_Cortes.webp?height=150&width=150",
         },
         {
           name: "Camilo Franco",
-          image: "/Camilo_Franco.jpg?height=150&width=150",
+          image: "/Camilo_Franco.webp?height=150&width=150",
         },
       ].map((member, index) => (
         <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -446,25 +446,25 @@ export default function ScientificEventPage() {
                         name: "Valentina Miranda",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
-                        image: "/vale.jpg?height=150&width=150",
+                        image: "/vale.webp?height=150&width=150",
                       },
                       {
                         name: "Emanuel Cabrera",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
-                        image: "/emanuel.jpg?height=150&width=150",
+                        image: "/emanuel.webp?height=150&width=150",
                       },
                       {
                         name: "Valentina Ospina",
                         role: "Ingeniera ambiental. Asistente de Investigación",
                         affiliation: "Universidad de Medellín",
-                        image: "/placeholder.jpg?height=150&width=150",
+                        image: "/placeholder.webp?height=150&width=150",
                       },
                       {
                         name: "Elizabeth Granda",
                         role: "Estudiante de Computación Científica",
                         affiliation: "Universidad de Medellín",
-                        image: "/eli.jpg?height=150&width=150",
+                        image: "/eli.webp?height=150&width=150",
                       },
                     ].map((member, index) => (
                       <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -678,7 +678,7 @@ export default function ScientificEventPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/*image 1 */}
                   <Image
-                    src="/memories/charlas.jpg"
+                    src="/memories/charlas.webp"
                     width={200}
                     height={300}
                     alt="charlas"
@@ -686,7 +686,7 @@ export default function ScientificEventPage() {
                   />
 
                   <Image
-                    src="/memories/charlas2.jpg"
+                    src="/memories/charlas2.webp"
                     width={400}
                     height={300}
                     alt="charlas"
@@ -694,7 +694,7 @@ export default function ScientificEventPage() {
                   />
 
                   <video
-                    src="/memories/clausura.mp4"
+                    src="/memories/clausura.webm"
                     width={200}
                     height={200}
                     autoPlay
@@ -704,7 +704,7 @@ export default function ScientificEventPage() {
                   />
 
                   <Image
-                    src="/memories/grupal.jpg"
+                    src="/memories/grupal.webp"
                     width={300}
                     height={300}
                     alt="asistentes"
@@ -712,7 +712,7 @@ export default function ScientificEventPage() {
                   />
 
                   <video
-                    src="/memories/inauguracion.mp4"
+                    src="/memories/inauguracion.webm"
                     width={160}
                     height={200}
                     autoPlay
@@ -722,7 +722,7 @@ export default function ScientificEventPage() {
                   />
 
                   <Image
-                    src="/memories/inauguracion2.jpeg"
+                    src="/memories/inauguracion2.webp"
                     width={300}
                     height={300}
                     alt="asistentes"
@@ -765,7 +765,7 @@ export default function ScientificEventPage() {
                   {/* Map Image */}
                   <div className="w-full lg:w-2/3">
                     <Image
-                      src="/Colombia_America.png"
+                      src="/Colombia_America.webp"
                       alt="Distribución geográfica"
                       width={800}
                       height={400}
@@ -1067,7 +1067,7 @@ export default function ScientificEventPage() {
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-8 md:grid-cols-1 lg:grid-cols-1">
                 {[
-                  "/universidad_medellin.jpg"
+                  "/universidad_medellin.webp"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
@@ -1086,9 +1086,9 @@ export default function ScientificEventPage() {
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                 {[
-                  "/universidad_antioquia.png",
-                  "/universidad_nacional.jpg",
-                  "/polanyi.jpg"
+                  "/universidad_antioquia.webp",
+                  "/universidad_nacional.webp",
+                  "/polanyi.webp"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
