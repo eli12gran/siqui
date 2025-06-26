@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
   title: "SIQUI UDEM 2025",
-  description: "Join us for the premier scientific event exploring the frontiers of quantum technology",
+  description: "Acompáñenos al principal simposio de química que celebra un siglo de mecánica cuántica, donde la ciencia revolucionaria se fusiona con la innovación transformadora.",
     generator: 'v0.dev'
 }
 
