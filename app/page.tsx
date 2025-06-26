@@ -327,7 +327,7 @@ export default function ScientificEventPage() {
         {/* Committees */}
         <section id="committees" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-3 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comités de SIQUI 2025</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -339,8 +339,16 @@ export default function ScientificEventPage() {
               <div className="space-y-12">
                 {/* Scientific Committee */}
                 <div className="space-y-12">
-  <h3 className="text-center text-2xl font-bold">Comité Organizador</h3>
-
+  {/* <h3 className="text-center text-2xl font-bold">Comité Organizador</h3>  */}
+  <div className="container px-4 md:px-6">
+  <div className="flex flex-col items-center justify-center space-y-4 text-center">
+    <div className="space-y-2">
+      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
+        Comité Organizador
+      </div>
+    </div>
+  </div>
+</div>
   {/* Universidad de Medellín */}
   <div className="space-y-6 max-w-5xl mx-auto">
     <h4 className="text-center text-lg font-bold">Universidad de Medellín</h4>
@@ -439,7 +447,16 @@ export default function ScientificEventPage() {
 
                 {/*Program Committee*/}
                 <div>
-                  <h3 className="mb-6 text-center text-2xl font-bold">Comité Logístico</h3>
+                  {/* <h3 className="mb-6 text-center text-2xl font-bold">Comité Logístico</h3> */}
+              <div className="container px-4 md:px-6">
+                  <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+                    <div className="space-y-4">
+                      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
+                      Comité Logístico
+                      </div>
+                    </div>
+                </div>
+              </div>
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
                     {[
                       {
@@ -487,7 +504,16 @@ export default function ScientificEventPage() {
 
                 {/* Organizing Committee */}
                 <div>
-                  <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3>
+                  {/* <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3> */}
+                  <div className="container px-4 md:px-6">
+                  <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+                    <div className="space-y-4">
+                      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
+                      Comité Científico
+                      </div>
+                    </div>
+                </div>
+              </div>
                   <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-3">
                     {[
                       {
@@ -678,7 +704,7 @@ export default function ScientificEventPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/*image 1 */}
                   <Image
-                    src="/memories/charlas.webp"
+                    src="/memories/premiacion1.webp"
                     width={200}
                     height={300}
                     alt="charlas"
@@ -686,7 +712,7 @@ export default function ScientificEventPage() {
                   />
 
                   <Image
-                    src="/memories/charlas2.webp"
+                    src="/memories/colegio_poster.webp"
                     width={400}
                     height={300}
                     alt="charlas"
@@ -700,14 +726,16 @@ export default function ScientificEventPage() {
                     autoPlay
                     muted
                     loop
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover -mt-10"
                   />
 
-                  <Image
-                    src="/memories/grupal.webp"
+                  <video
+                    src="/memories/grito_simposio.webm"
                     width={300}
-                    height={300}
-                    alt="asistentes"
+                    height={600}
+                    autoPlay
+                    muted
+                    loop
                     className="rounded-lg object-cover"
                   />
 
@@ -727,6 +755,14 @@ export default function ScientificEventPage() {
                     height={300}
                     alt="asistentes"
                     className="rounded-lg object-cover"
+                  />
+
+                  <Image
+                    src="/memories/grupal.webp"
+                    width={300}
+                    height={300}
+                    alt="asistentes"
+                    className="rounded-lg object-cover -mt-10"
                   />
 
                 </div>
@@ -836,7 +872,7 @@ export default function ScientificEventPage() {
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
-              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl">Martes 21 de octubre</h3>
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Martes 21 de octubre</h3>
               <div className="space-y-6">
                 {[
                   {
@@ -871,7 +907,7 @@ export default function ScientificEventPage() {
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-1">
-              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl">Miércoles 22 de octubre</h3>
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Miércoles 22 de octubre</h3>
               <div className="space-y-6">
                 {[
                   {
@@ -1055,6 +1091,7 @@ export default function ScientificEventPage() {
         {/* Sponsors */}
         <section id="sponsors" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
+            {/* Organiza Section (Centered) */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -1063,12 +1100,11 @@ export default function ScientificEventPage() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Organiza:</h2>
               </div>
             </div>
+
+            {/* Sponsor Logo Grid */}
             <div className="mx-auto py-12">
-              {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-8 md:grid-cols-1 lg:grid-cols-1">
-                {[
-                  "/universidad_medellin.webp"
-                ].map((src, i) => (
+                {["/universidad_medellin.webp"].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
                       src={src}
@@ -1081,14 +1117,19 @@ export default function ScientificEventPage() {
                 ))}
               </div>
             </div>
+
+            {/* Apoya Section (Now Centered) */}
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Apoya:</h2>
+            </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
-              <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-4">
                 {[
                   "/universidad_antioquia.webp",
                   "/universidad_nacional.webp",
-                  "/polanyi.webp"
+                  "/polanyi.webp",
+                  "/uniremington.webp"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
