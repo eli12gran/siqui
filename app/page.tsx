@@ -284,8 +284,14 @@ export default function ScientificEventPage() {
                   institution: "Andercol S.A.S.",
                   image: "/johnatan_diosa.webp?height=300&width=300",
                   link: "https://www.linkedin.com/in/johnatan-diosa-arango-17185b37/",
+                },
+                {
+                  name: "Dr. Claudia Correa",
+                  formacion: "Magister en Educación y Doctora en Humanidades y Artes con mención en Ciencias de la Educación",
+                  role: "Docente",
+                  institution: "Institución Educativa Pueblo Nuevo, Amalfi, Antioquia",
+                  image: "/claudia_correa.jpeg",
                 }
-                
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
                   <div className="aspect-square overflow-hidden">
@@ -475,7 +481,7 @@ export default function ScientificEventPage() {
                         name: "Valentina Ospina",
                         role: "Ingeniera ambiental. Asistente de Investigación",
                         affiliation: "Universidad de Medellín",
-                        image: "/placeholder.webp?height=150&width=150",
+                        image: "/valen_ospina.jpeg?height=150&width=150",
                       },
                       {
                         name: "Elizabeth Granda",
@@ -951,7 +957,7 @@ export default function ScientificEventPage() {
                   {
                     time: "11:30 - 12:00",
                     title: "Conferencista invitado: Química desde la educación media",
-                    speaker: "Por confirmar",
+                    speaker: "Claudia Correa",
                     location: "pendiente"
                   },
                   {
