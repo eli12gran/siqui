@@ -1179,7 +1179,7 @@ export default function ScientificEventPage() {
                   className="inline-flex items-center gap-2 bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
                   asChild
                 >
-                  <Link href="mailto:siquiudem@soyudemedellin.edu.co">
+                  <Link href="mailto:siquiudem@udemedellin.edu.co">
                   Contáctenos
                   <Mail className="h-4 w-4" />
                   </Link>
