@@ -294,7 +294,6 @@ export default function ScientificEventPage() {
                 },
                 {
                   name: "Isabel Oller Alberola",
-                  formacion: "Magister en Educación y Doctora en Humanidades y Artes con mención en Ciencias de la Educación",
                   role: "Editora de las revistas: Water Science and Technology, Journal of Environmental Chemical Engineering y Water",
                   institution: "Plataforma Solar de Almería (CIEMAT), España. Unidad de Tratamientos Solares del Agua",
                   image: "/isabel_oller.jpeg",
