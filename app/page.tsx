@@ -291,6 +291,13 @@ export default function ScientificEventPage() {
                   role: "Docente",
                   institution: "Institución Educativa Pueblo Nuevo, Amalfi, Antioquia",
                   image: "/claudia_correa.jpeg",
+                },
+                {
+                  name: "Isabel Oller Alberola",
+                  formacion: "Magister en Educación y Doctora en Humanidades y Artes con mención en Ciencias de la Educación",
+                  role: "Editora de las revistas: Water Science and Technology, Journal of Environmental Chemical Engineering y Water",
+                  institution: "Plataforma Solar de Almería (CIEMAT), España. Unidad de Tratamientos Solares del Agua",
+                  image: "/isabel_oller.jpeg",
                 }
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
@@ -934,8 +941,8 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "9:15 - 9:45",
-                    title: "Charlas 1-2",
-                    speaker: "Pendiente",
+                    title: "Conferencista invitada: El rol de la mujer en la ciencia ",
+                    speaker: "Isabel Oller Alberola",
                     location: "pendiente",
                   },
                   {
@@ -950,7 +957,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "10:30 - 11:30",
-                    title: "Charlas 3-6",
+                    title: "Charlas 1-4",
                     speaker: "Pendiente",
                     location: "pendiente",
                   },
@@ -961,7 +968,7 @@ export default function ScientificEventPage() {
                     location: "pendiente"
                   },
                   {
-                    time: "10:15 - 10:30",
+                    time: "12:00 - 14:00",
                     title: "Almuerzo libre",
                   },
                   {
@@ -972,7 +979,7 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "15:00 - 16:00",
-                    title: "Charlas 7-10",
+                    title: "Charlas 5-8",
                     speaker: "Pendiente",
                     location: "pendiente",
                   },
@@ -1127,12 +1134,13 @@ export default function ScientificEventPage() {
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
-              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-5">
                 {[
                   "/universidad_antioquia.webp",
                   "/universidad_nacional.webp",
                   "/polanyi.webp",
-                  "/uniremington.webp"
+                  "/uniremington.webp",
+                  "/cpq.webp"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
