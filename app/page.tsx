@@ -297,6 +297,7 @@ export default function ScientificEventPage() {
                   role: "Editora de las revistas: Water Science and Technology, Journal of Environmental Chemical Engineering y Water",
                   institution: "Plataforma Solar de Almería (CIEMAT), España. Unidad de Tratamientos Solares del Agua",
                   image: "/isabel_oller.jpeg",
+                  link: "https://www.psa.es/es/unidades/tsa/personal/ioller.php",
                 }
               ].map((speaker, index) => (
                 <Card key={index} className="overflow-hidden">
