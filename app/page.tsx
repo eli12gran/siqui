@@ -1134,13 +1134,16 @@ export default function ScientificEventPage() {
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
-              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-5">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-4">
                 {[
                   "/universidad_antioquia.webp",
                   "/universidad_nacional.webp",
                   "/polanyi.webp",
                   "/uniremington.webp",
-                  "/cpq.webp"
+                  "/cpq.webp",
+                  "/cecoltec.webp",
+                  "/Innovatek.webp",
+                  "/simprolab.webp"
                 ].map((src, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
                     <Image
