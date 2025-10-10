@@ -204,6 +204,7 @@ export default function ScientificEventPage() {
               },
               {
                 label: "Plantilla para póster",
+                subtitle: "Dimensiones: 70 x 100 cm",
                 link: "/templates/Plantilla_poster_SIQUI.pptx",
               },
               {
@@ -218,7 +219,12 @@ export default function ScientificEventPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between gap-4 p-4 border rounded-lg hover:shadow transition"
               >
-                <span className="font-medium text-lg text-left">{item.label}</span>
+                <div className="text-left">
+                  <span className="font-medium text-lg block">{item.label}</span>
+                  {item.subtitle && (
+                    <span className="text-xl text-muted-foreground block">{item.subtitle}</span>
+                  )}
+                </div>
                 <Download className="w-5 h-5 text-primary" />
 
               </a>
@@ -891,13 +897,13 @@ export default function ScientificEventPage() {
                   {
                     time: "15:00 - 16:00",
                     title: "Registro e inscripciones",
-                    location: "pendiente",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
                   },
                   {
                     time: "16:00 - 17:00",
                     title: "Conferencia plenaria 1",
                     speaker: "Dr. Sixto Malato",
-                    location: "pendiente",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
                   },
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
@@ -907,8 +913,8 @@ export default function ScientificEventPage() {
                         <span className="text-base font-medium">{session.time}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-base text-muted-foreground">{session.location}</span>
+                        <MapPin className="h-4 w-10 text-muted-foreground" />
+                        <span className="text-s text-muted-foreground">{session.location}</span>
                       </div>
                     </div>
                     <div className="flex-1">
@@ -924,32 +930,32 @@ export default function ScientificEventPage() {
               <div className="space-y-6">
                 {[
                   {
-                    time: "07:30 - 08:00",
+                    time: "07:00 - 08:00",
                     title: "Registro e inscripciones",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "08:00 - 08:15",
                     title: "Apertura y bienvenida",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "8:15 - 9:15",
                     title: "Conferencia plenaria 2: Mecánica cuántica y evolución molecular",
                     speaker: "Dr. Albeiro Restrepo",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "9:15 - 9:45",
-                    title: "Conferencista invitada: El rol de la mujer en la ciencia ",
-                    speaker: "Isabel Oller Alberola",
-                    location: "pendiente",
+                    title: "Charlas 1-4",
+                    speaker: "Pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "9:45 - 10:15",
                     title: "Conferencista invitado: Química en la Industria",
                     speaker: "Jonathan Diosa",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "10:15 - 10:30",
@@ -957,15 +963,15 @@ export default function ScientificEventPage() {
                   },
                   {
                     time: "10:30 - 11:30",
-                    title: "Charlas 1-4",
-                    speaker: "Pendiente",
-                    location: "pendiente",
+                    title: "Conferencista invitada: El rol de la mujer en la ciencia ",
+                    speaker: "Isabel Oller Alberola",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
                   },
                   {
                     time: "11:30 - 12:00",
                     title: "Conferencista invitado: Química desde la educación media",
                     speaker: "Claudia Correa",
-                    location: "pendiente"
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
                   },
                   {
                     time: "12:00 - 14:00",
@@ -975,13 +981,13 @@ export default function ScientificEventPage() {
                     time: "14:00 - 15:00",
                     title: "Conferencia plenaria 3: Procesos avanzados de oxidación",
                     speaker: "César Pulgarín",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "15:00 - 16:00",
                     title: "Charlas 5-8",
                     speaker: "Pendiente",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "16:15 - 18:00",
@@ -991,7 +997,7 @@ export default function ScientificEventPage() {
                   {
                     time: "18:00 - 19:00",
                     title: "Clausura",
-                    location: "pendiente",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
@@ -1001,8 +1007,8 @@ export default function ScientificEventPage() {
                         <span className="text-base font-medium">{session.time}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-muted-foreground" />
-                        <span className="text-base text-muted-foreground">{session.location}</span>
+                        <MapPin className="h-4 w-10 text-muted-foreground" />
+                        <span className="text-s text-muted-foreground">{session.location}</span>
                       </div>
                     </div>
                     <div className="flex-1">
@@ -1134,25 +1140,29 @@ export default function ScientificEventPage() {
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
-              <div className="grid grid-cols-2 gap-1 md:grid-cols-4 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">
                 {[
-                  "/universidad_antioquia.webp",
-                  "/universidad_nacional.webp",
-                  "/polanyi.webp",
-                  "/uniremington.webp",
-                  "/cpq.webp",
-                  "/cecoltec.webp",
-                  "/Innovatek.webp",
-                  "/simprolab.webp"
-                ].map((src, i) => (
+                  { src: "/universidad_antioquia.webp", alt: "Universidad de Antioquia", h: "h-16" },
+                  { src: "/universidad_nacional.webp", alt: "Universidad Nacional", h: "h-16" },
+                  { src: "/polanyi.webp", alt: "Polanyi", h: "h-20" },
+                  { src: "/uniremington.webp", alt: "Uniremington", h: "h-14" },
+                  { src: "/cpq.webp", alt: "CPQ", h: "h-25" },
+                  { src: "/cecoltec.webp", alt: "Cecoltec", h: "h-21" },
+                  { src: "/Innovatek.webp", alt: "Innovatek", h: "h-16" },
+                  { src: "/simprolab.webp", alt: "Simprolab", h: "h-25" },
+                  { src: "/lanzetta_rengifo.webp", alt: "Lanzetta Rengifo", h: "h-400" },
+                ].map((sponsor, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
-                    <Image
-                      src={src}
-                      width={200}
-                      height={100}
-                      alt={`Platinum Sponsor ${i + 1}`}
-                      className="max-h-16 w-auto object-contain"
-                    />
+                    {/* container enforces a consistent box size; tweak sponsor.h per-logo if needed */}
+                    <div className={`flex items-center justify-center max-w-[180px] w-full ${sponsor.h}`}>
+                      <Image
+                        src={sponsor.src}
+                        width={200}
+                        height={100}
+                        alt={sponsor.alt || `Sponsor ${i + 1}`}
+                        className="w-auto max-h-full object-contain"
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
