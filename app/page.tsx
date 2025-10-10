@@ -67,7 +67,7 @@ export default function ScientificEventPage() {
               />
 
               {/* Buttons */}
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
                 <Link
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform"
                   passHref
@@ -992,7 +992,7 @@ export default function ScientificEventPage() {
                   {
                     time: "16:15 - 18:00",
                     title: "Sesión de pósters",
-                    location: "pendiente",
+                    location: "Centro de Convergencia Tecnológica",
                   },
                   {
                     time: "18:00 - 19:00",
