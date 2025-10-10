@@ -1181,7 +1181,7 @@ export default function ScientificEventPage() {
                 llena de conocimiento, networking y pasión por la química.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
                 <Link href= "https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
                 passHref legacyBehavior
                 target="_blank"
