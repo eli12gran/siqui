@@ -898,16 +898,46 @@ export default function ScientificEventPage() {
               <div className="space-y-6">
                 {[
                   {
-                    time: "15:00 - 16:00",
+                    time: "14:00 - 15:00",
                     title: "Registro e inscripciones",
                     location: "Auditorio Héctor Ospina Botero del Bloque 18",
                   },
                   {
-                    time: "16:00 - 17:00",
+                    time: "15:00 - 15:10",
+                    title: "Bienvenida",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  },
+                  {
+                    time: "15:10 - 15:20",
+                    title: "Palabras de Bienvenida",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  },
+                  {
+                    time: "15:20 - 15:35",
+                    title: "Reconocimiento",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  },
+                  {
+                    time: "15:35 - 15:50",
+                    title: "Premio Nacional - Procesos Avanzados de Oxidación",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  },
+                  {
+                    time: "15:50 - 16:05",
+                    title: "Premio internacional - Procesos Avanzados de Oxidación",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  },
+                  {
+                    time: "16:05 - 16:55",
                     title: "Conferencia plenaria 1",
                     speaker: "Dr. Sixto Malato",
                     location: "Auditorio Héctor Ospina Botero del Bloque 18",
                   },
+                  {
+                    time: "17:00 - 19:00",
+                    title: "Acto cultural / Coctel de bienvenida",
+                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                  }
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
                     <div className="flex w-full flex-col gap-1 md:w-1/5">
