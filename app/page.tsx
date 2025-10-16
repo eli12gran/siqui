@@ -43,11 +43,11 @@ export default function ScientificEventPage() {
               Apoya
             </Link>
           </nav>
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
+          <Link href="/templates/Programacion_SIQUI-1.pdf" 
                   passHref legacyBehavior
                   target="_blank"
                   rel="noopener noreferrer">
-            <Button>Registrate acá</Button>
+            <Button>Descarga la programación</Button>
           </Link>
         </div>
       </header>
@@ -69,25 +69,29 @@ export default function ScientificEventPage() {
               {/* Buttons */}
               <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
                 <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform"
+                  href="/templates/Programacion_SIQUI-1.pdf"
                   passHref
                   legacyBehavior
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Button size="lg" className="inline-flex text-lg items-center gap-2">
-                    Regístrate acá
+                    Ver programación (PDF)
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Link
-                  href="https://docs.google.com/document/d/1FHvBjdXH4eJ828lF3preHnQWOsEZhbna/edit?usp=sharing&ouid=115148655397799654178&rtpof=true&sd=true"
+                {/* <Link
+                  href="/templates/Programacion_SIQUI-1.pdf"
                   passHref
                   legacyBehavior
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                 <Button size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
-                  Descarga formato resumen
+                  Descargar programación (PDF)
                   <ExternalLink className="h-4 w-4" />
                 </Button>
-                </Link>
+                </Link> */}
               </div>
 
               {/* Details Row */}
@@ -183,16 +187,15 @@ export default function ScientificEventPage() {
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
               Ten en cuenta que, para participar en modalidad de póster o charla, es necesario que envíes el resumen de tu trabajo usando la plantilla.
             </p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-lg mt-4"
-            >
-              <button className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition">
-                Formulario de inscripción
+            <div className="inline-block text-lg mt-4">
+              <button className="px-6 py-3 bg-gray-300 text-gray-700 font-semibold rounded-lg cursor-not-allowed" disabled>
+                Inscripciones cerradas
               </button>
-            </a>
+              <div className="mt-3 text-sm text-muted-foreground">
+                ¿Necesitas la programación completa? Descarga el programa aquí:&nbsp;
+                <a href="/templates/Programacion_SIQUI-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Programa (PDF)</a>
+              </div>
+            </div>
           </div>
 
           {/* Templates Grid */}
@@ -940,65 +943,104 @@ export default function ScientificEventPage() {
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "8:15 - 9:15",
+                    time: "8:15 - 9:00",
                     title: "Conferencia plenaria 2: Mecánica cuántica y evolución molecular",
                     speaker: "Dr. Albeiro Restrepo",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "9:15 - 9:45",
-                    title: "Charlas 1-4",
-                    speaker: "Pendiente",
+                    time: "9:05 - 9:25",
+                    title: "Presentación Oral 1: Síntesis de amoniaco sobre superficies puras, con defectos y dopadas de rutilo TiO₂",
+                    speaker: "Francisco Núñez Zarur",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                  },
+                  {
+                    time: "9:25 - 9:45",
+                    title: "Presentación Oral 2: Oxidación de hidrocarburos mediante biomateriales híbridos funcionalizados: una estrategia sostenible para el tratamiento de aguas de producción",
+                    speaker: "Karol Zapata Acosta",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "9:45 - 10:15",
                     title: "Conferencista invitado: Química en la Industria",
-                    speaker: "Jonathan Diosa",
+                    speaker: "Dr. Jonathan Diosa",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "10:15 - 10:30",
+                    time: "10:15 - 10:35",
                     title: "Coffee Break",
                   },
                   {
-                    time: "10:30 - 11:30",
+                    time: "10:35 - 11:15",
                     title: "Conferencista invitada: El rol de la mujer en la ciencia ",
-                    speaker: "Isabel Oller Alberola",
+                    speaker: "Dra. Isabel Oller Alberola",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
                   },
                   {
-                    time: "11:30 - 12:00",
-                    title: "Conferencista invitado: Química desde la educación media",
-                    speaker: "Claudia Correa",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
+                    time: "11:15 - 11:35",
+                    title: "Presentación Oral 3: Regeneración cíclica de nanomateriales a base de SiO₂ modificados con Cu y Ag: impacto de la atmósfera en la remoción de azufre y la producción de hidrógeno a partir de crudo pesado",
+                    speaker: "Oscar Medina",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "12:00 - 14:00",
+                    time: "11:35 - 11:55",
+                    title: "Presentación Oral 4: Formación de nanoestructuras en conjugados de Quitosano-Ácido Biliar: un estudio por FT-ATR, Raman y cámara térmica",
+                    speaker: "Aida Liliana Barbosa",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                  },
+                  {
+                    time: "11:55 - 12:10",
+                    title: "Presentación Oral 5: Transformación de Residuos de Cuesco de Palma en Soluciones Climáticas: Estudio de Adsorción de CO₂ sobre Biocarbones Ecoeficientes",
+                    speaker: "Sergio Alberto Acevedo Corredor",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                  },
+                  {
+                    time: "12:10 - 14:00",
                     title: "Almuerzo libre",
                   },
                   {
-                    time: "14:00 - 15:00",
+                    time: "14:00 - 14:50",
                     title: "Conferencia plenaria 3: Procesos avanzados de oxidación",
-                    speaker: "César Pulgarín",
+                    speaker: "Dr. César Pulgarín",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "15:00 - 16:00",
-                    title: "Charlas 5-8",
-                    speaker: "Pendiente",
+                    time: "14:55 - 15:15",
+                    title: "Conferencista invitado: Química desde la educación media",
+                    speaker: "Dra. Claudia Correa",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
+                  },
+                  {
+                    time: "15:15 - 15:35",
+                    title: "Presentación Oral 6: Oxidación biológica de H₂S para control de olores: simulación y validación de procesos biotecnológicos en Aspen Plus",
+                    speaker: "Jesus Rafael Acevedo Mastrogiacomo",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
-                    time: "16:15 - 18:00",
+                    time: "15:35 - 15:55",
+                    title: "Presentación Oral 7: Degradación simultánea de fármacos problemáticos en un efluente de agua residual empleando zeolita comercial y peroximonosulfato",
+                    speaker: "Efraím Adolfo Serna Galvis",
+                    location: "Foro Federico Estsrada Vélez, ubicado en el Bloque 15 (15-100)",
+                  },
+                  {
+                    time: "15:55 - 16:10",
+                    title: "Coffee Break - Foto Grupal",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                  },
+                  {
+                    time: "16:00 - 17:30",
                     title: "Sesión de pósters",
-                    location: "Centro de Convergencia Tecnológica",
+                    location: "Centro de Convergencia Tecnológica, ubicado en el Bloque 9",
                   },
                   {
-                    time: "18:00 - 19:00",
+                    time: "17:30 - 18:00",
                     title: "Clausura",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
+                  {
+                    time: "19:00 - 21:00",
+                    title: "Cena Invitados Especiales"
+                  }
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
                     <div className="flex w-full flex-col gap-1 md:w-1/5">
@@ -1136,7 +1178,7 @@ export default function ScientificEventPage() {
 
             {/* Apoya Section (Now Centered) */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Apoya:</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Patrocina:</h2>
             </div>
             <div className="mx-auto py-12">
               {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
@@ -1182,12 +1224,12 @@ export default function ScientificEventPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
-                <Link href= "https://docs.google.com/forms/d/e/1FAIpQLSeMbw3r26MFEzr-IC7XXXYfn4o_XtrKOHHiMYL_KRrdTfuK3g/viewform" 
+                <Link href= "/templates/Programa_SIQUI_2025.pdf" 
                 passHref legacyBehavior
                 target="_blank"
                 rel="noopener noreferrer">
                 <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
-                  Regístrate ahora
+                  Ver programa (PDF)
                   <ChevronRight className="h-4 w-4" />
                 </Button>
                 </Link>
