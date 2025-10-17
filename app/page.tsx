@@ -80,18 +80,18 @@ export default function ScientificEventPage() {
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                {/* <Link
-                  href="/templates/Programacion_SIQUI-1.pdf"
+                { <Link
+                  href="/templates/PROGRAMACION_POSTER - SIQUI_16-Oct.pdf"
                   passHref
                   legacyBehavior
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                 <Button size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
-                  Descargar programación (PDF)
+                  Ver listado Póster (PDF)
                   <ExternalLink className="h-4 w-4" />
                 </Button>
-                </Link> */}
+                </Link> }
               </div>
 
               {/* Details Row */}
