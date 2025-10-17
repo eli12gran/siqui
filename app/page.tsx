@@ -1009,7 +1009,7 @@ export default function ScientificEventPage() {
                   {
                     time: "11:15 - 11:35",
                     title: "Presentación Oral 3: Regeneración cíclica de nanomateriales a base de SiO₂ modificados con Cu y Ag: impacto de la atmósfera en la remoción de azufre y la producción de hidrógeno a partir de crudo pesado",
-                    speaker: "Oscar Medina",
+                    speaker: "Juan Carlos Galindez",
                     location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
@@ -1050,7 +1050,7 @@ export default function ScientificEventPage() {
                     time: "15:35 - 15:55",
                     title: "Presentación Oral 7: Degradación simultánea de fármacos problemáticos en un efluente de agua residual empleando zeolita comercial y peroximonosulfato",
                     speaker: "Efraím Adolfo Serna Galvis",
-                    location: "Foro Federico Estsrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
                   },
                   {
                     time: "15:55 - 16:10",
