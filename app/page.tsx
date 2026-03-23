@@ -43,11 +43,11 @@ export default function ScientificEventPage() {
               Apoya
             </Link>
           </nav>
-          <Link href="/templates/Programacion_SIQUI-1.pdf" 
+          <Link href="/memories/MEMORIAS_II_SIQUI.pdf" 
                   passHref legacyBehavior
                   target="_blank"
                   rel="noopener noreferrer">
-            <Button>Descarga la programación</Button>
+            <Button>Descarga las memorias del SIQUI 2025</Button>
           </Link>
         </div>
       </header>
@@ -69,6 +69,18 @@ export default function ScientificEventPage() {
               {/* Buttons */}
               <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
                 <Link
+                  href="/memories/MEMORIAS_II_SIQUI.pdf"
+                  passHref
+                  legacyBehavior
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" className="inline-flex text-lg items-center gap-2">
+                    Descarga las memorias de SIQUI 2025
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </Link>                
+                {/* <Link
                   href="/templates/Programacion_SIQUI-1.pdf"
                   passHref
                   legacyBehavior
@@ -91,7 +103,7 @@ export default function ScientificEventPage() {
                   Ver listado Póster (PDF)
                   <ExternalLink className="h-4 w-4" />
                 </Button>
-                </Link> }
+                </Link> } */}
               </div>
 
               {/* Details Row */}
@@ -634,9 +646,21 @@ export default function ScientificEventPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                <Link
+                  href="/memories/MEMORIAS_SIQUI_II.pdf"
+                  passHref
+                  legacyBehavior
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" className="inline-flex text-lg items-center gap-1">
+                    Descarga las memorias del SIQUI 2025
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+                {/* <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   SIQUI I (evento pasado)
-                </div>
+                </div> */}
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Memorias</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Highlights y estadísticos del evento en 2024.
