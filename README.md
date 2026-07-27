@@ -73,7 +73,7 @@ npm run start   # sirve el build generado
 npm run lint
 ```
 
-### Despliegue en Vercel
+## Despliegue en Vercel
 
 El sitio se despliega en Vercel (`vercel.json` ya trae la configuración del framework). Para desplegar manualmente:
 
