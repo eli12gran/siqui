@@ -40,7 +40,7 @@ export default function MemoriesLandingPage() {
             <CardContent className="flex h-full flex-col justify-between p-6">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">SIQUI II</p>
-                <h2 className="mt-3 text-2xl font-semibold">Memorias de la edición actual</h2>
+                <h2 className="mt-3 text-2xl font-semibold">Memorias de la segunda edición</h2>
                 <p className="mt-3 text-muted-foreground">
                   Consulta las memorias de la segunda edición del simposio, incluyendo el material descargable y el resumen del evento.
                 </p>
