@@ -7,9 +7,7 @@ const config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx,css}",
     "./components/**/*.{js,ts,jsx,tsx,mdx,css}",
     "./src/**/*.{js,ts,jsx,tsx,mdx,css}",
-    "./globals.css"
-  ]
-  ,
+  ],
   prefix: "",
   theme: {
     container: {
