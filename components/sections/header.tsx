@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
   return (
@@ -35,11 +36,14 @@ export function Header() {
             Apoya
           </Link>
         </nav>
-        <Button asChild>
-          <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
-            Descarga las memorias del SIQUI 2025
-          </Link>
-        </Button>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Button asChild>
+            <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
+              Descarga las memorias del SIQUI 2025
+            </Link>
+          </Button>
+        </div>
       </div>
     </header>
   )
