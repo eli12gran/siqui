@@ -46,6 +46,8 @@ export const siquiII = {
     ],
   } satisfies ThematicLinesData,
 
+  statsHeading: "Estadísticos del evento 2025",
+
   stats: [
     { value: "187", label: "Participantes" },
     { value: "11", label: "Regiones representadas, nacionales e internacionales" },

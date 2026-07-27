@@ -65,6 +65,8 @@ export const siquiI = {
     { type: "image", src: "/memories/grupal.webp", alt: "asistentes", width: 300, height: 300, className: "rounded-lg object-cover -mt-10" },
   ] satisfies GalleryItem[],
 
+  statsHeading: "Estadísticos del evento 2024",
+
   stats: [
     { value: "180+", label: "Participantes" },
     { value: "12", label: "Regiones representadas, nacionales e internacionales" },
