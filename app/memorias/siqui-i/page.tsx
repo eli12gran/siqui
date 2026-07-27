@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { EditionHeader } from "@/components/memorias/edition-header"
 import { MemoriesSection } from "@/components/memorias/memories-section"
 import { EditionOverview } from "@/components/memorias/edition-overview"
@@ -7,6 +8,24 @@ import { StatCards } from "@/components/memorias/stat-cards"
 import { PieChartCard } from "@/components/memorias/pie-chart-card"
 import { GeographicDistribution } from "@/components/memorias/geographic-distribution"
 import { siquiI } from "@/lib/data/editions/siqui-i"
+
+export const metadata: Metadata = {
+  title: "Memorias SIQUI I (2024)",
+  description:
+    "Memorias de la primera edición del Simposio de Química UdeMedellín, realizada el 1 de noviembre de 2024: fotos, estadísticas y momentos destacados del día.",
+  openGraph: {
+    url: "/memorias/siqui-i",
+    siteName: "SIQUI UdeMedellín",
+    locale: "es_CO",
+    type: "website",
+    images: [{ url: "/memories/grupal.webp", width: 1502, height: 879, alt: "SIQUI I 2024" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siquiudem",
+    images: ["/memories/grupal.webp"],
+  },
+}
 
 export default function SiquiIPage() {
   return (

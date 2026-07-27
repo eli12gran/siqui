@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { EditionHeader } from "@/components/memorias/edition-header"
 import { MemoriesSection } from "@/components/memorias/memories-section"
 import { EditionOverview } from "@/components/memorias/edition-overview"
@@ -7,6 +8,24 @@ import { PieChartCard } from "@/components/memorias/pie-chart-card"
 import { SpeakerGrid } from "@/components/memorias/speaker-grid"
 import { CommitteesSection } from "@/components/memorias/committees-section"
 import { siquiII } from "@/lib/data/editions/siqui-ii"
+
+export const metadata: Metadata = {
+  title: "Memorias SIQUI II (2025)",
+  description:
+    "Memorias de la segunda edición del Simposio de Química UdeMedellín, realizada el 21 y 22 de octubre de 2025: ponentes, comités y estadísticas del evento.",
+  openGraph: {
+    url: "/memorias/siqui-ii",
+    siteName: "SIQUI UdeMedellín",
+    locale: "es_CO",
+    type: "website",
+    images: [{ url: "/gallery/1.webp", width: 1417, height: 755, alt: "SIQUI II 2025" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siquiudem",
+    images: ["/gallery/1.webp"],
+  },
+}
 
 export default function SiquiIIPage() {
   return (

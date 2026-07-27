@@ -1,11 +1,35 @@
 import type React from "react"
+import type { Metadata } from "next"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
-export const metadata = {
-  title: "SIQUI UDEM 2025",
-  description: "Acompáñenos al principal simposio de química que celebra un siglo de mecánica cuántica, donde la ciencia revolucionaria se fusiona con la innovación transformadora.",
-    generator: 'v0.dev'
+const title = "SIQUI UdeMedellín 2026 — III Simposio de Química"
+const description =
+  "III Simposio de Química UdeMedellín, 12 y 13 de noviembre de 2026 en la Universidad de Medellín. Bajo el lema “Química para la sostenibilidad con impacto social”."
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.siquiudem.com"),
+  title: {
+    default: title,
+    template: "%s | SIQUI UdeMedellín",
+  },
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://www.siquiudem.com",
+    siteName: "SIQUI UdeMedellín",
+    images: [{ url: "/branding/Logo_2026.webp", width: 1417, height: 756, alt: title }],
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siquiudem",
+    title,
+    description,
+    images: ["/branding/Logo_2026.webp"],
+  },
 }
 
 export default function RootLayout({

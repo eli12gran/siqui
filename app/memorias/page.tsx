@@ -1,7 +1,26 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Memorias",
+  description:
+    "Explora las memorias de las ediciones previas del Simposio de Química UdeMedellín (SIQUI): fotos, estadísticas y materiales de cada edición.",
+  openGraph: {
+    url: "/memorias",
+    siteName: "SIQUI UdeMedellín",
+    locale: "es_CO",
+    type: "website",
+    images: [{ url: "/branding/Logo_2026.webp", width: 1417, height: 756, alt: "Memorias SIQUI UdeMedellín" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siquiudem",
+    images: ["/branding/Logo_2026.webp"],
+  },
+}
 
 export default function MemoriesLandingPage() {
   return (
