@@ -26,11 +26,18 @@ app/                        Rutas (App Router)
 components/
   sections/                 Bloques de la landing (Header, Hero, About,
                              Schedule, Venue, Sponsors, Footer, etc.)
+  memorias/                 Bloques reutilizables de las páginas de
+                             memorias (EditionHeader, SpeakerGrid,
+                             PieChartCard, CommitteesSection, etc.)
   ui/                        Componentes base de shadcn/ui (Button, Card,
                              Dialog, Toast, ...), generados por su CLI
 
 lib/
-  data/schedule.ts           Datos del cronograma (separados del JSX)
+  data/schedule.ts           Datos del cronograma de la landing (separados del JSX)
+  data/editions/             Contenido de cada edición pasada del SIQUI
+                             (types.ts + un archivo por edición: siqui-i.ts,
+                             siqui-ii.ts — ponentes, comités, estadísticas,
+                             galería), consumido por components/memorias/
   utils.ts                    Helpers (cn, etc.)
 
 hooks/                      Hooks compartidos (use-mobile, use-toast)
@@ -44,7 +51,7 @@ public/
   templates/                 Plantillas descargables (resumen, póster, PPT)
 ```
 
-Cada nueva edición del SIQUI se agrega como una ruta nueva bajo `app/memorias/siqui-N/`, reutilizando los componentes de `components/sections/` y `components/ui/` que ya existen.
+Cada nueva edición del SIQUI (ej. SIQUI III) se agrega creando `lib/data/editions/siqui-iii.ts` con su contenido, y una página delgada en `app/memorias/siqui-iii/page.tsx` que compone los componentes ya existentes de `components/memorias/` — sin copiar JSX ni duplicar componentes.
 
 ## Requisitos
 
@@ -70,8 +77,10 @@ npm run start   # sirve el build generado
 `npm run build` falla si hay errores de TypeScript o de ESLint — no se pueden ignorar silenciosamente (ver `next.config.mjs`). Antes de abrir un PR, correr también:
 
 ```bash
-npm run lint
+npm run lint   # eslint . directo (next lint quedó deprecado)
 ```
+
+Un workflow de GitHub Actions (`.github/workflows/ci.yml`) corre `npm ci` + `npm run build` en cada push y PR contra `main`, así que cualquier error de tipos o de lint bloquea el check automáticamente.
 
 ## Despliegue en Vercel
 
@@ -89,5 +98,5 @@ vercel --prod        # despliega a producción
 1. Crea una rama a partir de `main` para tu cambio.
 2. Antes de comitear, corre `npm run build` (incluye type-check + lint) y confirma que pasa limpio.
 3. Sigue el estilo de mensajes de commit ya usado en el historial: prefijos tipo `fix:`, `feat:`, `refactor:` seguidos de una descripción corta en presente, y el cuerpo explicando el *por qué* del cambio cuando no sea obvio.
-4. Al agregar contenido de una nueva edición del simposio, sigue las convenciones ya existentes: fotos de ponentes en `public/speakers/`, logos en `public/sponsors/` o `public/branding/`, y datos de cronograma en `lib/data/` en vez de hardcodeados en el JSX.
+4. Al agregar una nueva edición del simposio, sigue las convenciones ya existentes: su contenido va en un archivo nuevo de `lib/data/editions/` (no hardcodeado en el JSX), sus fotos en `public/speakers/`, sus logos en `public/sponsors/` o `public/branding/`, y la página se compone reutilizando `components/memorias/`.
 5. Abre un pull request contra `main` describiendo el cambio y su motivo.
