@@ -74,3 +74,11 @@ export type ThematicLinesData = {
   intro: string
   items: { name: string }[]
 }
+
+export type CommitteesData = {
+  heading: string
+  description: string
+  organizador: CommitteeSubgroup[]
+  logistico: CommitteeMember[]
+  cientifico: CommitteeMember[]
+}

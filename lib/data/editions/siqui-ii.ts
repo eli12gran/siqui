@@ -1,6 +1,5 @@
 import type {
-  CommitteeMember,
-  CommitteeSubgroup,
+  CommitteesData,
   CoverImage,
   EditionOverview,
   PieChartConfig,
@@ -129,6 +128,9 @@ export const siquiII = {
   ] satisfies Speaker[],
 
   committees: {
+    heading: "Comités de SIQUI 2025",
+    description: "Conozca a los reconocidos expertos que revisan las presentaciones y organizan el evento.",
+
     organizador: [
       {
         university: "Universidad de Medellín",
@@ -152,7 +154,7 @@ export const siquiII = {
           { name: "Camilo Franco", image: "/speakers/Camilo_Franco.webp?height=150&width=150" },
         ],
       },
-    ] satisfies CommitteeSubgroup[],
+    ],
 
     logistico: [
       {
@@ -179,7 +181,7 @@ export const siquiII = {
         affiliation: "Universidad de Medellín",
         image: "/speakers/eli.webp?height=150&width=150",
       },
-    ] satisfies CommitteeMember[],
+    ],
 
     cientifico: [
       { name: "Francisco Nuñez", affiliation: "Universidad Nacional de Colombia" },
@@ -201,6 +203,6 @@ export const siquiII = {
       { name: "Lina Paola Higuita", affiliation: "PPG Colombia" },
       { name: "Camilo Castro", affiliation: "Universidad de Antioquia" },
       { name: "Sergio Valencia", affiliation: "Tecnológico de Antioquia" },
-    ] satisfies CommitteeMember[],
-  },
+    ],
+  } satisfies CommitteesData,
 }
