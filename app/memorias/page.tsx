@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     "Explora las memorias de las ediciones previas del Simposio de Química UdeMedellín (SIQUI): fotos, estadísticas y materiales de cada edición.",
   openGraph: {
     url: "/memorias",
-    siteName: "SIQUI UdeMedellín",
+    siteName: "SIQUI Universidad de Medellín",
     locale: "es_CO",
     type: "website",
-    images: [{ url: "/branding/Logo_2026.webp", width: 1417, height: 756, alt: "Memorias SIQUI UdeMedellín" }],
+    images: [{ url: "/branding/Logo_2026.webp", width: 1417, height: 756, alt: "Memorias SIQUI Universidad de Medellín" }],
   },
   twitter: {
     card: "summary_large_image",

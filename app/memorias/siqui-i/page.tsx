@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Memorias de la primera edición del Simposio de Química UdeMedellín, realizada el 1 de noviembre de 2024: fotos, estadísticas y momentos destacados del día.",
   openGraph: {
     url: "/memorias/siqui-i",
-    siteName: "SIQUI UdeMedellín",
+    siteName: "SIQUI Universidad de Medellín",
     locale: "es_CO",
     type: "website",
     images: [{ url: "/memories/grupal.webp", width: 1502, height: 879, alt: "SIQUI I 2024" }],

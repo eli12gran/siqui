@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Memorias de la segunda edición del Simposio de Química UdeMedellín, realizada el 21 y 22 de octubre de 2025: ponentes, comités y estadísticas del evento.",
   openGraph: {
     url: "/memorias/siqui-ii",
-    siteName: "SIQUI UdeMedellín",
+    siteName: "SIQUI Universidad de Medellín",
     locale: "es_CO",
     type: "website",
     images: [{ url: "/gallery/1.webp", width: 1417, height: 755, alt: "SIQUI II 2025" }],
