@@ -47,7 +47,7 @@ export default function SiquiIiPage() {
 
           <div className="flex justify-center overflow-hidden rounded-xl">
             <Image
-              src="/1.webp"
+              src="/gallery/1.webp"
               alt="Portada del simposio"
               width={600}
               height={300}
@@ -151,21 +151,21 @@ export default function SiquiIiPage() {
                   name: "Dr. Albeiro Restrepo",
                   role: "Profesor titular, Instituto de Química. Codirector del grupo de Química-Física Teórica, clasificado A1 por Minciencias. Investigador senior.",
                   institution: "Universidad de Antioquia",
-                  image: "/albeiro.webp?height=300&width=300",
+                  image: "/speakers/albeiro.webp?height=300&width=300",
                   link: "https://scholar.google.es/citations?user=nfjNsG4AAAAJ&hl=es",
                 },
                 {
                   name: "Dr. César Pulgarín",
                   role: "Profesor Emérito EPFL (Suiza). Miembro honorario de la Academia Colombiana de Ciencias Exactas Físicas y Naturales",
                   institution: "EPFL (Suiza)",
-                  image: "/Cesar_Pulgarin.webp?height=300&width=300",
+                  image: "/speakers/Cesar_Pulgarin.webp?height=300&width=300",
                   link: "https://people.epfl.ch/cesar.pulgarin?lang=en",
                 },
                 {
                   name: "Dr. Sixto Malato",
                   role: "Profesor e Investigador OPI (España)",
                   institution: "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT) (Ministerio de Economía y Competitividad de España)",
-                  image: "/Sixto_Malato.webp?height=300&width=300",
+                  image: "/speakers/Sixto_Malato.webp?height=300&width=300",
                   link: "https://www.psa.es/es/unidades/tsa/personal/smalato.php",
                 },
                 {
@@ -173,7 +173,7 @@ export default function SiquiIiPage() {
                   formacion: "Doctor en Ciencias Químicas, Universidad de Antioquia",
                   role: "Especialista I+D Síntesis y mezclas",
                   institution: "Andercol S.A.S.",
-                  image: "/johnatan_diosa.webp?height=300&width=300",
+                  image: "/speakers/johnatan_diosa.webp?height=300&width=300",
                   link: "https://www.linkedin.com/in/johnatan-diosa-arango-17185b37/",
                 },
                 {
@@ -181,13 +181,13 @@ export default function SiquiIiPage() {
                   formacion: "Magister en Educación y Doctora en Humanidades y Artes con mención en Ciencias de la Educación",
                   role: "Docente",
                   institution: "Institución Educativa Pueblo Nuevo, Amalfi, Antioquia",
-                  image: "/claudia_correa.jpeg",
+                  image: "/speakers/claudia_correa.jpeg",
                 },
                 {
                   name: "Isabel Oller Alberola",
                   role: "Editora de las revistas: Water Science and Technology, Journal of Environmental Chemical Engineering y Water",
                   institution: "Plataforma Solar de Almería (CIEMAT), España. Unidad de Tratamientos Solares del Agua",
-                  image: "/isabel_oller.jpeg",
+                  image: "/speakers/isabel_oller.jpeg",
                   link: "https://www.psa.es/es/unidades/tsa/personal/ioller.php",
                 }
               ].map((speaker, index) => (
@@ -260,19 +260,19 @@ export default function SiquiIiPage() {
               {[
                 {
                   name: "María Angélica Forgionny",
-                  image: "/angelica.webp?height=150&width=150",
+                  image: "/speakers/angelica.webp?height=150&width=150",
                 },
                 {
                   name: "Carlos Jiménez",
-                  image: "/carlos.webp?height=150&width=150",
+                  image: "/speakers/carlos.webp?height=150&width=150",
                 },
                 {
                   name: "Nancy Acelas",
-                  image: "/nancy_arelas.webp?height=150&width=150",
+                  image: "/speakers/nancy_arelas.webp?height=150&width=150",
                 },
                 {
                   name: "Maria Isabel Mejía",
-                  image: "/maria_isabel.webp?height=150&width=150",
+                  image: "/speakers/maria_isabel.webp?height=150&width=150",
                 },
               ].map((member, index) => (
                 <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -298,7 +298,7 @@ export default function SiquiIiPage() {
               {[
                 {
                   name: "Ricardo Torres",
-                  image: "/Ricardo_Torres.webp?height=150&width=150",
+                  image: "/speakers/Ricardo_Torres.webp?height=150&width=150",
                 },
               ].map((member, index) => (
                 <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -324,11 +324,11 @@ export default function SiquiIiPage() {
               {[
                 {
                   name: "Farid Cortés",
-                  image: "/Farid_Cortes.webp?height=150&width=150",
+                  image: "/speakers/Farid_Cortes.webp?height=150&width=150",
                 },
                 {
                   name: "Camilo Franco",
-                  image: "/Camilo_Franco.webp?height=150&width=150",
+                  image: "/speakers/Camilo_Franco.webp?height=150&width=150",
                 },
               ].map((member, index) => (
                 <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
@@ -365,25 +365,25 @@ export default function SiquiIiPage() {
           name: "Valentina Miranda",
           role: "Estudiante de Computación Científica",
           affiliation: "Universidad de Medellín",
-          image: "/vale.webp?height=150&width=150",
+          image: "/speakers/vale.webp?height=150&width=150",
         },
         {
           name: "Emanuel Cabrera",
           role: "Estudiante de Computación Científica",
           affiliation: "Universidad de Medellín",
-          image: "/emanuel.webp?height=150&width=150",
+          image: "/speakers/emanuel.webp?height=150&width=150",
         },
         {
           name: "Valentina Ospina",
           role: "Ingeniera ambiental. Asistente de Investigación",
           affiliation: "Universidad de Medellín",
-          image: "/valen_ospina.jpeg?height=150&width=150",
+          image: "/speakers/valen_ospina.jpeg?height=150&width=150",
         },
         {
           name: "Elizabeth Granda",
           role: "Estudiante de Computación Científica",
           affiliation: "Universidad de Medellín",
-          image: "/eli.webp?height=150&width=150",
+          image: "/speakers/eli.webp?height=150&width=150",
         },
           ].map((member, index) => (
             <div key={index} className="flex items-center gap-4 rounded-lg border p-4">

@@ -220,7 +220,7 @@ export default function SiquiIiPage() {
                   {/* Map Image */}
                   <div className="w-full lg:w-2/3">
                     <Image
-                      src="/Colombia_America.webp"
+                      src="/gallery/Colombia_America.webp"
                       alt="Distribución geográfica"
                       width={800}
                       height={400}

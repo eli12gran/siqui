@@ -14,7 +14,7 @@ export function Sponsors() {
         {/* Sponsor Logo Grid */}
         <div className="mx-auto py-12">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-1 lg:grid-cols-1">
-            {["/universidad_medellin.webp"].map((src, i) => (
+            {["/sponsors/universidad_medellin.webp"].map((src, i) => (
               <div key={`platinum-${i}`} className="flex items-center justify-center">
                 <Image
                   src={src}
@@ -36,15 +36,15 @@ export function Sponsors() {
         <div className="mx-auto py-12">
           <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">
             {[
-              { src: "/universidad_antioquia.webp", alt: "Universidad de Antioquia", h: "h-16" },
-              { src: "/universidad_nacional.webp", alt: "Universidad Nacional", h: "h-16" },
-              { src: "/polanyi.webp", alt: "Polanyi", h: "h-20" },
-              { src: "/uniremington.webp", alt: "Uniremington", h: "h-14" },
-              { src: "/cpq.webp", alt: "CPQ", h: "h-25" },
-              { src: "/cecoltec.webp", alt: "Cecoltec", h: "h-21" },
-              { src: "/Innovatek.webp", alt: "Innovatek", h: "h-16" },
-              { src: "/simprolab.webp", alt: "Simprolab", h: "h-25" },
-              { src: "/lanzetta_rengifo.webp", alt: "Lanzetta Rengifo", h: "h-400" },
+              { src: "/sponsors/universidad_antioquia.webp", alt: "Universidad de Antioquia", h: "h-16" },
+              { src: "/sponsors/universidad_nacional.webp", alt: "Universidad Nacional", h: "h-16" },
+              { src: "/sponsors/polanyi.webp", alt: "Polanyi", h: "h-20" },
+              { src: "/sponsors/uniremington.webp", alt: "Uniremington", h: "h-14" },
+              { src: "/sponsors/cpq.webp", alt: "CPQ", h: "h-25" },
+              { src: "/sponsors/cecoltec.webp", alt: "Cecoltec", h: "h-21" },
+              { src: "/sponsors/Innovatek.webp", alt: "Innovatek", h: "h-16" },
+              { src: "/sponsors/simprolab.webp", alt: "Simprolab", h: "h-25" },
+              { src: "/sponsors/lanzetta_rengifo.webp", alt: "Lanzetta Rengifo", h: "h-400" },
             ].map((sponsor, i) => (
               <div key={`platinum-${i}`} className="flex items-center justify-center">
               */}
