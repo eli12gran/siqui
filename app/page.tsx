@@ -13,7 +13,7 @@ export default function ScientificEventPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-xl">
             <span className="text-primary">SIQUI</span>
-            <span className="text-muted-foreground">2025</span>
+            <span className="text-muted-foreground">2026</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:text-primary">
@@ -22,12 +22,12 @@ export default function ScientificEventPage() {
             <Link href="#inscriptions" className="text-sm font-medium hover:text-primary">
               Inscripciones
             </Link>
-            <Link href="#speakers" className="text-sm font-medium hover:text-primary">
+            {/*<Link href="#speakers" className="text-sm font-medium hover:text-primary">
               Ponentes
             </Link>
             <Link href="#committees" className="text-sm font-medium hover:text-primary">
               Comités
-            </Link>
+            </Link>*/}
             <Link href="/memorias" className="text-sm font-medium hover:text-primary">
               Memorias
             </Link>
@@ -57,7 +57,7 @@ export default function ScientificEventPage() {
               
               {/* Image on Top */}
               <Image
-                src="/1.webp"
+                src="/Logo_2026.webp"
                 width={800}
                 height={800}
                 alt="Conference Banner"
@@ -108,7 +108,7 @@ export default function ScientificEventPage() {
               <div className="flex flex-col gap-2 text-xl text-muted-foreground md:flex-row md:gap-6 justify-center items-center space-y-3">
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  <span>Octubre 21 y 22, 2025</span>
+                  <span>12 y 13 de noviembre, 2026</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
@@ -127,22 +127,24 @@ export default function ScientificEventPage() {
         {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-15">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-justify">
               <div className="space-y-6 max-w-5xl mx-auto px-4 md:px-6">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sobre el evento</h2>
                 <p className="text-muted-foreground md:text-xl leading-relaxed">
-                  En el marco del Año Internacional de la Ciencia y la Tecnología Cuánticas, proclamado por las Naciones Unidas para conmemorar 
-                  el centenario del desarrollo de la mecánica cuántica en 2025, el II Simposio de Química – UdeMedellín se une a esta celebración global liderada por la UNESCO.
-                  Esta iniciativa internacional busca promover la colaboración científica, fortalecer la educación y abordar los grandes desafíos del 
-                  siglo XXI a través de la ciencia y la tecnología. En sintonía con este llamado, nuestro simposio adopta el tema "Lo cuántico" como eje inspirador, 
-                  resaltando su impacto y conexiones desde la química. Queremos hacer de esta jornada un espacio accesible, participativo y transformador, 
-                  donde el conocimiento se comparta, se cuestione y se conecte con las personas. Invitamos a estudiantes, docentes, investigadores y entusiastas de la ciencia 
-                  a ser parte de un evento que celebra la curiosidad, la interdisciplinariedad y el potencial de la química como puente entre el mundo cuántico y la vida cotidiana. 
-                  Todas las áreas de la química y ciencias afines son bienvenidas.
+                  La Universidad de Medellín y el Grupo de Investigación Materiales con Impacto (Mat&mpac) presentan el III Simposio de Química UdeMedellín, un espacio de encuentro, diálogo y divulgación científica que se llevará a cabo los días 12 y 13 de noviembre de 2026, en la Universidad de Medellín, en el marco de la celebración del Día del Químico.
+                </p>
+                <p className="text-muted-foreground md:text-xl leading-relaxed">
+                  Bajo el lema "Química para la sostenibilidad con impacto social", esta tercera edición invita a reconocer el papel de la química como una ciencia fundamental para comprender y transformar nuestro entorno. A través del intercambio de conocimientos y experiencias, el simposio reunirá a investigadores, docentes, estudiantes y profesionales interesados en compartir avances, perspectivas y soluciones que contribuyan a enfrentar los desafíos actuales desde la ciencia, la innovación y la sostenibilidad.
+                </p>
+                <p className="text-muted-foreground md:text-xl leading-relaxed">
+                  En esta edición, el evento amplía su alcance con la incorporación de actividades de apropiación social del conocimiento dirigidas a instituciones educativas de diferentes municipios de Antioquia. Esta iniciativa busca fortalecer los vínculos entre la universidad, la escuela y la sociedad, acercando la química a nuevos públicos y promoviendo el interés por la ciencia como una herramienta para comprender el mundo y generar transformaciones con impacto.
+                </p>
+                <p className="text-muted-foreground md:text-xl leading-relaxed">
+                  Más que un espacio para presentar resultados científicos, el III Simposio de Química UdeMedellín busca propiciar conversaciones, conexiones y nuevas ideas en torno a una química comprometida con el futuro. Porque la ciencia adquiere un significado aún mayor cuando sus conocimientos trascienden los laboratorios y contribuyen a construir una sociedad más sostenible, innovadora y consciente.
                 </p>
               </div>
             </div>
-            
+            {/*}
             <div className="mx-auto max-w-5xl py-7">
               <div className="flex flex-col items-center text-center">
                 <div className="flex flex-col justify-center space-y-4 max-w-3xl">
@@ -176,7 +178,7 @@ export default function ScientificEventPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </section>
 
@@ -192,8 +194,10 @@ export default function ScientificEventPage() {
               Participa en el Simposio
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Inscríbete como asistente o presenta tu proyecto. Aquí encontrarás el formulario de inscripción, las plantillas necesarias y fechas importantes.
+              ¡Prepárate! Pronto estaremos anunciando las inscripciones.
+              {/*Inscríbete como asistente o presenta tu proyecto. Aquí encontrarás el formulario de inscripción, las plantillas necesarias y fechas importantes.*/}
             </p>
+            {/*
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
               Ten en cuenta que, para participar en modalidad de póster o charla, es necesario que envíes el resumen de tu trabajo usando la plantilla.
             </p>
@@ -205,10 +209,11 @@ export default function ScientificEventPage() {
                 ¿Necesitas la programación completa? Descarga el programa aquí:&nbsp;
                 <a href="/templates/Programacion_SIQUI-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Programa (PDF)</a>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           {/* Templates Grid */}
+          {/*
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -243,8 +248,10 @@ export default function ScientificEventPage() {
               </a>
             ))}
           </div>
+            */}
 
           {/* Important Dates */}
+          {/*
           <div className="max-w-3xl mx-auto space-y-6">
             <h3 className="text-2xl font-bold text-center">Fechas importantes</h3>
             <ul className="space-y-4">
@@ -261,383 +268,10 @@ export default function ScientificEventPage() {
                 </span>
               </li>
             </ul>
-          </div>
+          </div>*/}
         </div>
         </section>
 
-        {/* Keynote Speakers */}
-        <section id="speakers" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Conferencistas Invitados</h2>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
-              {[
-                {
-                  name: "Dr. Albeiro Restrepo",
-                  role: "Profesor titular, Instituto de Química. Codirector del grupo de Química-Física Teórica, clasificado A1 por Minciencias. Investigador senior.",
-                  institution: "Universidad de Antioquia",
-                  image: "/albeiro.webp?height=300&width=300",
-                  link: "https://scholar.google.es/citations?user=nfjNsG4AAAAJ&hl=es",
-                },
-                {
-                  name: "Dr. César Pulgarín",
-                  role: "Profesor Emérito EPFL (Suiza). Miembro honorario de la Academia Colombiana de Ciencias Exactas Físicas y Naturales",
-                  institution: "EPFL (Suiza)",
-                  image: "/Cesar_Pulgarin.webp?height=300&width=300",
-                  link: "https://people.epfl.ch/cesar.pulgarin?lang=en",
-                },
-                {
-                  name: "Dr. Sixto Malato",
-                  role: "Profesor e Investigador OPI (España)",
-                  institution: "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT) (Ministerio de Economía y Competitividad de España)",
-                  image: "/Sixto_Malato.webp?height=300&width=300",
-                  link: "https://www.psa.es/es/unidades/tsa/personal/smalato.php",
-                },
-                {
-                  name: "Dr. Johnatan Diosa",
-                  formacion: "Doctor en Ciencias Químicas, Universidad de Antioquia",
-                  role: "Especialista I+D Síntesis y mezclas",
-                  institution: "Andercol S.A.S.",
-                  image: "/johnatan_diosa.webp?height=300&width=300",
-                  link: "https://www.linkedin.com/in/johnatan-diosa-arango-17185b37/",
-                },
-                {
-                  name: "Dr. Claudia Correa",
-                  formacion: "Magister en Educación y Doctora en Humanidades y Artes con mención en Ciencias de la Educación",
-                  role: "Docente",
-                  institution: "Institución Educativa Pueblo Nuevo, Amalfi, Antioquia",
-                  image: "/claudia_correa.jpeg",
-                },
-                {
-                  name: "Isabel Oller Alberola",
-                  role: "Editora de las revistas: Water Science and Technology, Journal of Environmental Chemical Engineering y Water",
-                  institution: "Plataforma Solar de Almería (CIEMAT), España. Unidad de Tratamientos Solares del Agua",
-                  image: "/isabel_oller.jpeg",
-                  link: "https://www.psa.es/es/unidades/tsa/personal/ioller.php",
-                }
-              ].map((speaker, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <div className="aspect-square overflow-hidden">
-                    <Image
-                      src={speaker.image || "/placeholder.svg"}
-                      alt={speaker.name}
-                      width={300}
-                      height={300}
-                      className="h-full w-full object-cover transition-all hover:scale-105"
-                    />
-                  </div>
-                  <CardContent className="p-4">
-                    <div className="space-y-1.5">
-                      <h3 className="text-xl font-bold">{speaker.name}</h3>
-                      {speaker.formacion && (
-                        <p className="text-sm text-muted-foreground">{speaker.formacion}</p>
-                      )}
-                      <p className="text-sm text-muted-foreground">{speaker.role}</p>
-                      <p className="text-sm font-medium">{speaker.institution}</p>
-                      {speaker.link && (
-                        <a
-                          href={speaker.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-2"
-                        >
-                          Ver perfil
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Committees */}
-        <section id="committees" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-3 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comités de SIQUI 2025</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Conozca a los reconocidos expertos que revisan las presentaciones y organizan el evento.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto max-w-5xl py-12">
-              <div className="space-y-12">
-                {/* Scientific Committee */}
-                <div className="space-y-12">
-  {/* <h3 className="text-center text-2xl font-bold">Comité Organizador</h3>  */}
-  <div className="container px-4 md:px-6">
-  <div className="flex flex-col items-center justify-center space-y-4 text-center">
-    <div className="space-y-2">
-      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
-        Comité Organizador
-      </div>
-    </div>
-  </div>
-</div>
-  {/* Universidad de Medellín */}
-  <div className="space-y-6 max-w-5xl mx-auto">
-    <h4 className="text-center text-lg font-bold">Universidad de Medellín</h4>
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-      {[
-        {
-          name: "María Angélica Forgionny",
-          image: "/angelica.webp?height=150&width=150",
-        },
-        {
-          name: "Carlos Jiménez",
-          image: "/carlos.webp?height=150&width=150",
-        },
-        {
-          name: "Nancy Acelas",
-          image: "/nancy_arelas.webp?height=150&width=150",
-        },
-        {
-          name: "Maria Isabel Mejía",
-          image: "/maria_isabel.webp?height=150&width=150",
-        },
-      ].map((member, index) => (
-        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-          <Image
-            src={member.image}
-            alt={member.name}
-            width={60}
-            height={60}
-            className="rounded-full object-cover"
-          />
-          <div>
-            <h4 className="font-bold">{member.name}</h4>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Universidad de Antioquia */}
-  <div className="space-y-6 max-w-5xl mx-auto">
-    <h4 className="text-center text-lg font-bold">Universidad de Antioquia</h4>
-    <div className="grid gap-6 sm:grid-cols-1 place-items-center">
-      {[
-        {
-          name: "Ricardo Torres",
-          image: "/Ricardo_Torres.webp?height=150&width=150",
-        },
-      ].map((member, index) => (
-        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-          <Image
-            src={member.image}
-            alt={member.name}
-            width={60}
-            height={60}
-            className="rounded-full object-cover"
-          />
-          <div>
-            <h4 className="font-bold">{member.name}</h4>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Universidad Nacional de Colombia */}
-  <div className="space-y-6 max-w-4xl mx-auto">
-    <h4 className="text-center text-lg font-bold">Universidad Nacional de Colombia</h4>
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-      {[
-        {
-          name: "Farid Cortés",
-          image: "/Farid_Cortes.webp?height=150&width=150",
-        },
-        {
-          name: "Camilo Franco",
-          image: "/Camilo_Franco.webp?height=150&width=150",
-        },
-      ].map((member, index) => (
-        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-          <Image
-            src={member.image}
-            alt={member.name}
-            width={60}
-            height={60}
-            className="rounded-full object-cover"
-          />
-          <div>
-            <h4 className="font-bold">{member.name}</h4>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
-
-                {/*Program Committee*/}
-                <div>
-                  {/* <h3 className="mb-6 text-center text-2xl font-bold">Comité Logístico</h3> */}
-              <div className="container px-4 md:px-6">
-                  <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
-                    <div className="space-y-4">
-                      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
-                      Comité Logístico
-                      </div>
-                    </div>
-                </div>
-              </div>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-                    {[
-                      {
-                        name: "Valentina Miranda",
-                        role: "Estudiante de Computación Científica",
-                        affiliation: "Universidad de Medellín",
-                        image: "/vale.webp?height=150&width=150",
-                      },
-                      {
-                        name: "Emanuel Cabrera",
-                        role: "Estudiante de Computación Científica",
-                        affiliation: "Universidad de Medellín",
-                        image: "/emanuel.webp?height=150&width=150",
-                      },
-                      {
-                        name: "Valentina Ospina",
-                        role: "Ingeniera ambiental. Asistente de Investigación",
-                        affiliation: "Universidad de Medellín",
-                        image: "/valen_ospina.jpeg?height=150&width=150",
-                      },
-                      {
-                        name: "Elizabeth Granda",
-                        role: "Estudiante de Computación Científica",
-                        affiliation: "Universidad de Medellín",
-                        image: "/eli.webp?height=150&width=150",
-                      },
-                    ].map((member, index) => (
-                      <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-                        <Image
-                          src={member.image || "/placeholder.svg"}
-                          alt={member.name}
-                          width={60}
-                          height={60}
-                          className="rounded-full object-cover"
-                        />
-                        <div>
-                          <h4 className="font-bold">{member.name}</h4>
-                          <p className="text-sm text-muted-foreground">{member.role}</p>
-                          <p className="text-xs">{member.affiliation}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Organizing Committee */}
-                <div>
-                  {/* <h3 className="mb-6 text-center text-2xl font-bold">Comité Científico</h3> */}
-                  <div className="container px-4 md:px-6">
-                  <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
-                    <div className="space-y-4">
-                      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
-                      Comité Científico
-                      </div>
-                    </div>
-                </div>
-              </div>
-                  <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-3">
-                    {[
-                      {
-                        name: "Francisco Nuñez",
-                        affiliation: "Universidad Nacional de Colombia",
-                      },
-                      {
-                        name: "Jazmín Porras",
-                        affiliation: "Corporación Universitaria Remington",
-                      },
-                      {
-                        name: "Carolina Ramírez",
-                        affiliation: "Instituto Tecnológico Metropolitano",
-                      },
-                      {
-                        name: "Efraím Serna",
-                        affiliation: "Universidad de Antioquia",
-                      },
-                      {
-                        name: "Gina Hincapié Triviño",
-                        affiliation: "Universidad Nacional de Colombia (Bogotá)",
-                      },
-                      {
-                        name: "Natalia Súarez",
-                        affiliation: "Universidad de Antioquia",
-                      },
-                      {
-                        name: "Viviana Ospina",
-                        affiliation: "Universidad Utrecht, Países Bajos",
-                      },
-                      {
-                        name: "Sol Milena Mejía Chica",
-                        affiliation: "Universidad Javeriana",
-                      },
-                      {
-                        name: "Alejandro Vasquez",
-                        affiliation: "Universidad Arturo Prat, Chile",
-                      },
-                      {
-                        name: "Camilo Franco",
-                        affiliation: "Universidad Nacional de Colombia (Medellín)",
-                      },
-                      {
-                        name: "Maria Angélica Prada",
-                        affiliation: "Universidad de Antioquia",
-                      },
-                      {
-                        name: "Jorge Gallego",
-                        affiliation: "Universidad de Medellín",
-                      },
-                      {
-                        name: "Marcela Paredes",
-                        affiliation: "Fundación Universitaria Navarra (Huila)",
-                      },
-                      {
-                        name: "David Morales",
-                        affiliation: "Universidad Nacional Autónoma de México, Ciudad de México",
-                      },
-                      {
-                        name: "Ariel Cadena",
-                        affiliation: "Universidad Nacional de Colombia (Bogotá)",
-                      },
-                      {
-                        name: "Leidy Hoyos",
-                        affiliation: "Tecnológico de Antioquia",
-                      },
-                      {
-                        name: "Lina Paola Higuita",
-                        affiliation: "PPG Colombia",
-                      },
-                      {
-                        name: "Camilo Castro",
-                        affiliation: "Universidad de Antioquia",
-                      },
-                      {
-                        name: "Sergio Valencia",
-                        affiliation: "Tecnológico de Antioquia",
-                      },
-                    ].map((member, index) => (
-                      <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
-                        <div>
-                          <h4 className="font-bold">{member.name}</h4>
-                          <p className="text-xs">{member.affiliation}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Memories summary */}
         <section id="memories" className="w-full py-12 md:py-24 lg:py-20 bg-muted/30">
@@ -647,10 +281,7 @@ export default function ScientificEventPage() {
                 <div className="inline-flex rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Memorias
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Memorias históricas</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  El contenido del evento nuevo se mantiene en la portada, mientras que las memorias de ediciones previas se abren en páginas dedicadas.
-                </p>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Memorias históricas</h2>
               </div>
             </div>
 
@@ -659,7 +290,7 @@ export default function ScientificEventPage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">SIQUI I</p>
                 <h3 className="mt-3 text-2xl font-semibold">Primera edición</h3>
                 <p className="mt-3 text-muted-foreground">
-                  Revisa el contexto de la primera versión del simposio en una vista independiente.
+                  Revisa el contexto de la primera versión del simposio.
                 </p>
                 <Link href="/memorias/siqui-i" className="mt-6 inline-flex">
                   <Button variant="outline">Ver SIQUI I</Button>
@@ -670,7 +301,7 @@ export default function ScientificEventPage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">SIQUI II</p>
                 <h3 className="mt-3 text-2xl font-semibold">Segunda edición</h3>
                 <p className="mt-3 text-muted-foreground">
-                  Accede a las memorias y materiales de la edición anterior desde su propia página.
+                  Accede a las memorias y materiales de la edición anterior.
                 </p>
                 <Link href="/memorias/siqui-ii" className="mt-6 inline-flex">
                   <Button variant="outline">Ver SIQUI II</Button>
@@ -690,54 +321,88 @@ export default function ScientificEventPage() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Programación del Evento</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Un día completo de charlas inspiradoras, invitados especiales
+                  Una jornada de charlas inspiradoras, invitados especiales
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-12">
-              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Martes 21 de octubre</h3>
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Jueves 12 de noviembre</h3>
               <div className="space-y-6">
                 {[
                   {
-                    time: "14:00 - 15:00",
+                    time: "07:00 - 08:30",
                     title: "Registro e inscripciones",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "15:00 - 15:10",
+                    time: "08:30 - 08:30",
                     title: "Bienvenida",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "15:10 - 15:20",
-                    title: "Palabras de Bienvenida",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "09:30 - 10:15",
+                    title: "Plenaria #1",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "15:20 - 15:35",
-                    title: "Reconocimiento",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "10:15 - 10:35",
+                    title: "Coctel de bienvenida",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "15:35 - 15:50",
-                    title: "Premio Nacional - Procesos Avanzados de Oxidación",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "10:35 - 11:05",
+                    title: "Conferencista invitado #1 - Química en la Industria",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "15:50 - 16:05",
-                    title: "Premio internacional - Procesos Avanzados de Oxidación",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "11:05 - 11:25",
+                    title: "Charlas",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "16:05 - 16:55",
-                    title: "Conferencia plenaria 1",
-                    speaker: "Dr. Sixto Malato",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "11:25 - 11:45",
+                    title: "Charlas",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "17:00 - 19:00",
-                    title: "Acto cultural / Coctel de bienvenida",
-                    location: "Auditorio Héctor Ospina Botero del Bloque 18",
+                    time: "11:45 - 12:05",
+                    title: "Charlas",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "12:05 - 14:00",
+                    title: "Almuerzo Libre",
+                    location: "",
+                  },
+                  {
+                    time: "14:00 - 14:45",
+                    title: "Plenaria #2 - Rol de la mujer en la ciencia",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "14:45 - 15:15",
+                    title: "Conferencista invitado #2 - Investigación en Educación Media",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "15:15 - 15:35",
+                    title: "Charlas",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "15:35 - 15:55",
+                    title: "Charlas",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "15:55 - 16:15",
+                    title: "Coffee break y foto grupal",
+                    location: "Auditorio 1",
+                  },
+                  {
+                    time: "16:15 - 18:00",
+                    title: "Posters",
+                    location: "Por confirmar",
                   }
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
@@ -760,117 +425,53 @@ export default function ScientificEventPage() {
               </div>
             </div>
             <div className="mx-auto max-w-5xl py-1">
-              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Miércoles 22 de octubre</h3>
+              <h3 className="text-3xl font-bold tracking-tighter sm:text-3xl mb-4">Viernes 13 de noviembre</h3>
               <div className="space-y-6">
                 {[
                   {
-                    time: "07:00 - 08:00",
-                    title: "Registro e inscripciones",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "09:00 - 09:45",
+                    title: "Plenaria #3",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "08:00 - 08:15",
-                    title: "Apertura y bienvenida",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "09:45 - 10:15",
+                    title: "Conferencista invitado #3 - Investigación en Educación Media",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "8:15 - 9:00",
-                    title: "Conferencia plenaria 2: Mecánica cuántica y evolución molecular",
-                    speaker: "Dr. Albeiro Restrepo",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "10:15 - 10:45",
+                    title: "Conferencista invitado #3 - Investigación en Educación Media",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "9:05 - 9:25",
-                    title: "Presentación Oral 1: Síntesis de amoniaco sobre superficies puras, con defectos y dopadas de rutilo TiO₂",
-                    speaker: "Francisco Núñez Zarur",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "10:45 - 11:00",
+                    title: "Coffee break",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "9:25 - 9:45",
-                    title: "Presentación Oral 2: Oxidación de hidrocarburos mediante biomateriales híbridos funcionalizados: una estrategia sostenible para el tratamiento de aguas de producción",
-                    speaker: "Karol Zapata Acosta",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "11:00 - 11:20",
+                    title: "Charlas",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "9:45 - 10:15",
-                    title: "Conferencista invitado: Química en la Industria",
-                    speaker: "Dr. Jonathan Diosa",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
+                    time: "11:20 - 11:40",
+                    title: "Charlas",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "10:15 - 10:35",
-                    title: "Coffee Break",
+                    time: "11:40 - 12:00",
+                    title: "Charlas",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "10:35 - 11:15",
-                    title: "Conferencista invitada: El rol de la mujer en la ciencia ",
-                    speaker: "Dra. Isabel Oller Alberola",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
+                    time: "12:00 - 12:45",
+                    title: "Conversatorio",
+                    location: "Auditorio 1",
                   },
                   {
-                    time: "11:15 - 11:35",
-                    title: "Presentación Oral 3: Regeneración cíclica de nanomateriales a base de SiO₂ modificados con Cu y Ag: impacto de la atmósfera en la remoción de azufre y la producción de hidrógeno a partir de crudo pesado",
-                    speaker: "Juan Carlos Galindez",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "11:35 - 11:55",
-                    title: "Presentación Oral 4: Formación de nanoestructuras en conjugados de Quitosano-Ácido Biliar: un estudio por FT-ATR, Raman y cámara térmica",
-                    speaker: "Aida Liliana Barbosa",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "11:55 - 12:10",
-                    title: "Presentación Oral 5: Transformación de Residuos de Cuesco de Palma en Soluciones Climáticas: Estudio de Adsorción de CO₂ sobre Biocarbones Ecoeficientes",
-                    speaker: "Sergio Alberto Acevedo Corredor",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "12:10 - 14:00",
-                    title: "Almuerzo libre",
-                  },
-                  {
-                    time: "14:00 - 14:50",
-                    title: "Conferencia plenaria 3: Procesos avanzados de oxidación",
-                    speaker: "Dr. César Pulgarín",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "14:55 - 15:15",
-                    title: "Conferencista invitado: Química desde la educación media",
-                    speaker: "Dra. Claudia Correa",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)"
-                  },
-                  {
-                    time: "15:15 - 15:35",
-                    title: "Presentación Oral 6: Oxidación biológica de H₂S para control de olores: simulación y validación de procesos biotecnológicos en Aspen Plus",
-                    speaker: "Jesus Rafael Acevedo Mastrogiacomo",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "15:35 - 15:55",
-                    title: "Presentación Oral 7: Degradación simultánea de fármacos problemáticos en un efluente de agua residual empleando zeolita comercial y peroximonosulfato",
-                    speaker: "Efraím Adolfo Serna Galvis",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "15:55 - 16:10",
-                    title: "Coffee Break - Foto Grupal",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "16:00 - 17:30",
-                    title: "Sesión de pósters",
-                    location: "Centro de Convergencia Tecnológica, ubicado en el Bloque 9",
-                  },
-                  {
-                    time: "17:30 - 18:00",
-                    title: "Clausura",
-                    location: "Foro Federico Estrada Vélez, ubicado en el Bloque 15 (15-100)",
-                  },
-                  {
-                    time: "19:00 - 21:00",
-                    title: "Cena Invitados Especiales"
+                    time: "12:45 - 13:00",
+                    title: "Premiación y Clausura",
+                    location: "Auditorio 1",
                   }
                 ].map((session, index) => (
                   <div key={index} className="flex flex-col gap-2 rounded-lg border p-4 md:flex-row md:items-center transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
@@ -905,14 +506,14 @@ export default function ScientificEventPage() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Información del lugar</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  El SIQUI 2025 se llevará a cabo en las instalaciones de la Universidad de Medellín
+                  El SIQUI 2026 se llevará a cabo en las instalaciones de la Universidad de Medellín
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl gap-8 py-12 lg:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Centro Científico</h3>
+                  <h3 className="text-2xl font-bold">Campus UdeM</h3>
                   <p className="text-muted-foreground">
                     Un lugar equipado con los implementos necesarios para una experiencia amena y significativa en el SIQUI 2025.
                     Llegar a nuestro Campus Vivo es muy sencillo usando el transporte público integrado, Metro de Medellín.
@@ -1008,11 +609,11 @@ export default function ScientificEventPage() {
             </div>
 
             {/* Apoya Section (Now Centered) */}
+            {/*
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Patrocina:</h2>
             </div>
             <div className="mx-auto py-12">
-              {/* <h3 className="mb-8 text-center text-lg font-medium">Platinum Sponsors</h3> */}
               <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">
                 {[
                   { src: "/universidad_antioquia.webp", alt: "Universidad de Antioquia", h: "h-16" },
@@ -1026,7 +627,9 @@ export default function ScientificEventPage() {
                   { src: "/lanzetta_rengifo.webp", alt: "Lanzetta Rengifo", h: "h-400" },
                 ].map((sponsor, i) => (
                   <div key={`platinum-${i}`} className="flex items-center justify-center">
+                  */}
                     {/* container enforces a consistent box size; tweak sponsor.h per-logo if needed */}
+                    {/*
                     <div className={`flex items-center justify-center max-w-[180px] w-full ${sponsor.h}`}>
                       <Image
                         src={sponsor.src}
@@ -1039,22 +642,22 @@ export default function ScientificEventPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>*/}
           </div>
         </section>
 
         {/* Registration CTA */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-justify">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Listo para unirte?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">¿Listo para unirte?</h2>
                 <p className="mx-auto max-w-[700px] md:text-xl/relaxed">
-                ¡No te quedes fuera! Regístrate hoy mismo para el SIQUI 2025 y sé parte de una experiencia única 
-                llena de conocimiento, networking y pasión por la química.
+                Pronto estarán disponibles las inscripciones y más información sobre el SIQUI 2026. Te invitamos a ser parte de un encuentro en el que la ciencia, la innovación y el compromiso con la sociedad se unen para explorar el papel de la química en la construcción de un futuro más sostenible.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+                {/*
                 <Link href= "/templates/Programa_SIQUI_2025.pdf" 
                 passHref legacyBehavior
                 target="_blank"
@@ -1064,6 +667,7 @@ export default function ScientificEventPage() {
                   <ChevronRight className="h-4 w-4" />
                 </Button>
                 </Link>
+                */}
                 <Button
                   size="lg"
                   variant="outline"
@@ -1104,7 +708,7 @@ export default function ScientificEventPage() {
         <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
           <div className="flex items-center gap-2 font-bold text-xl">
             <span className="text-primary">SIQUI</span>
-            <span className="text-muted-foreground">2025</span>
+            <span className="text-muted-foreground">2026</span>
           </div>
           <p className="text-center text-sm text-muted-foreground md:text-left">
             &copy; {new Date().getFullYear()} Simposio de Química UdeMedellín. Todos los derechos reservados.

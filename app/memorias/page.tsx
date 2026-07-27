@@ -15,9 +15,6 @@ export default function MemoriesLandingPage() {
           <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
             Explora las memorias de las ediciones previas
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            El sitio principal ahora se enfoca en el evento próximo. Estas páginas dedicadas permiten revisar las memorias de las ediciones anteriores en un espacio independiente.
-          </p>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
