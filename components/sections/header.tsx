@@ -35,12 +35,11 @@ export function Header() {
             Apoya
           </Link>
         </nav>
-        <Link href="/memories/MEMORIAS_II_SIQUI.pdf"
-                passHref legacyBehavior
-                target="_blank"
-                rel="noopener noreferrer">
-          <Button>Descarga las memorias del SIQUI 2025</Button>
-        </Link>
+        <Button asChild>
+          <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
+            Descarga las memorias del SIQUI 2025
+          </Link>
+        </Button>
       </div>
     </header>
   )

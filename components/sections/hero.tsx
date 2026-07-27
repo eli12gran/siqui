@@ -20,42 +20,24 @@ export function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/memories/MEMORIAS_II_SIQUI.pdf"
-              passHref
-              legacyBehavior
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="inline-flex text-lg items-center gap-2">
+            <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
+              <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
                 Descarga las memorias de SIQUI 2025
                 <ChevronRight className="h-4 w-4" />
-              </Button>
-            </Link>
-            {/* <Link
-              href="/templates/Programacion_SIQUI-1.pdf"
-              passHref
-              legacyBehavior
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="inline-flex text-lg items-center gap-2">
+              </Link>
+            </Button>
+            {/* <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
+              <Link href="/templates/Programacion_SIQUI-1.pdf" target="_blank" rel="noopener noreferrer">
                 Ver programación (PDF)
                 <ChevronRight className="h-4 w-4" />
-              </Button>
-            </Link>
-            { <Link
-              href="/templates/PROGRAMACION_POSTER - SIQUI_16-Oct.pdf"
-              passHref
-              legacyBehavior
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <Button size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
-              Ver listado Póster (PDF)
-              <ExternalLink className="h-4 w-4" />
+              </Link>
             </Button>
-            </Link> } */}
+            <Button asChild size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
+              <Link href="/templates/PROGRAMACION_POSTER - SIQUI_16-Oct.pdf" target="_blank" rel="noopener noreferrer">
+                Ver listado Póster (PDF)
+                <ExternalLink className="h-4 w-4" />
+              </Link>
+            </Button> */}
           </div>
 
           {/* Details Row */}

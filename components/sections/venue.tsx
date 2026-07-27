@@ -57,20 +57,16 @@ export function Venue() {
               </div>
             </div>
             <div className="pt-4">
-            <Link
+            <Button variant="outline" className="inline-flex items-center gap-2" asChild>
+              <Link
                 href="https://www.metrodemedellin.gov.co/hs-fs/hubfs/v1-mapa%20esquematico-2021%20(1).webp?width=1200&height=1638&name=v1-mapa%20esquematico-2021%20(1).webp"
-                passHref
-                legacyBehavior
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="outline" className="inline-flex items-center gap-2" asChild>
-                  <a>
-                  Mapa de Metro Medellín
-                  <ExternalLink className="h-4 w-4" />
-                  </a>
-                </Button>
-            </Link>
+                Mapa de Metro Medellín
+                <ExternalLink className="h-4 w-4" />
+              </Link>
+            </Button>
             </div>
           </div>
           <div className="overflow-hidden rounded-xl">

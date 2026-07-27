@@ -16,15 +16,12 @@ export function RegistrationCta() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
             {/*
-            <Link href= "/templates/Programa_SIQUI_2025.pdf"
-            passHref legacyBehavior
-            target="_blank"
-            rel="noopener noreferrer">
-            <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
-              Ver programa (PDF)
-              <ChevronRight className="h-4 w-4" />
+            <Button asChild size="lg" variant="secondary" className="inline-flex items-center gap-2">
+              <Link href="/templates/Programa_SIQUI_2025.pdf" target="_blank" rel="noopener noreferrer">
+                Ver programa (PDF)
+                <ChevronRight className="h-4 w-4" />
+              </Link>
             </Button>
-            </Link>
             */}
             <Button
               size="lg"
@@ -37,15 +34,12 @@ export function RegistrationCta() {
               <Mail className="h-4 w-4" />
               </Link>
             </Button>
-            <Link href= "https://x.com/siquiudem"
-            passHref legacyBehavior
-            target="_blank"
-            rel="noopener noreferrer">
-            <Button size="lg" variant="secondary" className="inline-flex items-center gap-2">
-              @siquiudem
-              <FaXTwitter className="w-5 h-5" />
+            <Button asChild size="lg" variant="secondary" className="inline-flex items-center gap-2">
+              <Link href="https://x.com/siquiudem" target="_blank" rel="noopener noreferrer">
+                @siquiudem
+                <FaXTwitter className="w-5 h-5" />
+              </Link>
             </Button>
-            </Link>
             <Button
               size="lg"
               variant="outline"
