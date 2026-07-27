@@ -45,7 +45,7 @@ export default function TopicsChartV2() {
                 outerRadius={110}
                 dataKey="value"
                 labelLine={false}
-                label={({ name, percent }) => `${(percent * 100).toFixed(1)}%`}
+                label={({ percent }) => `${(percent * 100).toFixed(1)}%`}
                 isAnimationActive={true}
               >
                 {attendeeData.map((entry, index) => (

@@ -48,7 +48,7 @@ export default function AttendeeTypeChart() {
                 outerRadius={120}
                 dataKey="value"
                 labelLine={false}
-                label={({ name, percent }) => `${(percent * 100).toFixed(1)}%`}
+                label={({ percent }) => `${(percent * 100).toFixed(1)}%`}
                 isAnimationActive={true}
               >
                 {attendeeData.map((entry, index) => (

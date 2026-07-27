@@ -105,7 +105,7 @@ export default function SiquiIiPage() {
 
                     <h4 className="text-xl font-semibold">🏆 Premiación</h4>
                     <p className="text-muted-foreground mt-1">
-                      Al finalizar el día se otorgaron reconocimientos. Mención a los tres primeros puestos en la sesión de Pósters. Además, el premio "Mi póster favorito", elegido por votación de los asistentes, fue entregado a un proyecto presentado por estudiantes de educación media de la subregión norte del Departamento de Antioquia, destacando el talento emergente en la ciencia.
+                      Al finalizar el día se otorgaron reconocimientos. Mención a los tres primeros puestos en la sesión de Pósters. Además, el premio &ldquo;Mi póster favorito&rdquo;, elegido por votación de los asistentes, fue entregado a un proyecto presentado por estudiantes de educación media de la subregión norte del Departamento de Antioquia, destacando el talento emergente en la ciencia.
                     </p>
                   </div>
 
