@@ -1,23 +1,93 @@
-# SIQUI 2025
+# SIQUI UdeMedellín
 
-Event page made by scientific computing students at University of Medellin. The deployment of this page can be found on [this link](https://www.siquiudem.com/)
+Sitio web del **Simposio de Química de la Universidad de Medellín (SIQUI)**, organizado por el grupo de investigación Materiales con Impacto (Mat&mpac). El sitio en producción está en [siquiudem.com](https://www.siquiudem.com/).
 
-## Deploy in vercel
-- install the Vercel CLI
+## ¿Qué es este proyecto?
+
+Es la página informativa y de memorias del SIQUI: una landing con la información de la edición vigente del evento (fecha, lugar, cronograma, inscripciones, patrocinadores) y un archivo histórico ("Memorias") con el resumen, fotos y estadísticas de cada edición pasada (SIQUI I, SIQUI II, ...).
+
+## ¿Qué problemas resuelve?
+
+- Le da al simposio un punto único y actualizable para comunicar fecha, lugar, cronograma y estado de las inscripciones de cada edición, sin depender de redes sociales o volantes.
+- Preserva la memoria histórica del evento (fotos, estadísticas de asistentes, temas tratados, materiales descargables) edición por edición, en vez de perderla una vez termina el simposio.
+- Centraliza las plantillas que necesitan los participantes (resumen de proyecto, póster, presentación) para un solo lugar de descarga.
+
+## Arquitectura
+
+Next.js 15 (App Router) + React 19 + TypeScript, estilizado con Tailwind CSS y componentes de [shadcn/ui](https://ui.shadcn.com/) sobre Radix UI. Es un sitio mayormente estático (páginas prerenderizadas), sin backend propio.
+
 ```
+app/                        Rutas (App Router)
+  page.tsx                    Landing principal (edición vigente)
+  memorias/page.tsx           Índice de ediciones pasadas
+  memorias/siqui-i/           Memorias de la primera edición
+  memorias/siqui-ii/          Memorias de la segunda edición
+
+components/
+  sections/                 Bloques de la landing (Header, Hero, About,
+                             Schedule, Venue, Sponsors, Footer, etc.)
+  ui/                        Componentes base de shadcn/ui (Button, Card,
+                             Dialog, Toast, ...), generados por su CLI
+
+lib/
+  data/schedule.ts           Datos del cronograma (separados del JSX)
+  utils.ts                    Helpers (cn, etc.)
+
+hooks/                      Hooks compartidos (use-mobile, use-toast)
+
+public/
+  branding/                  Logo del evento
+  speakers/                  Fotos de ponentes y comités
+  sponsors/                  Logos de universidades/patrocinadores
+  gallery/                   Imágenes generales del evento
+  memories/                  Fotos, videos y PDFs de memorias por edición
+  templates/                 Plantillas descargables (resumen, póster, PPT)
+```
+
+Cada nueva edición del SIQUI se agrega como una ruta nueva bajo `app/memorias/siqui-N/`, reutilizando los componentes de `components/sections/` y `components/ui/` que ya existen.
+
+## Requisitos
+
+- Node.js `^18.18.0 || ^19.8.0 || >=20.0.0` (requerido por Next.js 15.5)
+- npm (gestor de paquetes del proyecto; hay un solo lockfile, `package-lock.json`)
+
+## Cómo ejecutarlo localmente
+
+```bash
+npm install
+npm run dev
+```
+
+Esto levanta el servidor de desarrollo en [http://localhost:3000](http://localhost:3000) con recarga en caliente.
+
+## Cómo construirlo para producción
+
+```bash
+npm run build   # compila, corre type-checking y ESLint, y genera el build de producción
+npm run start   # sirve el build generado
+```
+
+`npm run build` falla si hay errores de TypeScript o de ESLint — no se pueden ignorar silenciosamente (ver `next.config.mjs`). Antes de abrir un PR, correr también:
+
+```bash
+npm run lint
+```
+
+### Despliegue en Vercel
+
+El sitio se despliega en Vercel (`vercel.json` ya trae la configuración del framework). Para desplegar manualmente:
+
+```bash
 npm install -g vercel
+vercel login        # una sola vez
+vercel               # despliega un preview
+vercel --prod        # despliega a producción
 ```
 
-- Log in Vercel
-```
-vercel login
-```
-- Go to your project directory
-- deploy the project
-```
-vercel
-```
-- Actualizar despliegues
-```
-vercel --prod
-```
+## Cómo contribuir
+
+1. Crea una rama a partir de `main` para tu cambio.
+2. Antes de comitear, corre `npm run build` (incluye type-check + lint) y confirma que pasa limpio.
+3. Sigue el estilo de mensajes de commit ya usado en el historial: prefijos tipo `fix:`, `feat:`, `refactor:` seguidos de una descripción corta en presente, y el cuerpo explicando el *por qué* del cambio cuando no sea obvio.
+4. Al agregar contenido de una nueva edición del simposio, sigue las convenciones ya existentes: fotos de ponentes en `public/speakers/`, logos en `public/sponsors/` o `public/branding/`, y datos de cronograma en `lib/data/` en vez de hardcodeados en el JSX.
+5. Abre un pull request contra `main` describiendo el cambio y su motivo.
