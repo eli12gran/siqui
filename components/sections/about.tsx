@@ -1,3 +1,5 @@
+import {Atom,FlaskConical,Leaf,Zap,GraduationCap,Factory,Users} from "lucide-react";
+
 export function About() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-15">
@@ -19,7 +21,7 @@ export function About() {
             </p>
           </div>
         </div>
-        {/*}
+        
         <div className="mx-auto max-w-5xl py-7">
           <div className="flex flex-col items-center text-center">
             <div className="flex flex-col justify-center space-y-4 max-w-3xl">
@@ -28,32 +30,50 @@ export function About() {
               </div>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
                 {[
-                  {
-                    name: "⚛️​ Química inorgánica, orgánica, analítica, fisicoquímica y computacional.",
-                  },
-                  {
-                    name: "🔬​ Química de materiales avanzados, nanomateriales y catálisis.",
-                  },
-                  {
-                    name: "🌱​ Energía renovable, química verde, sostenibilidad y economía circular.",
-                  },
-                  {
-                    name: "💡 Innovación, educación e impacto social de la química.",
-                  },
-                  {
-                    name: "🏭 Aplicaciones industriales, políticas científicas y regulación en tecnologías químicas.",
-                  },
-                ].map((member, index) => (
-                  <div key={index} className="flex items-justified gap-4 rounded-lg border p-4 transition-shadow duration-200 hover:shadow-lg transform hover:scale-[1.01]">
-                    <div>
-                      <h4 className="text-xl font-bold">{member.name}</h4>
-                    </div>
-                  </div>
-                ))}
+  {
+    icon: Atom,
+    name: "Química inorgánica, orgánica, analítica, fisicoquímica y química computacional.",
+  },
+  {
+    icon: FlaskConical,
+    name: "Química de materiales, nanomateriales, catálisis y procesos avanzados de oxidación.",
+  },
+  {
+    icon: Leaf,
+    name: "Química ambiental, sostenibilidad y economía circular.",
+  },
+  {
+    icon: Zap,
+    name: "Energías renovables y tecnologías limpias.",
+  },
+  {
+    icon: GraduationCap,
+    name: "Innovación y educación en química.",
+  },
+  {
+    icon: Users,
+    name: "Apropiación social del conocimiento y ciencia para la sociedad.",
+  },
+].map((member, index) => {
+  const Icon = member.icon;
+
+  return (
+<div
+  key={index}
+  className="flex items-center gap-4 rounded-lg border p-4 transition-shadow duration-200 hover:shadow-lg hover:scale-[1.01]"
+>
+  <Icon className="h-7 w-7 text-primary shrink-0" />
+
+  <h4 className="text-xl font-bold text-left">
+    {member.name}
+  </h4>
+</div>
+                );
+})}
               </div>
             </div>
           </div>
-        </div>*/}
+        </div>
       </div>
     </section>
   )
