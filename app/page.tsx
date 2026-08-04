@@ -2,6 +2,7 @@ import { Header } from "@/components/sections/header"
 import { Hero } from "@/components/sections/hero"
 import { About } from "@/components/sections/about"
 import { Inscriptions } from "@/components/sections/inscriptions"
+import { Speakers } from "@/components/sections/speakers"
 import { Memories } from "@/components/sections/memories"
 import { Schedule } from "@/components/sections/schedule"
 import { Venue } from "@/components/sections/venue"
@@ -17,6 +18,7 @@ export default function ScientificEventPage() {
         <Hero />
         <About />
         <Inscriptions />
+        < Speakers />
         <Memories />
         <Schedule />
         <Venue />

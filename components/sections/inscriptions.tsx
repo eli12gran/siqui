@@ -1,3 +1,5 @@
+import { Download } from "lucide-react";
+
 export function Inscriptions() {
   return (
     <section id="inscriptions" className="w-full py-7 bg-muted/50">
@@ -30,8 +32,8 @@ export function Inscriptions() {
         </div>
 
         {/* Templates Grid */}
-        {/*
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {[
             {
               label: "Plantilla resumen del proyecto",
@@ -41,10 +43,6 @@ export function Inscriptions() {
               label: "Plantilla para póster",
               subtitle: "Dimensiones: 70 x 100 cm",
               link: "/templates/Plantilla_poster_SIQUI.pptx",
-            },
-            {
-              label: "Plantilla presentación de diapositivas",
-              link: "/templates/Plantilla_SIQUI.pptx",
             },
           ].map((item, index) => (
             <a
@@ -65,7 +63,6 @@ export function Inscriptions() {
             </a>
           ))}
         </div>
-          */}
 
         {/* Important Dates */}
         {/*
