@@ -9,7 +9,7 @@ export function Speakers() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
 
   return (
-        <section id="speakers" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="speakers" className="w-full py-12 md:py-24 lg:py-10 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">

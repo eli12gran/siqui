@@ -21,8 +21,8 @@ export function Hero() {
           {/* Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
-              <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
-                Descarga las memorias de SIQUI 2025
+              <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
+                Regístrate aquí
                 <ChevronRight className="h-4 w-4" />
               </Link>
             </Button>
