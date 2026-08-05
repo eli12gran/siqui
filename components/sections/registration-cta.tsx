@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
+import { Mail, ChevronRight } from "lucide-react"
 import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 export function RegistrationCta() {
@@ -11,18 +11,17 @@ export function RegistrationCta() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">¿Listo para unirte?</h2>
             <p className="mx-auto max-w-[700px] md:text-xl/relaxed">
-            Pronto estarán disponibles las inscripciones y más información sobre el SIQUI 2026. Te invitamos a ser parte de un encuentro en el que la ciencia, la innovación y el compromiso con la sociedad se unen para explorar el papel de la química en la construcción de un futuro más sostenible.
+            ¡Regístrate hoy mismo para el SIQUI 2026! Te invitamos a ser parte de un encuentro en el que la ciencia, la innovación y el compromiso con la sociedad se unen para explorar el papel de la química en la construcción de un futuro más sostenible.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
-            {/*
+          
             <Button asChild size="lg" variant="secondary" className="inline-flex items-center gap-2">
-              <Link href="/templates/Programa_SIQUI_2025.pdf" target="_blank" rel="noopener noreferrer">
-                Ver programa (PDF)
+              <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
+                Regístrate ahora
                 <ChevronRight className="h-4 w-4" />
               </Link>
             </Button>
-            */}
             <Button
               size="lg"
               variant="outline"

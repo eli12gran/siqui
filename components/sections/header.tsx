@@ -40,8 +40,8 @@ export function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Button asChild>
-            <Link href="/memories/MEMORIAS_II_SIQUI.pdf" target="_blank" rel="noopener noreferrer">
-              Descarga las memorias del SIQUI 2025
+            <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
+              Regístrate aquí
             </Link>
           </Button>
         </div>

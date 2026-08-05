@@ -1,4 +1,5 @@
-import { Download } from "lucide-react";
+import { Download, Calendar } from "lucide-react";
+import Link from "next/link"
 
 export function Inscriptions() {
   return (
@@ -13,22 +14,25 @@ export function Inscriptions() {
             Participa en el Simposio
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            ¡Prepárate! Pronto estaremos anunciando las inscripciones.
-            {/*Inscríbete como asistente o presenta tu proyecto. Aquí encontrarás el formulario de inscripción, las plantillas necesarias y fechas importantes.*/}
+            Inscríbete como asistente o presenta tu proyecto. Aquí encontrarás el formulario de inscripción y las plantillas necesarias y fechas importantes.
           </p>
-          {/*
+          
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Ten en cuenta que, para participar en modalidad de póster o charla, es necesario que envíes el resumen de tu trabajo usando la plantilla.
           </p>
           <div className="inline-block text-lg mt-4">
-            <button className="px-6 py-3 bg-gray-300 text-gray-700 font-semibold rounded-lg cursor-not-allowed" disabled>
-              Inscripciones cerradas
+            <button className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-[hsl(var(--primary-hover))] transition-colors">
+              <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
+              Formulario de inscripción
+              </Link>
             </button>
+
+            {/*
             <div className="mt-3 text-sm text-muted-foreground">
               ¿Necesitas la programación completa? Descarga el programa aquí:&nbsp;
               <a href="/templates/Programacion_SIQUI-1.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Programa (PDF)</a>
-            </div>
-          </div>*/}
+            </div>*/}
+          </div>
         </div>
 
         {/* Templates Grid */}
@@ -65,24 +69,37 @@ export function Inscriptions() {
         </div>
 
         {/* Important Dates */}
-        {/*
+        
         <div className="max-w-3xl mx-auto space-y-6">
           <h3 className="text-2xl font-bold text-center">Fechas importantes</h3>
           <ul className="space-y-4">
             <li className="flex text-lg items-start gap-3">
               <Calendar className="w-5 h-5 text-primary mt-1" />
               <span>
-                <strong>Fecha límite para envío de resúmenes:</strong> 01 de septiembre de 2025
+                <strong>Apertura y llamado a presentar resúmenes:</strong> 5 de agosto de 2026
               </span>
             </li>
             <li className="flex text-lg items-start gap-3">
               <Calendar className="w-5 h-5 text-primary mt-1" />
               <span>
-                <strong>Cierre de inscripciones generales:</strong> 30 de septiembre de 2025
+                <strong>Fecha límite para envío de resúmenes:</strong> 15 de septiembre de 2026
               </span>
             </li>
+                        <li className="flex text-lg items-start gap-3">
+              <Calendar className="w-5 h-5 text-primary mt-1" />
+              <span>
+                <strong>Notificación de aceptación de resúmenes:</strong> 1 de octubre de 2026
+              </span>
+            </li>
+            {/*
+            <li className="flex text-lg items-start gap-3">
+              <Calendar className="w-5 h-5 text-primary mt-1" />
+              <span>
+                <strong>Cierre de inscripciones generales:</strong> 30 de septiembre de 2025
+              </span>
+            </li>*/}
           </ul>
-        </div>*/}
+        </div>
       </div>
     </section>
   )
