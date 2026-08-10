@@ -23,7 +23,7 @@ export function Speakers() {
                   summary: "Profesor asociado de la Universidad de Antioquia y líder del Grupo Tandem Max Planck en Nanobioingeniería, con una trayectoria internacional en química analítica y nanobiotecnología.",
                   description: "Profesor Asociado y líder del Grupo Tandem Max Planck en Nanobioingeniería de la Universidad de Antioquia. Es químico de esta institución y doctor en Química por la Universidad de Barcelona (España). Ha realizado estancias posdoctorales en Francia, Estados Unidos y España, y ha dirigido a más de 20 estudiantes de posgrado. Desde 2022 figura entre el 2% de los científicos más influyentes del mundo en Química Analítica y es miembro correspondiente de la Academia Colombiana de Ciencias Exactas, Físicas y Naturales. Sus líneas de investigación se centran en el desarrollo de (bio)sensores, nanomateriales, nano(micro)transportadores, nano(micro)motores, electroquímica y herramientas analíticas para aplicaciones ambientales y biomédicas.",
                   institution: "Universidad de Antioquia",
-                  image: "/speakers/siqui3/jahir.webp",
+                  image: "/speakers/siqui3/jahir.png",
                   link: "https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/grupos-investigacion/max-planck/nanobioengineering/Contenido/asMenuLateral/members",
                 },
                 {
@@ -31,8 +31,16 @@ export function Speakers() {
                   summary: "Ingeniera biológica y doctora en Biotecnología con amplia experiencia en investigación, docencia y desarrollo de soluciones en nanotecnología y alimentos.",
                   description: "Ingeniera Biológica, Magíster en Ciencia y Tecnología de Alimentos y Doctora en Biotecnología por la Universidad Nacional de Colombia. Es docente e investigadora de la Universidad Nacional de Colombia, con más de 15 años de experiencia en investigación y 9 años de experiencia docente, enfocada en nanotecnología, biotecnología, química de alimentos, materiales avanzados y formulación de proyectos. Su producción científica incluye 38 publicaciones, 28 ponencias nacionales e internacionales, 2 capítulo de libro y 2 patentes. Ha recibido 20 reconocimientos académicos y científicos, entre los que destacan el Premio Nacional L'Oréal-UNESCO \"Para las Mujeres en la Ciencia\" y el reconocimiento como una de los 100 Nuevos Líderes de Colombia 2025, distinciones que resaltan su aporte al desarrollo de la ciencia, la innovación y la formación de nuevas generaciones.",
                   institution: "Universidad Nacional de Colombia",
-                  image: "/speakers/siqui3/karol_zapata.webp?height=300&width=300",
+                  image: "/speakers/siqui3/karol_zapata.jpeg?height=300&width=300",
                   link: "https://orcid.org/0000-0003-0850-4556",
+                },
+                {
+                  name: "Dr. Javier Antonio Arcibar",
+                  summary: "Ingeniero Químico y Doctor en Ciencias Aplicadas, y actualmente es investigador del CIMAV e Investigador Nacional Nivel 2. Sus líneas de investigación se enfocan en la revalorización de residuos, el desarrollo de adsorbentes y nuevos materiales catódicos para baterías. Es vicepresidente de la Asociación Mexicana de Adsorción.",
+                  description: "Originario de San Luis Potosí, México, es Ingeniero Químico por la Universidad Autónoma de San Luis Potosí, Y doctor en Ciencias Aplicadas en Ciencias Ambientales por el IPICYT.  Realizó una estancia posdoctoral en la Universidad de la Ciudad de Nueva York en el grupo de la Dra. Del 2015 al 2025 fue investigador del Centro de Innovación aplicada en Tecnologías competitivas (CIATEC) en Guanajuato México donde dirigió más de 10 proyectos de investigación e innovación en las áreas de agua y energía. Desde el 2025 es investigador del Centro de Investigación en Materiales Avanzados (CIMAV) en el departamento de medio ambiente y energía. Es investigador nacional nivel 2, es vicepresidente de la Asociación Mexicana de Adsorción, miembro de la Asociación Mexicana del carbón y de la Asociación Internacional de Adsorción. Sus intereses están relacionados con la revalorización de residuos, el desarrollo y estudio de adsorbentes y la investigación de nuevos materiales catódicos para baterías. Lo más importante, es fanático del buen café.",
+                  institution: "Centro de Investigación en Materiales Avanzados (CIMAV)",
+                  image: "/speakers/siqui3/javier_arcibar.jpeg?height=300&width=300",
+                  link: "https://orcid.org/0000-0002-6826-8666"
                 }
               ].map((speaker, index) => {
                 const isExpanded = expandedIndex === index
