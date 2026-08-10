@@ -11,7 +11,7 @@ export function Hero() {
 
           {/* Image on Top */}
           <Image
-            src="/branding/Logo_2026.webp"
+            src="/branding/logo_2026.webp"
             width={800}
             height={800}
             alt="Conference Banner"

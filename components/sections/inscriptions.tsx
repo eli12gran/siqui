@@ -46,7 +46,7 @@ export function Inscriptions() {
             {
               label: "Plantilla para póster",
               subtitle: "Dimensiones: 70 x 100 cm",
-              link: "/templates/Plantilla_poster_SIQUI.pptx",
+              link: "/templates/Plantilla_poster_SIQUI_III.pptx",
             },
           ].map((item, index) => (
             <a
