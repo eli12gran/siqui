@@ -20,10 +20,9 @@ export function Header() {
           <Link href="#speakers" className="text-sm font-medium hover:text-primary">
             Ponentes
           </Link>
-          {/*}
           <Link href="#committees" className="text-sm font-medium hover:text-primary">
             Comités
-          </Link>*/}
+          </Link>
           <Link href="/memorias" className="text-sm font-medium hover:text-primary">
             Memorias
           </Link>

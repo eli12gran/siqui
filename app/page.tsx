@@ -9,6 +9,7 @@ import { Venue } from "@/components/sections/venue"
 import { Sponsors } from "@/components/sections/sponsors"
 import { RegistrationCta } from "@/components/sections/registration-cta"
 import { Footer } from "@/components/sections/footer"
+import { Committees } from "@/components/sections/committees"
 
 export default function ScientificEventPage() {
   return (
@@ -19,6 +20,7 @@ export default function ScientificEventPage() {
         <About />
         <Inscriptions />
         < Speakers />
+        < Committees/>
         <Memories />
         <Schedule />
         <Venue />

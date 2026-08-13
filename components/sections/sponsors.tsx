@@ -29,27 +29,20 @@ export function Sponsors() {
         </div>
 
         {/* Apoya Section (Now Centered) */}
-        {/*
+        
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Patrocina:</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Apoya:</h2>
         </div>
         <div className="mx-auto py-12">
-          <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">
+          {/*<div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">*/}
+          <div className="grid grid-cols-1 gap-1 md:grid-cols-1 lg:grid-cols-1">
             {[
-              { src: "/sponsors/universidad_antioquia.webp", alt: "Universidad de Antioquia", h: "h-16" },
-              { src: "/sponsors/universidad_nacional.webp", alt: "Universidad Nacional", h: "h-16" },
-              { src: "/sponsors/polanyi.webp", alt: "Polanyi", h: "h-20" },
-              { src: "/sponsors/uniremington.webp", alt: "Uniremington", h: "h-14" },
-              { src: "/sponsors/cpq.webp", alt: "CPQ", h: "h-25" },
-              { src: "/sponsors/cecoltec.webp", alt: "Cecoltec", h: "h-21" },
-              { src: "/sponsors/Innovatek.webp", alt: "Innovatek", h: "h-16" },
-              { src: "/sponsors/simprolab.webp", alt: "Simprolab", h: "h-25" },
-              { src: "/sponsors/lanzetta_rengifo.webp", alt: "Lanzetta Rengifo", h: "h-400" },
+              { src: "/sponsors/siqui3/sponsor1.webp", alt: "Academia Joven de Colombia", h: "h-50" }
             ].map((sponsor, i) => (
               <div key={`platinum-${i}`} className="flex items-center justify-center">
-              */}
+
                 {/* container enforces a consistent box size; tweak sponsor.h per-logo if needed */}
-                {/*
+
                 <div className={`flex items-center justify-center max-w-[180px] w-full ${sponsor.h}`}>
                   <Image
                     src={sponsor.src}
@@ -62,7 +55,7 @@ export function Sponsors() {
               </div>
             ))}
           </div>
-        </div>*/}
+        </div>
       </div>
     </section>
   )
