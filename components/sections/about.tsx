@@ -1,4 +1,4 @@
-import {Atom,FlaskConical,Leaf,Zap,GraduationCap,Factory,Users} from "lucide-react";
+import {Atom,FlaskConical,Leaf,Zap,GraduationCap,Users} from "lucide-react";
 
 export function About() {
   return (
