@@ -41,6 +41,13 @@ export function Speakers() {
                   institution: "Centro de Investigación en Materiales Avanzados (CIMAV)",
                   image: "/speakers/siqui3/javier_arcibar.webp?height=300&width=300",
                   link: "https://orcid.org/0000-0002-6826-8666"
+                },
+                {
+                  name: "Dr. Alexa González Posada",
+                  summary: "Química y doctora en Ciencias Químicas de la Universidad de Antioquia, con trayectoria en investigación, docencia universitaria y gestión de proyectos técnico-científicos orientados a la industria.",
+                  description: "Alexa González Posada es química y doctora en Ciencias Químicas de la Universidad de Antioquia. Cuenta con trayectoria en investigación, docencia universitaria y gestión de proyectos técnico-científicos orientados a la industria. Su trabajo se ha centrado en el estudio fisicoquímico de materiales y en el uso de técnicas analíticas aplicadas a la investigación, el desarrollo, la innovación y el control de calidad.\n\nActualmente se desempeña como representante de Ventas Consultivas y Proyectos en Cecoltec Services S.A.S., donde asesora a empresas de las industrias farmacéutica, cosmética, alimentaria, agroindustrial y de materiales. Su labor comprende la identificación de necesidades técnicas y la formulación de alternativas analíticas dirigidas al desarrollo de productos, la optimización de procesos y la toma de decisiones con fundamento científico.\n\nAsimismo, ha desarrollado una labor docente en el ámbito universitario, en la que articula su formación académica con el conocimiento adquirido en el entorno productivo. Desde este enfoque, promueve una visión aplicada de la química, destaca su estrecha relación con la industria y fomenta su uso para responder a desafíos concretos.",
+                  institution: "Cecoltec Services S.A.S.",
+                  image: "/speakers/siqui3/alexa_gonzalez.webp",
                 }
               ].map((speaker, index) => {
                 const isExpanded = expandedIndex === index
@@ -69,7 +76,7 @@ export function Speakers() {
                   <CardContent className="p-4 pt-3">
                     <div className="space-y-2">
                       <h3 className="text-xl font-bold sm:text-2xl">{speaker.name}</h3>
-                      <p className="text-base text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed whitespace-pre-line">
                         {isExpanded ? speaker.description : speaker.summary}
                       </p>
                       <p className="text-sm font-medium">{speaker.institution}</p>
