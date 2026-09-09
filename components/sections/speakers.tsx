@@ -27,7 +27,7 @@ export function Speakers() {
                   link: "https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/grupos-investigacion/max-planck/nanobioengineering/Contenido/asMenuLateral/members",
                 },
                 {
-                  name: "Dr. Karol Zapata",
+                  name: "Dra. Karol Zapata",
                   summary: "Ingeniera biológica y doctora en Biotecnología con amplia experiencia en investigación, docencia y desarrollo de soluciones en nanotecnología y alimentos.",
                   description: "Ingeniera Biológica, Magíster en Ciencia y Tecnología de Alimentos y Doctora en Biotecnología por la Universidad Nacional de Colombia. Es docente e investigadora de la Universidad Nacional de Colombia, con más de 15 años de experiencia en investigación y 9 años de experiencia docente, enfocada en nanotecnología, biotecnología, química de alimentos, materiales avanzados y formulación de proyectos. Su producción científica incluye 38 publicaciones, 28 ponencias nacionales e internacionales, 2 capítulo de libro y 2 patentes. Ha recibido 20 reconocimientos académicos y científicos, entre los que destacan el Premio Nacional L'Oréal-UNESCO \"Para las Mujeres en la Ciencia\" y el reconocimiento como una de los 100 Nuevos Líderes de Colombia 2025, distinciones que resaltan su aporte al desarrollo de la ciencia, la innovación y la formación de nuevas generaciones.",
                   institution: "Universidad Nacional de Colombia",
@@ -43,7 +43,7 @@ export function Speakers() {
                   link: "https://orcid.org/0000-0002-6826-8666"
                 },
                 {
-                  name: "Dr. Alexa González Posada",
+                  name: "Dra. Alexa González Posada",
                   summary: "Química y doctora en Ciencias Químicas de la Universidad de Antioquia, con trayectoria en investigación, docencia universitaria y gestión de proyectos técnico-científicos orientados a la industria.",
                   description: "Alexa González Posada es química y doctora en Ciencias Químicas de la Universidad de Antioquia. Cuenta con trayectoria en investigación, docencia universitaria y gestión de proyectos técnico-científicos orientados a la industria. Su trabajo se ha centrado en el estudio fisicoquímico de materiales y en el uso de técnicas analíticas aplicadas a la investigación, el desarrollo, la innovación y el control de calidad.\n\nActualmente se desempeña como representante de Ventas Consultivas y Proyectos en Cecoltec Services S.A.S., donde asesora a empresas de las industrias farmacéutica, cosmética, alimentaria, agroindustrial y de materiales. Su labor comprende la identificación de necesidades técnicas y la formulación de alternativas analíticas dirigidas al desarrollo de productos, la optimización de procesos y la toma de decisiones con fundamento científico.\n\nAsimismo, ha desarrollado una labor docente en el ámbito universitario, en la que articula su formación académica con el conocimiento adquirido en el entorno productivo. Desde este enfoque, promueve una visión aplicada de la química, destaca su estrecha relación con la industria y fomenta su uso para responder a desafíos concretos.",
                   institution: "Cecoltec Services S.A.S.",
