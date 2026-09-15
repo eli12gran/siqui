@@ -18,10 +18,10 @@ export function Sponsors() {
               <div key={`platinum-${i}`} className="flex items-center justify-center">
                 <Image
                   src={src}
-                  width={200}
-                  height={100}
+                  width={300}
+                  height={200}
                   alt={`Platinum Sponsor ${i + 1}`}
-                  className="max-h-16 w-auto object-contain"
+                  className="max-h-17 w-auto object-contain"
                 />
               </div>
             ))}
@@ -35,9 +35,10 @@ export function Sponsors() {
         </div>
         <div className="mx-auto py-12">
           {/*<div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-3">*/}
-          <div className="grid grid-cols-1 gap-1 md:grid-cols-1 lg:grid-cols-1">
+          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 lg:grid-cols-2">
             {[
-              { src: "/sponsors/siqui3/sponsor1.webp", alt: "Academia Joven de Colombia", h: "h-50" }
+              { src: "/sponsors/siqui3/sponsor1.webp", alt: "Academia Joven de Colombia", h: "h-100" },
+              { src: "/sponsors/cpq.webp", alt: "Consejo Profesional de Química Colombia", h: "h-120" }
             ].map((sponsor, i) => (
               <div key={`platinum-${i}`} className="flex items-center justify-center">
 
@@ -46,8 +47,8 @@ export function Sponsors() {
                 <div className={`flex items-center justify-center max-w-[180px] w-full ${sponsor.h}`}>
                   <Image
                     src={sponsor.src}
-                    width={200}
-                    height={100}
+                    width={300}
+                    height={200}
                     alt={sponsor.alt || `Sponsor ${i + 1}`}
                     className="w-auto max-h-full object-contain"
                   />

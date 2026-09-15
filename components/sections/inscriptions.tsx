@@ -82,13 +82,13 @@ export function Inscriptions() {
             <li className="flex text-lg items-start gap-3">
               <Calendar className="w-5 h-5 text-primary mt-1" />
               <span>
-                <strong>Fecha límite para envío de resúmenes:</strong> 15 de septiembre de 2026
+                <strong>Fecha límite para envío de resúmenes:</strong> 30 de septiembre de 2026
               </span>
             </li>
                         <li className="flex text-lg items-start gap-3">
               <Calendar className="w-5 h-5 text-primary mt-1" />
               <span>
-                <strong>Notificación de aceptación de resúmenes:</strong> 1 de octubre de 2026
+                <strong>Notificación de aceptación de resúmenes:</strong> 15 de octubre de 2026
               </span>
             </li>
             {/*
