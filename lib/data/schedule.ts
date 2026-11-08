@@ -1,132 +1,269 @@
-export type Session = {
+export type Auditorium = 2 | 3
+
+export type EventType =
+  | "general"
+  | "plenary"
+  | "invited"
+  | "break"
+  | "special"
+
+export type ScheduleEvent = {
   time: string
   title: string
-  location: string
-  speaker?: string
+  location?: string
+  type: EventType
+  auditorium: Auditorium | "both"
 }
 
-export const thursdaySessions: Session[] = [
-  {
-    time: "07:00 - 08:30",
-    title: "Registro e inscripciones",
-    location: "Auditorio 1",
-  },
-  {
-    time: "08:30 - 08:30",
-    title: "Bienvenida",
-    location: "Auditorio 1",
-  },
-  {
-    time: "09:30 - 10:15",
-    title: "Plenaria #1",
-    location: "Auditorio 1",
-  },
-  {
-    time: "10:15 - 10:35",
-    title: "Coctel de bienvenida",
-    location: "Auditorio 1",
-  },
-  {
-    time: "10:35 - 11:05",
-    title: "Conferencista invitado #1 - Química en la Industria",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:05 - 11:25",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:25 - 11:45",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:45 - 12:05",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "12:05 - 14:00",
-    title: "Almuerzo Libre",
-    location: "",
-  },
-  {
-    time: "14:00 - 14:45",
-    title: "Plenaria #2 - Rol de la mujer en la ciencia",
-    location: "Auditorio 1",
-  },
-  {
-    time: "14:45 - 15:15",
-    title: "Conferencista invitado #2 - Investigación en Educación Media",
-    location: "Auditorio 1",
-  },
-  {
-    time: "15:15 - 15:35",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "15:35 - 15:55",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "15:55 - 16:15",
-    title: "Coffee break y foto grupal",
-    location: "Auditorio 1",
-  },
-  {
-    time: "16:15 - 18:00",
-    title: "Posters",
-    location: "Por confirmar",
-  },
-]
+export type ParallelSession = {
+  time: string
+  talks: {
+    talkId: string
+    auditorium: Auditorium
+  }[]
+}
 
-export const fridaySessions: Session[] = [
-  {
-    time: "09:00 - 09:45",
-    title: "Plenaria #3",
-    location: "Auditorio 1",
-  },
-  {
-    time: "09:45 - 10:15",
-    title: "Conferencista invitado #3 - Investigación en Educación Media",
-    location: "Auditorio 1",
-  },
-  {
-    time: "10:15 - 10:45",
-    title: "Conferencista invitado #3 - Investigación en Educación Media",
-    location: "Auditorio 1",
-  },
-  {
-    time: "10:45 - 11:00",
-    title: "Coffee break",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:00 - 11:20",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:20 - 11:40",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "11:40 - 12:00",
-    title: "Charlas",
-    location: "Auditorio 1",
-  },
-  {
-    time: "12:00 - 12:45",
-    title: "Conversatorio",
-    location: "Auditorio 1",
-  },
-  {
-    time: "12:45 - 13:00",
-    title: "Premiación y Clausura",
-    location: "Auditorio 1",
-  },
-]
+export type ScheduleBlock =
+  | {
+      type: "event"
+      event: ScheduleEvent
+    }
+  | {
+      type: "parallel"
+      session: ParallelSession
+    }
+
+export type DaySchedule = {
+  date: string
+  blocks: ScheduleBlock[]
+}
+
+export const thursdaySchedule: DaySchedule = {
+  date: "Jueves 12 de noviembre",
+  blocks: [
+    {
+      type: "event",
+      event: {
+        time: "07:00 - 08:30",
+        title: "Registro e inscripciones",
+        location: "Auditorio 3",
+        type: "general",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "08:30 - 08:45",
+        title: "Bienvenida",
+        location: "Auditorio 3",
+        type: "general",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "08:45 - 09:30",
+        title: "Plenaria #1 Dr. Javier Arcibar",
+        location: "Auditorio 3",
+        type: "plenary",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "09:30 - 10:00",
+        title: "Conferencista invitado #1 Dra. Alexa González",
+        location: "Auditorio 3",
+        type: "invited",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "10:00 - 10:30",
+        title: "Coffee Break",
+        type: "break",
+        auditorium: "both",
+      },
+    },
+
+    // Parallel oral presentations
+    ...["10:30 - 10:45", "10:45 - 11:00", "11:00 - 11:15",
+      "11:15 - 11:30", "11:30 - 11:45"].map((time, index) => ({
+      type: "parallel" as const,
+      session: {
+        time,
+        talks: [
+          {
+            talkId: `Charla ${index * 2 + 1}`,
+            auditorium: 3 as const,
+          },
+          {
+            talkId: `Charla ${index * 2 + 2}`,
+            auditorium: 2 as const,
+          },
+        ],
+      },
+    })),
+
+    {
+      type: "event",
+      event: {
+        time: "12:00 - 14:00",
+        title: "Almuerzo libre",
+        type: "break",
+        auditorium: "both",
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "14:00 - 14:45",
+        title: "Plenaria #2 Dra. Karol Zapata",
+        location: "Auditorio 3",
+        type: "plenary",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "14:45 - 15:15",
+        title: "Conferencista invitado #2 Simón Reyes",
+        location: "Auditorio 3",
+        type: "invited",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "15:15 - 16:00",
+        title: "Coffee Break / Cóctel y foto grupal",
+        location: "Auditorio 3",
+        type: "break",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "16:00 - 16:25",
+        title: "Intervención musical",
+        location: "Auditorio 3",
+        type: "special",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "16:25 - 18:30",
+        title: "Exposición de pósteres",
+        location: "Pasillo Bloque 11 y Auditorio 1",
+        type: "special",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "21:00 - 24:00",
+        title: "Actividad social",
+        type: "special",
+        auditorium: "both",
+      },
+    },
+  ],
+}
+
+export const fridaySchedule: DaySchedule = {
+  date: "Viernes 13 de noviembre",
+  blocks: [
+    {
+      type: "event",
+      event: {
+        time: "09:00 - 09:45",
+        title: "Plenaria #3 Dr. Jahir Orozco",
+        location: "Auditorio 3",
+        type: "plenary",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "09:45 - 10:15",
+        title: "Conferencista invitado #3 Dr. Alejandro Vasquez",
+        location: "Auditorio 3",
+        type: "invited",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "10:15 - 10:45",
+        title: "Conferencista invitado #4 Prof. Maria Eugenia Acevedo",
+        location: "Auditorio 3",
+        type: "invited",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "10:45 - 11:00",
+        title: "Coffee Break",
+        type: "break",
+        auditorium: 3,
+      },
+    },
+
+    {
+      type: "parallel",
+      session: {
+        time: "11:00 - 11:15",
+        talks: [
+          { talkId: "Charla 11", auditorium: 3 },
+          { talkId: "Charla 12", auditorium: 2 },
+        ],
+      },
+    },
+    {
+      type: "parallel",
+      session: {
+        time: "11:15 - 11:30",
+        talks: [
+          { talkId: "Charla 13", auditorium: 3 },
+          { talkId: "Charla 14", auditorium: 2 },
+        ],
+      },
+    },
+
+    {
+      type: "event",
+      event: {
+        time: "11:45 - 12:15",
+        title: "Conversatorio",
+        location: "Auditorio 3",
+        type: "plenary",
+        auditorium: 3,
+      },
+    },
+    {
+      type: "event",
+      event: {
+        time: "12:15 - 12:45",
+        title: "Premiación y clausura",
+        location: "Auditorio 3",
+        type: "special",
+        auditorium: 3,
+      },
+    },
+  ],
+}
