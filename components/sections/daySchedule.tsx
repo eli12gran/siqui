@@ -12,7 +12,7 @@ function TalkLink({ talkId }: { talkId: string }) {
   return (
     <a
       href={`#talk-${talkId.toLowerCase()}`}
-      className="flex h-full items-center justify-center rounded-lg border border-primary/20 bg-primary/5 p-4 font-bold text-primary transition-all hover:border-primary hover:bg-primary/10 hover:shadow-md"
+      className="flex min-h-[78px] items-center justify-center rounded-lg border border-primary/20 bg-primary/5 p-4 font-bold text-primary transition-all hover:border-primary hover:bg-primary/10 hover:shadow-md"
     >
       {talkId}
       <span className="ml-2 text-xs font-normal text-muted-foreground">
@@ -105,23 +105,23 @@ function ScheduleRow({ block }: { block: ScheduleBlock }) {
         <span>{session.time}</span>
       </div>
 
-      {/* Auditorium 3 */}
-      <div className="min-w-0">
-        <span className="mb-1 block text-xs font-medium text-muted-foreground md:hidden">
-          Auditorio 3
-        </span>
+{/* Auditorium 3 */}
+<div className="min-w-0 flex flex-col gap-2">
+  <span className="text-xs font-medium text-muted-foreground">
+    Auditorio 3
+  </span>
 
-        {talk3 && <TalkLink talkId={talk3.talkId} />}
-      </div>
+  {talk3 && <TalkLink talkId={talk3.talkId} />}
+</div>
 
-      {/* Auditorium 2 */}
-      <div className="min-w-0">
-        <span className="mb-1 block text-xs font-medium text-muted-foreground md:hidden">
-          Auditorio 2
-        </span>
+{/* Auditorium 2 */}
+<div className="min-w-0 flex flex-col gap-2">
+  <span className="text-xs font-medium text-muted-foreground">
+    Auditorio 2
+  </span>
 
-        {talk2 && <TalkLink talkId={talk2.talkId} />}
-      </div>
+  {talk2 && <TalkLink talkId={talk2.talkId} />}
+</div>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
+  ExternalLink,
   Menu,
   X,
 } from "lucide-react"
@@ -57,11 +58,12 @@ export function Header() {
 
           <Button asChild>
             <Link
-              href="https://forms.gle/8F9XEfR99ucTv98q8"
+              href="/templates/siqui3/Posters_SIQUI_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Regístrate aquí
+              Ver listado Póster (PDF)
+              <ExternalLink className="h-4 w-4" />
             </Link>
           </Button>
         </div>
@@ -105,11 +107,12 @@ export function Header() {
                 <SheetClose asChild>
                   <Button asChild className="w-full">
                     <Link
-                      href="https://forms.gle/8F9XEfR99ucTv98q8"
+                      href="/templates/siqui3/Posters_SIQUI_2026.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Regístrate aquí
+                      Ver listado Póster (PDF)
+                    <ExternalLink className="h-4 w-4" />
                     </Link>
                   </Button>
                 </SheetClose>

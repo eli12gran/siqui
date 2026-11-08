@@ -78,7 +78,6 @@ export function Committees() {
 
 {/* Comité logístico */}
   <div className="space-y-6 max-w-5xl mx-auto">
-    <h4 className="text-center text-lg font-bold">Universidad de Medellín</h4>
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
       {[
         {
@@ -95,8 +94,7 @@ export function Committees() {
         },
         {
           name: "Sebastián Pérez",
-          /*image: "/speakers/maria_isabel.webp?height=150&width=150",*/
-          image: "/sponsors/universidad_medellin.webp?height=150&width=150",
+          image: "/speakers/siqui3/sebastian_perez.webp?height=150&width=150",
         },
         {
           name: "Emanuel Cabrera",
