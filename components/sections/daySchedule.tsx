@@ -22,6 +22,20 @@ function TalkLink({ talkId }: { talkId: string }) {
   )
 }
 
+function DiscussionLink() {
+  return (
+    <a
+      href="#discussion"
+      className="flex h-full items-center justify-center rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 font-bold text-amber-700 transition-all hover:border-amber-500 hover:bg-amber-500/10 hover:shadow-md dark:text-amber-400"
+    >
+      Conversatorio
+      <span className="ml-2 text-xs font-normal text-muted-foreground">
+        Ver detalles →
+      </span>
+    </a>
+  )
+}
+
 // Displays one row of the schedule.
 function ScheduleRow({ block }: { block: ScheduleBlock }) {
   // CASE 1: The block is a general event.
@@ -47,8 +61,12 @@ function ScheduleRow({ block }: { block: ScheduleBlock }) {
           )}
 
           {event.auditorium === 3 || isBoth ? (
-            <ScheduleItem event={event} />
-          ) : null}
+  event.title === "Conversatorio" ? (
+    <DiscussionLink />
+  ) : (
+    <ScheduleItem event={event} />
+  )
+) : null}
         </div>
 
         {/* Event in Auditorium 2 */}

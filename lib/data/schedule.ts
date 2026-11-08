@@ -46,7 +46,7 @@ export const thursdaySchedule: DaySchedule = {
       event: {
         time: "07:00 - 08:30",
         title: "Registro e inscripciones",
-        location: "Auditorio 3",
+        location: "Entrada del Auditorio 3 - Bloque 11",
         type: "general",
         auditorium: 3,
       },

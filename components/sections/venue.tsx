@@ -23,7 +23,7 @@ export function Venue() {
             <div className="space-y-2">
               <h3 className="text-2xl font-bold">Campus UdeM</h3>
               <p className="text-muted-foreground">
-                Un lugar equipado con los implementos necesarios para una experiencia amena y significativa en el SIQUI 2025.
+                Un lugar equipado con los implementos necesarios para una experiencia amena y significativa en el SIQUI 2026.
                 Llegar a nuestro Campus Vivo es muy sencillo usando el transporte público integrado, Metro de Medellín.
               </p>
             </div>

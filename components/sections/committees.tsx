@@ -65,6 +65,59 @@ export function Committees() {
       ))}
     </div>
     </div>
+
+      <div className="container px-4 md:px-6">
+  <div className="flex flex-col items-center justify-center space-y-4 text-center">
+    <div className="space-y-2">
+      <div className="inline-block rounded-lg bg-primary px-4 py-2 text-lg font-bold text-primary-foreground">
+        Comité Logístico
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Comité logístico */}
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <h4 className="text-center text-lg font-bold">Universidad de Medellín</h4>
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+      {[
+        {
+          name: "Valentina Ospina",
+          image: "/speakers/valen_ospina.webp?height=150&width=150",
+        },
+        {
+          name: "Valentina Miranda",
+          image: "/speakers/vale.webp?height=150&width=150",
+        },
+        {
+          name: "Johwan Paniagua",
+          image: "/speakers/siqui3/jowhan.webp?height=150&width=150",
+        },
+        {
+          name: "Sebastián Pérez",
+          /*image: "/speakers/maria_isabel.webp?height=150&width=150",*/
+          image: "/sponsors/universidad_medellin.webp?height=150&width=150",
+        },
+        {
+          name: "Emanuel Cabrera",
+          image: "/speakers/emanuel.webp?height=150&width=150",
+        }
+      ].map((member, index) => (
+        <div key={index} className="flex items-center gap-4 rounded-lg border p-4">
+          <Image
+            src={member.image}
+            alt={member.name}
+            width={60}
+            height={60}
+            className="rounded-full object-cover"
+          />
+          <div>
+            <h4 className="font-bold">{member.name}</h4>
+          </div>
+        </div>
+      ))}
+    </div>
+    </div>
               </div>
             </div>
             </div>

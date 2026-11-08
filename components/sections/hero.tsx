@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Users, ChevronRight } from "lucide-react"
+import { Calendar, MapPin, Users, ChevronRight, ExternalLink } from "lucide-react"
 
 export function Hero() {
   return (
@@ -20,24 +20,24 @@ export function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
+            {/*<Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
               <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
                 Regístrate aquí
                 <ChevronRight className="h-4 w-4" />
               </Link>
-            </Button>
-            {/* <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
+            </Button> */}
+            {/*<Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
               <Link href="/templates/Programacion_SIQUI-1.pdf" target="_blank" rel="noopener noreferrer">
                 Ver programación (PDF)
                 <ChevronRight className="h-4 w-4" />
               </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="inline-flex text-lg items-center gap-2">
-              <Link href="/templates/PROGRAMACION_POSTER - SIQUI_16-Oct.pdf" target="_blank" rel="noopener noreferrer">
+            </Button>*/}
+            <Button asChild size="lg" className="inline-flex text-lg items-center gap-2">
+              <Link href="/templates/siqui3/Posters_SIQUI_2026.pdf" target="_blank" rel="noopener noreferrer">
                 Ver listado Póster (PDF)
                 <ExternalLink className="h-4 w-4" />
               </Link>
-            </Button> */}
+            </Button>
           </div>
 
           {/* Details Row */}
