@@ -65,6 +65,13 @@ export function Speakers() {
                   institution: "Universidad Arturo Prat, Iquique, Chile",
                   image: "/speakers/siqui3/Alejandro_V.jpeg",
                   link: "https://www.scopus.com/authid/detail.uri?authorId=56108486100"
+                },
+                {
+                  name: "Prof. María Eugenia Acevedo Rojas",
+                  summary: "Docente Química y Medio Ambiente, Lic. en Biología y Química, UdeA. Magister en Psicopedagogía, UdeA. Especialista en Evaluación Pedagógica, UCatolica de Manizales. 45 años de ejercicio docente: básica, media y pregrado",
+                  description: "Docente Química y Medio Ambiente, Lic. en Biología y Química, UdeA. Magister en Psicopedagogía, UdeA. Especialista en Evaluación Pedagógica, UCatolica de Manizales. 45 años de ejercicio docente: básica, media y pregrado",
+                  institution: "Institución Educativa Gómez Plata, Antiquia",
+                  image: "/speakers/siqui3/maria_eugenia_acevedo.webp"
                 }
               ].map((speaker, index) => {
                 const isExpanded = expandedIndex === index

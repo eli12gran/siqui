@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Mail, ChevronRight } from "lucide-react"
+import { Mail, ChevronRight, ExternalLink } from "lucide-react"
 import { FaXTwitter, FaInstagram } from "react-icons/fa6"
 
 export function RegistrationCta() {
@@ -17,9 +17,9 @@ export function RegistrationCta() {
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
           
             <Button asChild size="lg" variant="secondary" className="inline-flex items-center gap-2">
-              <Link href="https://forms.gle/8F9XEfR99ucTv98q8" target="_blank" rel="noopener noreferrer">
-                Regístrate ahora
-                <ChevronRight className="h-4 w-4" />
+              <Link href="/templates/siqui3/Posters_SIQUI_2026.pdf" target="_blank" rel="noopener noreferrer">
+                Ver listado Póster
+                <ExternalLink className="h-4 w-4" />
               </Link>
             </Button>
             <Button

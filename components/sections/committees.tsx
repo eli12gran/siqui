@@ -8,7 +8,7 @@ export function Committees() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-3 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Comités de SIQUI 2025</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Comités de SIQUI 2026</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Conozca a los reconocidos expertos que revisan las presentaciones y organizan el evento.
                 </p>

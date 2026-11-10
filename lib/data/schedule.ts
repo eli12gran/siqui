@@ -44,7 +44,7 @@ export const thursdaySchedule: DaySchedule = {
     {
       type: "event",
       event: {
-        time: "07:00 - 08:30",
+        time: "07:30 - 08:30",
         title: "Registro e inscripciones",
         location: "Entrada del Auditorio 3 - Bloque 11",
         type: "general",
@@ -123,7 +123,7 @@ export const thursdaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "14:00 - 14:45",
-        title: "Plenaria #2 Dra. Karol Zapata",
+        title: "Plenaria #2 Dra. Karol Zapata: Rol de las mujeres en la ciencia. De las brechas a las posibilidades: mujeres, ciencia y transformación social.",
         location: "Auditorio 3",
         type: "plenary",
         auditorium: 3,
@@ -188,7 +188,7 @@ export const fridaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "09:00 - 09:45",
-        title: "Plenaria #3 Dr. Jahir Orozco",
+        title: "Plenaria #3 Dr. Jahir Orozco: Nanochemistry in precision medicine of colorectal cancer",
         location: "Auditorio 3",
         type: "plenary",
         auditorium: 3,
@@ -198,7 +198,7 @@ export const fridaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "09:45 - 10:15",
-        title: "Conferencista invitado #3 Dr. Alejandro Vasquez",
+        title: "Conferencista invitado #3 Dr. Alejandro Vasquez: Aplicaciones de la fisicoquímica desde una perspectiva molecular",
         location: "Auditorio 3",
         type: "invited",
         auditorium: 3,
@@ -208,7 +208,7 @@ export const fridaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "10:15 - 10:45",
-        title: "Conferencista invitado #4 Prof. Maria Eugenia Acevedo",
+        title: "Conferencista invitado #4 Prof. Maria Eugenia Acevedo: “La Pacanería”​. Economía circular y evaluación exploratoria del compost y el biochar en una unidad productiva escolar, año 2026​",
         location: "Auditorio 3",
         type: "invited",
         auditorium: 3,
