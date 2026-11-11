@@ -65,7 +65,7 @@ export const thursdaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "08:45 - 09:30",
-        title: "Plenaria #1 Dr. Javier Arcibar",
+        title: "Plenaria #1 Dr. Javier Arcibar: Transformación de residuos de carbones porosos para su uso en baterías de Li-S",
         location: "Auditorio 3",
         type: "plenary",
         auditorium: 3,
@@ -133,7 +133,7 @@ export const thursdaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "14:45 - 15:15",
-        title: "Conferencista invitado #2 Simón Reyes",
+        title: "Conferencista invitado #2 Simón Reyes: Diseño y aplicación de nanomateriales y compósitos híbridos para la sostenibilidad ambiental",
         location: "Auditorio 3",
         type: "invited",
         auditorium: 3,
