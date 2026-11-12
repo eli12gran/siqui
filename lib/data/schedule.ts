@@ -75,7 +75,7 @@ export const thursdaySchedule: DaySchedule = {
       type: "event",
       event: {
         time: "09:30 - 10:00",
-        title: "Conferencista invitado #1 Dra. Alexa González",
+        title: "Conferencista invitado #1 Dra. Alexa González: De la academia a la industria: La química como herramienta para transformar problemas en soluciones",
         location: "Auditorio 3",
         type: "invited",
         auditorium: 3,
